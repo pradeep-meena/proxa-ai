@@ -223,7 +223,7 @@ const Sidebar = ({ collapsed }) => {
                 setOpenSubmenu(null);
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> All Contract /
-              Contract Wearhouse
+              Contract warehouse
             </li>
             <li
               className={`submenu-item ${

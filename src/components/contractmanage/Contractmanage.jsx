@@ -99,7 +99,7 @@ const Contractmanage = () => {
   <li><Link to="/addnewcontact" class="dropdown-item">Add New Contract</Link></li>
     <li><Link to="/contractdetail" class="dropdown-item" href="#">Contract Detail</Link></li>
     <li><Link to="/contracttemplate" class="dropdown-item">Contract Template Selection</Link></li>
-    <li><Link to="" class="dropdown-item">Path Selection</Link></li>
+    <li><Link to="/costumeagent" class="dropdown-item">Path Selection</Link></li>
     
   </ul>
 </div>

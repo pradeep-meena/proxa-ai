@@ -78,31 +78,31 @@ const VendorPerformanceManagement = () => {
           </thead>
           <tbody>
             <tr>
-              <td>Category 1</td>
+              <td>KPI 1</td>
               <td className="table-danger">12 / 50</td>
               <td className="table-success">47 / 50</td>
               <td className="table-success">45 / 50</td>
             </tr>
             <tr>
-              <td>Category 2</td>
+              <td>KPI 2</td>
               <td className="table-danger">2 / 5</td>
               <td className="table-success">5 / 5</td>
               <td className="table-warning">3 / 5</td>
             </tr>
             <tr>
-              <td>Category 3</td>
+              <td>KPI 3</td>
               <td className="table-danger">11 / 25</td>
               <td className="table-success">22 / 25</td>
               <td className="table-warning">14 / 25</td>
             </tr>
             <tr>
-              <td>Category 4</td>
+              <td>KPI 4</td>
               <td className="table-warning">31 / 50</td>
               <td className="table-success">38 / 50</td>
               <td className="table-warning">31 / 50</td>
             </tr>
             <tr>
-              <td>Category 5</td>
+              <td>KPI 5</td>
               <td className="table-success">9 / 10</td>
               <td className="table-success">9 / 10</td>
               <td className="table-danger">1 / 10</td>

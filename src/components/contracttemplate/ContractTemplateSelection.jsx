@@ -28,6 +28,7 @@ function ContractTemplateSelection() {
 
         {/* Upload Button */}
         <div>
+        <Link to="/costumeagent">
           <button
             className="btn btn-success d-flex align-items-center justify-content-center contrabtn"
             style={{
@@ -41,8 +42,9 @@ function ContractTemplateSelection() {
             }}
           >
             <i className="fa-solid fa-file-upload me-2"></i>
-            <Link to="/costumeagent">Upload Custom Agreement</Link>
+            Upload Custom Agreement
           </button>
+          </Link>
         </div>
       </div>
 
