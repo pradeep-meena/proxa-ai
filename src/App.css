@@ -31,11 +31,11 @@ main{
 }
 @media (max-width: 768px){
   main{
-    position: relative;
-    top: 61px;
-    left: -295px;
-    width: 50vh;
-    height: 50vh;
+    top: 126px;
+        left: 28px;
+        width: 50vh;
+        height: 50vh;
+        position: fixed;
   }
   
 }
