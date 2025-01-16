@@ -31,8 +31,8 @@ main{
 @media (max-width: 768px){
   main{
     top: 126px;
-        left: 28px;
-        width: 50vh;
+        left: 15px;
+        width: 45vh;
         height: 50vh;
         position: fixed;
   }
