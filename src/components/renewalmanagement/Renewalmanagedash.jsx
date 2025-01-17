@@ -7,7 +7,7 @@ const Renewalmanagedash = () => {
   <div className="renual-top">
   <h3 className="mb-4 fw-bold">Renewals Dashboard</h3>
           {/* Upload Button */}
-          <div>
+          {/* <div>
           <button
             className="btn btn-success d-flex align-items-center justify-content-center contrabtn"
             style={{
@@ -22,7 +22,7 @@ const Renewalmanagedash = () => {
           >
             <Link to="/renewalform">Renewal Request Form</Link>
           </button>
-        </div>
+        </div> */}
   </div>
   <div className="table-responsive mt-5">
     <table className="table table-bordered text-center align-middle table-striped">
@@ -51,7 +51,7 @@ const Renewalmanagedash = () => {
               style={{ color: "#0d99ff" }}
             />
             <i className="fa-solid fa-download mx-2 renewaldownload" />
-            <button className="btn btn-renewal">Renew</button>
+            <button className="btn btn-renewal"><Link to="/renewalform">Renew</Link></button>
           </td>
         </tr>
         <tr>
@@ -82,7 +82,7 @@ const Renewalmanagedash = () => {
               style={{ color: "#0d99ff" }}
             />
             <i className="fa-solid fa-download mx-2 renewaldownload" />
-            <button className="btn btn-renewal">Renew</button>
+            <button className="btn btn-renewal"><Link to="/renewalform">Renew</Link></button>
           </td>
         </tr>
         <tr>
@@ -128,7 +128,7 @@ const Renewalmanagedash = () => {
               style={{ color: "#0d99ff" }}
             />
             <i className="fa-solid fa-download mx-2 renewaldownload" />
-            <button className="btn btn-renewal">Renew</button>
+            <button className="btn btn-renewal"><Link to="/renewalform">Renew</Link></button>
           </td>
         </tr>
         <tr>

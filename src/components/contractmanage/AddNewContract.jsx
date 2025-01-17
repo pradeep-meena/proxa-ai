@@ -77,6 +77,32 @@ const AddNewContract = () => {
         {/* Request Details */}
         <h5 style={{ borderBottom: '1px solid black', textAlign: 'start', marginBottom: '15px' }}>Request Details</h5>
         <div className="row align-items-center">
+  <div className="col-md-3 mb-3">
+    <input type="text" placeholder="Milestone Name" className="form-control p-3" />
+  </div>
+  <div className="col-md-3 mb-3">
+    <input type="date" placeholder="Due Date" className="form-control p-3" />
+  </div>
+  <div className="col-md-3 mb-3">
+    <input type="text" placeholder="Responsible Party" className="form-control p-3" />
+  </div>
+  <div className="col-md-3 mb-3">
+    <button
+      className="btn"
+      style={{
+        backgroundColor: '#0096D4',
+        color: 'white',
+        width: '100%',
+        height: '56px',
+        borderRadius: '5px',
+      }}
+    >
+      + Add
+    </button>
+  </div>
+</div>
+
+        <div className="row align-items-center">
           <div className="col-md-3 mb-3">
             <input type="text" placeholder="Milestone Name" className="form-control p-3" />
           </div>
@@ -86,20 +112,20 @@ const AddNewContract = () => {
           <div className="col-md-3 mb-3">
             <input type="text" placeholder="Responsible Party" className="form-control p-3" />
           </div>
-          <div className="col-md-3 text-center">
-            <button
-              className="btn"
-              style={{
-                backgroundColor: '#0096D4',
-                color: 'white',
-                width: '100%',
-                height: '56px',
-                borderRadius: '5px',
-              }}
-            >
-              + Add
-            </button>
-          </div>
+          <div className="col-md-3 mb-3">
+    <button
+      className="btn"
+      style={{
+        backgroundColor: 'red',
+        color: 'white',
+        width: '100%',
+        height: '56px',
+        borderRadius: '5px',
+      }}
+    >
+      -
+    </button>
+  </div>
         </div>
 
         {/* Attachments */}
@@ -127,7 +153,7 @@ const AddNewContract = () => {
           </div>
         </div>
 
-        {/* Additional Information */}
+        {/* Additional Information
         <h5 style={{ borderBottom: '1px solid black', textAlign: 'start', marginBottom: '15px' }}>Some More Information</h5>
         <div className="row mb-3">
           <div className="col-md-4 mb-3">
@@ -140,7 +166,7 @@ const AddNewContract = () => {
               <option>Choose Your Contact</option>
             </select>
           </div>
-        </div>
+        </div> */}
 
         {/* Approval Workflow */}
         <h5 style={{ borderBottom: '1px solid black', textAlign: 'start', marginBottom: '15px' }}>Approval Workflow</h5>

@@ -36,6 +36,7 @@ function PathSelection() {
           Define the type of engagement for your contract.
         </p>
       </div>
+    
 
       {/* New Engagement Section */}
       <div className="mb-5">
@@ -89,6 +90,8 @@ function PathSelection() {
               Existing Supplier
             </button>
           </div>
+
+        
         </div>
       </div>
 
@@ -145,6 +148,33 @@ function PathSelection() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="mb-5">
+      <h4
+          className="fw-bold"
+          style={{
+            fontFamily: "Urbanist",
+            fontSize: "20px",
+            lineHeight: "24px",
+            borderBottom:"1px solid black"
+          }}
+        >
+          Add agreement
+        </h4>
+        <div className="col-sm-4">
+            <button
+              className="btn w-100 py-3 mt-3"
+              style={{
+                border: "1px solid #6c757d",
+                backgroundColor: "#f8f9fa",
+                borderRadius: "5px",
+                color: "#000",
+                
+              }}
+            >
+              Add agreement
+            </button>
+          </div>
       </div>
 
       {/* Footer Section */}

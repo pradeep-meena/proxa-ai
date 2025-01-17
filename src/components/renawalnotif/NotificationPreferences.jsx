@@ -30,13 +30,14 @@ const NotificationPreferences = () => {
       <div className="form">
         <div className="form-group">
           <label className="form-label">Remind me before renewal</label>
-          <select className="form-select">
-            <option value="" disabled selected>
+          <select className="form-select ">
+            <option value=" disabled selected">
               Select renewal Days
             </option>
-            <option value="7">7 Days</option>
-            <option value="14">14 Days</option>
-            <option value="30">30 Days</option>
+            <option value="7">180 Days</option>
+            <option value="14">120 Days</option>
+            <option value="30">60 Days</option>
+            <option>Custom</option>
           </select>
         </div>
 
