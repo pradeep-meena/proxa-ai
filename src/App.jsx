@@ -53,7 +53,7 @@ function App() {
       <div className={`right-side-content ${isSidebarCollapsed ? "collapsed " : ""  }`} >
           <Routes>
             <Route path="/" element={<Login/>}/>
-            <Route path="/dashbord" element={<Dashboard/>}/>
+            <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="/intakemanagement" element={<IntakeManagement/>}/>
             <Route path="/intakenewreq" element={<CreateNewRequest/>}/>
             <Route path="/intakemyrequ" element={<Myrequest/>}/>

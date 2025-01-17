@@ -20,7 +20,7 @@ const AddNewContract = () => {
               borderRadius: '5px',
             }}
           >
-            <i className="fa-solid fa-arrow-right"></i> Back
+            <i className="fa-solid fa-arrow-left"></i> Back
           </button>
           </Link>
         </div>
@@ -81,7 +81,7 @@ const AddNewContract = () => {
     <input type="text" placeholder="Milestone Name" className="form-control p-3" />
   </div>
   <div className="col-md-3 mb-3">
-    <input type="date" placeholder="Due Date" className="form-control p-3" />
+    <input type="text" placeholder="Due Date" className="form-control p-3" />
   </div>
   <div className="col-md-3 mb-3">
     <input type="text" placeholder="Responsible Party" className="form-control p-3" />
@@ -107,7 +107,7 @@ const AddNewContract = () => {
             <input type="text" placeholder="Milestone Name" className="form-control p-3" />
           </div>
           <div className="col-md-3 mb-3">
-            <input type="date" placeholder="Due Date" className="form-control p-3" />
+            <input type="text" placeholder="Due Date" className="form-control p-3" />
           </div>
           <div className="col-md-3 mb-3">
             <input type="text" placeholder="Responsible Party" className="form-control p-3" />

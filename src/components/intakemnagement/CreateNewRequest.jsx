@@ -329,7 +329,11 @@ const CreateNewRequest = () => {
               <option value="no">No</option>
             </select>
           </div>
+
         </div>
+        
+        <input type="checkbox"/>Does it involve cloud?<br/>
+        <input type="checkbox"/>Does this contract need to share customer or employee information?
 
         {/* Buttons */}
         <div className="d-flex justify-content-center ">
