@@ -258,6 +258,9 @@ const Sidebar = ({ collapsed }) => {
             </div>
           </li>
         </ul>
+        git add .
+        git commit -m "changes"
+        git pull
       </div>
     </div>
   );
