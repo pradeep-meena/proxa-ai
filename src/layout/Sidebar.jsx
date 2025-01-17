@@ -18,10 +18,10 @@ const Sidebar = ({ collapsed }) => {
       <div className="sidebar">
         <ul className="menu">
           {/* Dashboard Section */}
-          <li className={`menu-item ${isActive("/dashbord") ? "active" : ""}`}>
+          <li className={`menu-item ${isActive("/dashboard") ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/dashbord")}>
+              onClick={() => navigate("/dashboard")}>
               <i className="fa-solid fa-cubes"></i>
               <span className="menu-text">Dashboard</span>
             </div>
