@@ -685,12 +685,66 @@ select.form-input {
 }
 
 .workflow-line {
-  height: 40px;
   width: 4px;
-  background-color: #dee2e6;
   margin: auto;
 }
+.fa-check{
+  cursor: pointer;
+  transition: all 0.5 linear;
+}
+.fa-check:hover{
+  color: green;
+  text-shadow: 1px 1px 20px green, 1px 1px 20px green;
+  transform: scale(1.5);
+}
+.fa-xmark{
+  cursor: pointer;
+  transition: all 0.5 linear;
+}
+.fa-xmark:hover{
+  color: red;
+  text-shadow: 1px 1px 20px red, 1px 1px 20px red;
+  transform: scale(1.5);
+}
+.p-dialog-title{
+  padding: 15px;
+  color: #578E7E;
+  font-weight: bold;
+}
+.p-dialog-content{
+  padding-left: 20px;
+}
+.p-dialog-footer{
+  padding: 20px !important;
+}
+.p-confirm-dialog-accept{
+  padding: 0px 10px;
+  border-radius: 5px;
+  background-color: #578E7E;
+  border: none;
+  margin-left: 5px;
+}
+.p-button-label{
+  color: black;
+}
+.workflow-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
 
+
+.workflow-line i {
+  font-size: 1.5rem;
+}
+
+.workflow-card .fa-arrow-down {
+  margin-top: 10px;
+  color: #28a745;
+}
 /* approvialworkfolw */
 /* renewalmanage */
 .btn-renewal {
@@ -723,7 +777,7 @@ select.form-input {
 .renewaldownload {
 
   color: green;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5 linear;
 
 }
 
@@ -731,12 +785,12 @@ select.form-input {
 .renewaldownload:hover {
   color: green;
   text-shadow: 1px 1px 20px green, 1px 1px 20px green;
-  scale:(1.5)
+  transform: scale(1.5)
 }
 .fa-regular:hover{
   color: rgb(13, 153, 255) !important;
   text-shadow: 1px 1px 20px rgb(13, 153, 255), 1px 1px 20px rgb(13, 153, 255);
-  scale:(1.5)
+  transform: scale(1.5)
 }
 
 /* renewalmanage */

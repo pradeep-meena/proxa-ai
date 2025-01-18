@@ -143,7 +143,7 @@ const AddNewContract = () => {
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                marginLeft:'50px',
+
                 gap: '8px',
               }}
             >
