@@ -1,9 +1,22 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 const NotificationPreferences = () => {
-  const [leaseAgreement, setLeaseAgreement] = useState(true);
-  const [serviceContract, setServiceContract] = useState(false);
-  const [maintenanceAgreement, setMaintenanceAgreement] = useState(false);
+  
+
+  const [selectedOption, setSelectedOption] = useState("");
+  const [otherInput, setOtherInput] = useState("");
+
+  const handleSelectChange = (e) => {
+    setSelectedOption(e.target.value);
+    if (e.target.value !== "Other") {
+      setOtherInput(""); // Clear other input when a predefined option is selected
+    }
+  };
+
+  const handleOtherInputChange = (e) => {
+    setOtherInput(e.target.value);
+  };
+
 
   const handleReset = () => {
     setLeaseAgreement(true);
@@ -16,6 +29,43 @@ const NotificationPreferences = () => {
   };
 
   return (
+    <>
+     {/* <div>
+      <label htmlFor="providerType" className="form-label">
+        Select Provider Type
+      </label>
+      <select
+        className="form-select"
+        id="providerType"
+        value={selectedOption}
+        onChange={handleSelectChange}
+      >
+        <option value="" selected hidden>
+          Select provider type
+        </option>
+        <option value="Caregiver">Caregiver</option>
+        <option value="Nurse">Nurse</option>
+        <option value="Physical Therapist">Physical Therapist</option>
+        <option value="Occupational Therapist">Occupational Therapist</option>
+        <option value="Other">Other</option>
+      </select>
+
+      {selectedOption === "Other" && (
+        <div className="mt-3">
+          <label htmlFor="otherProviderType" className="form-label">
+            Please specify:
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="otherProviderType"
+            value={otherInput}
+            onChange={handleOtherInputChange}
+            placeholder="Enter provider type"
+          />
+        </div>
+      )}
+    </div> */}
     <div className="notification-container">
       <div className="header">
         <div className="noti-main-head">
@@ -30,55 +80,54 @@ const NotificationPreferences = () => {
       <div className="form">
         <div className="form-group">
           <label className="form-label">Remind me before renewal</label>
-          <select className="form-select ">
-            <option value=" disabled selected">
-              Select renewal Days
-            </option>
-            <option value="7">180 Days</option>
-            <option value="14">120 Days</option>
-            <option value="30">60 Days</option>
-            <option><button data-bs-toggle="modal" data-bs-target="#exampleModal">Custom</button></option>
+         <div className='row'>
+          <div className='col-md-4'>
+          <select id="renewalType"
+        value={selectedOption}
+        onChange={handleSelectChange} className="form-select ">
+            
+            
+            <option value=" selected hidden">
+            Select renewal Days
+        </option>
+        <option value="">180 Days</option>
+        <option value="">120 Days</option>
+        <option value="">60 Days</option>
+        
+        <option value="Other">Custom</option>
           </select>
+          </div>
+          <div className='col-md-4'>
+          <select id="renewalType"
+        value={selectedOption}
+        onChange={handleSelectChange} className="form-select ">
+            
+            
+            <option value=" selected hidden">
+            Renewal or New Engagement
+        </option>
+      
+          </select>
+          </div>
+          </div>
+          {selectedOption === "Other" && (
+        <div className=" mt-3">
+        
+          <label htmlFor="otherProviderType" className="form-label">
+            Please specify:
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="otherProviderType"
+            value={otherInput}
+            onChange={handleOtherInputChange}
+            placeholder="Enter custom days"
+          />
+        
         </div>
-
-
-    
-
-
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">This is the modal content.</div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          data-bs-dismiss="modal"
-        >
-          Close
-        </button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+      )}
+        </div>
 
 
         <div className="form-group">
@@ -109,6 +158,7 @@ const NotificationPreferences = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

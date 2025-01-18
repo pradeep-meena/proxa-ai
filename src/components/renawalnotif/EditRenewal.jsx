@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function EditRenewal() {
+function      EditRenewal() {
   return (
     <div className="container mt-5">
       <div className="d-flex justify-content-between align-items-center flex-wrap">
@@ -25,7 +25,8 @@ function EditRenewal() {
         color: 'white',
         borderRadius: '10px',
         display:'flex',
-        justifyContent:'space-between'
+        justifyContent:'center',
+        gap:'5px'
       }}
     >
     <i className="fa-solid fa-arrow-left ms-2"></i>  Back 

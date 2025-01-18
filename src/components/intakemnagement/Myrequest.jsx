@@ -125,14 +125,27 @@ const Myrequest = () => {
                       className="fa-regular fa-eye me-2 myrequesteye"
                       style={{ cursor: "pointer" }}
                       onClick={() => handleOpenModal(request)}
-                      data-bs-placement="top" title="View"
+                      data-bs-placement="top"
+                      title="View"
                     />
                     <i
-                      className="fa-regular fa-pen-to-square myrequestedit"
+                      className="fa-regular fa-pen-to-square me-2 myrequestedit"
                       style={{ fontSize: "15px", cursor: "pointer" }}
                       onClick={handleIconClick}
-                      data-bs-placement="top" title="Edit"
+                      data-bs-placement="top"
+                      title="Edit"
                     />
+                    <button
+                      style={{ border: "none", backgroundColor: "transparent" }}
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      <i
+                        class="fa-regular fa-comment"
+                        style={{ color: "#518bbb" }}
+                      ></i>
+                    </button>
                   </td>
                 </tr>
               ))}
@@ -299,6 +312,49 @@ const Myrequest = () => {
               }}
             />
 
+            <input
+              type="text"
+              name="item"
+              value={formValues.item}
+              onChange={handleInputChange}
+              placeholder="Request Type"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+            <input
+              type="text"
+              name="date"
+              value={formValues.date}
+              onChange={handleInputChange}
+              placeholder="Submission Date"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+            <input
+              type="text"
+              name="status"
+              value={formValues.status}
+              onChange={handleInputChange}
+              placeholder="Status"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+
             {/* Buttons */}
             <div style={{ textAlign: "right" }}>
               <button
@@ -346,6 +402,66 @@ const Myrequest = () => {
             onClick={handleCancelModal}
           />
         )}
+        {/* Overlay */}
+        {isModalOpen && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              zIndex: 999,
+            }}
+            onClick={handleCancelModal}
+          />
+        )}
+
+        <div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">
+                  Enter Comments
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn"
+                  data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  style={{ backgroundColor: "#578e7e", color: "white" }}
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

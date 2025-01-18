@@ -229,9 +229,9 @@ const Dashboard = () => {
     </div>
     <div className="col-12 col-sm-6 col-lg-3 mb-3 d-flex align-items-end">
       <div className="content w-100">
-        <h5 className="text-start fw-bold">Search by Source</h5>
+        <h5 className="text-start fw-bold">Search by Sourcing Lead</h5>
         <form class="dash-search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <input class="form-control me-2" type="search" placeholder="Enter..." aria-label="Search" />
       </form>
       </div>
     </div>

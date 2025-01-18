@@ -26,7 +26,7 @@ const RenewalWebform = () => {
           <form>
             <div className="mb-3 p-2">
             
-              <select className="form-select p-3" id="vendorName">
+              <select className="form-select p-3" id="vendorName" style={{fontSize:'16px',color:'gray'}}>
                 <option value="">Vendor Name</option>
                 <option value="Vendor1">Vendor 1</option>
                 <option value="Vendor2">Vendor 2</option>
@@ -47,22 +47,13 @@ const RenewalWebform = () => {
             <div className="mb-3 p-2">
              
               <input
-                type="date"
+                type="text"
                 className="form-control p-3"
                 id="newEndDate"
                 placeholder="New End Date"
               />
             </div>
 
-            <div className="mb-3 p-2">
-             
-              <input
-                type="text"
-                className="form-control p-3"
-                id="AddService"
-                placeholder="Add Service"
-              />
-            </div>
 
             <div className="mb-3 p-2 ">
              
@@ -74,7 +65,15 @@ const RenewalWebform = () => {
                 style={{height:'200px'}}
               ></textarea>
             </div>
-
+            <div className="mb-3 p-2">
+             
+             <input
+               type="text"
+               className="form-control p-3"
+               id="AddService"
+               placeholder="Add Service"
+             />
+           </div>
             <div 
   className="d-flex justify-content-center align-items-center flex-wrap" 
   style={{ height: "100%" }}
