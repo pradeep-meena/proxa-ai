@@ -8,7 +8,7 @@ const Signup = () => {
       <h2 className="welcome-text">Welcome !</h2>
       <form className="signup-form">
         <div className="form-row">
-          <input type="text" placeholder="First Name *" className="form-input" />
+          <input type="text" placeholder="First Name *" className="form-input"/>
           <input type="text" placeholder="Last Name *" className="form-input" />
         </div>
         <div className="form-row">
