@@ -75,6 +75,12 @@ const CreateNewRequest = () => {
               <option value=""> Subcategory</option>
             </select>
           </div>
+          <div className="col-md-4 mb-3">
+        
+            <select id="category" className="form-select p-3">
+              <option value=""> Engagement Type</option>
+            </select>
+          </div>
         </div>
 
         {/* Request Details */}
@@ -97,13 +103,78 @@ const CreateNewRequest = () => {
         <div className="row">
              <div className=" col-md-4 mb-4">
           {/* <label htmlFor="deliveryDate" className="form-label">Expected Delivery Date</label> */}
-          <input type="date" id="deliveryDate" placeholder="Expected Delivery Date" className="form-control p-3" />
-        </div></div>
+          <input type="text" id="deliveryDate" placeholder="Expected Delivery Date" className="form-control p-3" />
+        </div>
+        <div className=" col-md-4 mb-4">
+          {/* <label htmlFor="deliveryDate" className="form-label">Expected Delivery Date</label> */}
+          <input type="text" id="deliveryDate" placeholder="Execution Timeline" className="form-control p-3" />
+        </div>
+        <div className=" col-md-4 mb-4">
+          {/* <label htmlFor="deliveryDate" className="form-label">Expected Delivery Date</label> */}
+          <input type="text" id="deliveryDate" placeholder="Reason for earlier execution (IF Services)" className="form-control p-3" />
+        </div>
+        
+        </div>
 
+        <div className="row">
+             <div className=" col-md-4 mb-4">
+          {/* <label htmlFor="deliveryDate" className="form-label">Expected Delivery Date</label> */}
+          <input type="text" id="deliveryDate" placeholder="Service Duration (in months/years)" className="form-control p-3" />
+        </div>
+        <div className="col-md-4 mb-3">
+            {/* <label htmlFor="contact" className="form-label">Choose Your Contact</label> */}
+            <select id="contact" className="form-select p-3">
+              <option value="">Renewal</option>
+            </select>
+          </div>
+        <div className="col-md-4 mb-3 p-3">
+  <button
+    className="text-secondary text-start"
+    style={{
+      backgroundColor: 'white',
+      borderRadius: '5px',
+      border: 'none',
+      padding: '10px 20px',
+      color: 'black',
+      cursor: 'pointer',
+      fontSize: '16px',
+      textAlign: 'center',
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      transition: 'all 0.3s ease',
+      display: 'flex', 
+      alignItems: 'center', 
+    }}
+  >
+    <label
+      className="text-secondary"
+      htmlFor="fileInput"
+      style={{
+        cursor: 'pointer',
+        color: 'black',
+        marginLeft: '5px',
+        display: 'flex', 
+        alignItems: 'center', 
+        gap: '8px', 
+      }}
+    >
+      <i className="fa-solid fa-file-circle-plus"></i>
+      Upload Contract Document
+    </label>
+  </button>
+  <input
+    type="file"
+    id="fileInput"
+    style={{
+      display: 'none',
+    }}
+  />
+  </div>
+        
+        </div>
        
 
         {/* Budget Information */}
-        <h5 style={{borderBottom:'1px solid black', textAlign:'start',textAlign:'start' ,marginBottom:'15px'}}>Budget Information</h5>
+        <h5 style={{borderBottom:'1px solid black', textAlign:'start' ,marginBottom:'15px'}}>Budget Information</h5>
         <div className="row mb-3">
           <div className="col-md-4 mb-3">
             {/* <label htmlFor="budgetCode"   placeholder="Budget Code" className="form-label">Budget Code</label> */}
@@ -120,35 +191,23 @@ const CreateNewRequest = () => {
         <div className="row mb-3">
                <div className="col-md-4 mb-3">
             <input 
-             type="text" 
-            id="name"  
-            placeholder="Name" 
-             className="form-control p-3" 
-             />
+             type="text"  id="name" placeholder="Name" className="form-control p-3" />
           </div>
            <div className="col-md-4 mb-3">
-           <input 
-              type="text" 
-            id="department" 
-            placeholder="Department" 
-                className="form-control p-3" 
-           />
+           <input  type="text" id="department"placeholder="Department" className="form-control p-3" />
             </div>
            <div className="col-md-4 mb-3">
-            <input 
-             type="email" 
-             id="email" 
-             placeholder="Email" 
-             className="form-control p-3" 
-              />
+            <input type="email"id="email" placeholder="Email"className="form-control p-3"/>
           </div>
            </div>
-
-
         <div className="row">
         <div className=" col-md-4 mb-3">
           {/* <label htmlFor="contactNumber" className="form-label">Contact Number</label> */}
           <input type="text" id="contactNumber" placeholder="Contact Number" className="form-control p-3" />
+        </div>
+        <div className=" col-md-8 mb-3">
+          {/* <label htmlFor="contactNumber" className="form-label">Contact Number</label> */}
+          <input type="text" id="contactNumber" placeholder="Additional Description" className="form-control p-3" />
         </div>
         </div>
        
@@ -186,7 +245,7 @@ const CreateNewRequest = () => {
         gap: '8px', 
       }}
     >
-      <i className="fa-solid fa-file-circle-plus"></i>
+      <i className="fa-solid fa-file-circle-plus " ></i>
       Click to Upload
     </label>
   </button>
@@ -195,14 +254,40 @@ const CreateNewRequest = () => {
     id="fileInput"
     style={{
       display: 'none',
+      
     }}
   />
 </div>
 
 </div>
+     {/*Supplier Information */ }
+<h5 style={{borderBottom:'1px solid black',textAlign:'start',marginBottom:'15px'}}>Supplier Information</h5>
+        <div className="row mb-3">
+               <div className="col-md-4 mb-3">
+            <input 
+             type="text"  id="name" placeholder="Authorized Singnatory" className="form-control p-3" />
+          </div>
+          <div className="col-md-4 mb-3">
+            {/* <label htmlFor="contact" className="form-label">Choose Your Contact</label> */}
+            <select id="contact" className="form-select p-3">
+              <option value="">Choose Your Contact</option>
+            </select>
+          </div>
+           </div>
+           
+        <div className="row mb-3">
+               <div className="col-md-4 mb-3 ">
+            <input 
+             type="checkbox"/><span>is there a subcontractor involved </span>
+          </div>
+           <div className="col-md-8 mb-3">
+           <input  type="text" id="department"placeholder="Additional information about the subcontractor(if checked)" className="form-control p-3" />
+            </div>
+           
+           </div>
 
 
-        {/* Additional Information */}
+        {/* Some More Information */}
         <h5 style={{borderBottom:'1px solid black',textAlign:'start',marginBottom:'15px'}}>Some More Information</h5>
         <div className="row mb-3 mt-3">
           <div className="col-md-4 mb-3">
@@ -217,9 +302,6 @@ const CreateNewRequest = () => {
               <option value="">Choose Your Contact</option>
             </select>
           </div>
-        </div>
-
-        <div className="row mb-3">
           <div className="col-md-4 mb-3">
             {/* <label htmlFor="help" className="form-label">How Can We Help You?</label> */}
             <select id="licenses" className="form-select p-3">
@@ -228,7 +310,18 @@ const CreateNewRequest = () => {
               <option value="no">No</option>
             </select>
           </div>
+        </div>
+
+        <div className="row mb-3">
           <div className="col-md-4 mb-3">
+            {/* <label htmlFor="help" className="form-label">How Can We Help You?</label> */}
+            <select id="licenses" className="form-select p-3">
+              <option value="">What do you need to boy ?</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div className="col-md-8 mb-3">
           {/* Do You Need to Add Licenses for an Existing Product? */}
             <select id="licenses" className="form-select p-3">
               <option value="">Do You Need to Add Licenses for an Existing Product?</option>
@@ -236,7 +329,11 @@ const CreateNewRequest = () => {
               <option value="no">No</option>
             </select>
           </div>
+
         </div>
+        
+        <input type="checkbox"/>Does it involve cloud?<br/>
+        <input type="checkbox"/>Does this contract need to share customer or employee information?
 
         {/* Buttons */}
         <div className="d-flex justify-content-center ">
@@ -245,6 +342,7 @@ const CreateNewRequest = () => {
         </div>
       </form>
     </div>
+    
   );
 };
 

@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState } from "react";;
 
 const RenewalWebform = () => {
+  const [content, setContent] = useState(""); 
+  const [image, setImage] = useState(null); 
+
+  // Handle image upload
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setImage(URL.createObjectURL(file)); 
+    }
+  };
+
+  // Handle text content input
+  const handleContentChange = (event) => {
+    setContent(event.target.value);
+  };
   return (
     <div className="container my-5">
       <h2 className="text-start mb-4">Renewal Webform with Document Preview</h2>
@@ -113,19 +128,57 @@ const RenewalWebform = () => {
 
         {/* Right Side - Document Preview */}
         <div className="col-md-6 mt-3">
-          <h4><u>Document Preview</u></h4>
-          <div
-            className="border p-3 shadow-sm"
-            style={{ height: "700px", overflowY: "scroll" }}
-          >
-            <img
-              src="https://i.ibb.co/xsRMv0P/renewalzoom.png" // Update with your correct image path
-              alt="Document Preview"
-              className="img-fluid"
-              style={{ width: "100%"}}
-            />
-          </div>
-        </div>
+      <h4>
+        <u>Document Preview</u>
+      </h4>
+      <div
+        className="border p-3 shadow-sm"
+        style={{ height: "700px", overflowY: "scroll", position: "relative" }}
+      >
+        {image ? (
+          <img
+            src={image}
+            alt="User Uploaded"
+            className="img-fluid"
+            style={{ width: "100%" }}
+          />
+        ) : (
+          <textarea
+            className="form-control"
+            value={content}
+            onChange={handleContentChange}
+            placeholder="Enter your text or upload an image..."
+            style={{
+              height: "100%",
+              width: "100%",
+              border: "none",
+              resize: "none",
+              outline: "none",
+              background: "transparent",
+            }}
+          />
+        )}
+      </div>
+
+      {/* Controls to add content */}
+      <div className="mt-3">
+        <button
+          className="btn btn-secondary me-2"
+          onClick={() => setContent("") || setImage(null)} // Reset content
+        >
+          Clear
+        </button>
+        <label className="btn btn-primary">
+          Upload Image
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+            style={{ display: "none" }}
+          />
+        </label>
+      </div>
+    </div>
       </div>
     </div>
   );

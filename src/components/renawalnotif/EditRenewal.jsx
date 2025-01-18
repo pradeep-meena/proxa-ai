@@ -14,7 +14,7 @@ function EditRenewal() {
    <Link to="/renewalnotifi"> <button
       className="btn btn-success text-white d-flex align-items-center"
       style={{
-        width: '209px',
+        width: '120px',
         height: '49px',
         top: '101px',
         left: '1191px',
@@ -28,7 +28,7 @@ function EditRenewal() {
         justifyContent:'space-between'
       }}
     >
-      Back <i className="fa-solid fa-arrow-right ms-2"></i>
+    <i className="fa-solid fa-arrow-left ms-2"></i>  Back 
     </button></Link>
   </div>
 </div>
