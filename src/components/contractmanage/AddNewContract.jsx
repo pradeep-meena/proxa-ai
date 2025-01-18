@@ -36,7 +36,7 @@ const AddNewContract = () => {
             <input type="text" placeholder="Description" className="form-control p-3" />
           </div>
           <div className="col-md-4 mb-3">
-            <select className="form-select p-3">
+            <select className="form-select p-3" style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option>Contract Type*</option>
             </select>
           </div>
@@ -44,7 +44,7 @@ const AddNewContract = () => {
 
         <div className="row mb-3">
           <div className="col-md-4 mb-3">
-            <select className="form-select p-3">
+            <select className="form-select p-3" style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option>Department*</option>
             </select>
           </div>
@@ -63,12 +63,12 @@ const AddNewContract = () => {
             <input type="text" placeholder="Budget *" className="form-control p-3" />
           </div>
           <div className="col-md-4 mb-3">
-            <select id="category" className="form-select p-3">
+            <select id="category" className="form-select p-3"style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option>Currency*</option>
             </select>
           </div>
           <div className="col-md-4">
-            <select id="subcategory" className="form-select p-3">
+            <select id="subcategory" className="form-select p-3"style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option>Payment Term *</option>
             </select>
           </div>
@@ -131,9 +131,9 @@ const AddNewContract = () => {
         {/* Attachments */}
         <h5 style={{ borderBottom: '1px solid black', textAlign: 'start', marginBottom: '15px' }}>Attachments</h5>
         <div className="row mb-3">
-          <div className="col-md-4 mb-3">
+          <div className="col-md-4 mb-3 ">
             <button
-              className="text-secondary text-start"
+              className="text-secondary text-start w-100 p-3"
               style={{
                 backgroundColor: 'white',
                 borderRadius: '5px',
@@ -143,6 +143,7 @@ const AddNewContract = () => {
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
+                marginLeft:'50px',
                 gap: '8px',
               }}
             >
@@ -172,12 +173,12 @@ const AddNewContract = () => {
         <h5 style={{ borderBottom: '1px solid black', textAlign: 'start', marginBottom: '15px' }}>Approval Workflow</h5>
         <div className="row mb-3">
           <div className="col-md-4 mb-3">
-            <select className="form-select p-3">
+            <select className="form-select p-3" style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option>Approvers</option>
             </select>
           </div>
           <div className="col-md-4 mb-3">
-            <select className="form-select p-3">
+            <select className="form-select p-3" style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option>Approval Levels</option>
             </select>
           </div>
