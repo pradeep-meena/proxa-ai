@@ -126,10 +126,21 @@ const Myrequest = () => {
                       onClick={() => handleOpenModal(request)}
                     />
                     <i
-        className="fa-regular fa-pen-to-square myrequestedit"
+        className="fa-regular fa-pen-to-square myrequestedit me-2"
         style={{ fontSize: "15px", cursor: "pointer" }}
         onClick={handleIconClick}
-      />
+      /> 
+       <button
+                    style={{ border: "none", backgroundColor: "transparent" }}
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                  >
+                    <i
+                      class="fa-regular fa-comment"
+                      style={{ color: "#518bbb" }}
+                    ></i>
+                  </button>
                   </td>
                 </tr>
               ))}
@@ -235,7 +246,7 @@ const Myrequest = () => {
             name="id"
             value={formValues.id}
             onChange={handleInputChange}
-            placeholder="001"
+            placeholder="Request ID"
             style={{
               width: "100%",
               padding: "8px",
@@ -249,7 +260,7 @@ const Myrequest = () => {
             name="item"
             value={formValues.item}
             onChange={handleInputChange}
-            placeholder="Goods"
+            placeholder="Request Type"
             style={{
               width: "100%",
               padding: "8px",
@@ -263,7 +274,7 @@ const Myrequest = () => {
             name="date"
             value={formValues.date}
             onChange={handleInputChange}
-            placeholder="2024-12-18"
+            placeholder="Submission Date"
             style={{
               width: "100%",
               padding: "8px",
@@ -277,7 +288,7 @@ const Myrequest = () => {
             name="status"
             value={formValues.status}
             onChange={handleInputChange}
-            placeholder="Pending"
+            placeholder="Status"
             style={{
               width: "100%",
               padding: "8px",
@@ -334,6 +345,51 @@ const Myrequest = () => {
           onClick={handleCancelModal}
         />
       )}
+
+<div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">
+                  Enter Comments
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>  
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn"
+                  data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  style={{backgroundColor: "#578e7e",color:"white"}}
+                >
+                 Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

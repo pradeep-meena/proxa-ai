@@ -7,7 +7,26 @@ const ContractDetails = () => {
       <div className="contact">
       <header className="header">
         <div><h1 className="title">Contract Details</h1><strong>#001</strong></div>
-        <Link to="/contractmanage"><button className="back-button">← Back</button></Link>
+        <Link to="/contractmanage"><button
+      className="btn btn-success text-white d-flex align-items-center"
+      style={{
+        width: '120px',
+        height: '49px',
+        top: '101px',
+        left: '1191px',
+        gap: '0px',
+        border: 'none', 
+        opacity: '1', 
+        backgroundColor: '#578E7E',
+        color: 'white',
+        borderRadius: '10px',
+        display:'flex',
+        justifyContent:'center',
+        gap:'5px'
+      }}
+    >
+    <i className="fa-solid fa-arrow-left ms-2"></i>  Back 
+    </button></Link>
       </header>
       </div>
 

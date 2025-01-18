@@ -347,6 +347,7 @@ const Contractmanage = () => {
                   ></i>
                 </td>
               </tr>
+              
             </tbody>
           </table>
         </div>

@@ -122,7 +122,7 @@ const CreateNewRequest = () => {
         </div>
         <div className="col-md-4 mb-3">
             {/* <label htmlFor="contact" className="form-label">Choose Your Contact</label> */}
-            <select id="contact" className="form-select p-3">
+            <select id="contact" className="form-select p-3" style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
               <option value="">Renewal</option>
             </select>
           </div>
@@ -212,11 +212,12 @@ const CreateNewRequest = () => {
         {/* Attachments */}
         <h5 style={{borderBottom:'1px solid black',textAlign:'start',marginBottom:'15px'}}>Attachments</h5>
         <div className="row mb-3">
-        <div className="col-md-4 mb-3">
+        <div className="col-md-4 mb-3" >
   <button
-    className="text-secondary text-center p-3 w-100"
+    className="text-secondary text-center p-3 w-100 "
     style={{
       backgroundColor: 'white',
+      
       borderRadius: '5px',
       border: 'none',
       color: 'black',

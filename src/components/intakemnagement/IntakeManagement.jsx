@@ -247,6 +247,22 @@ const IntakeManagement = () => {
         </li>
       </ul>
     </nav>
+    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+  <button
+    style={{
+      width: '120px',
+      height: '50px', // Corrected '65' to '65px'
+      backgroundColor: '#578e7e',
+      color: 'white',
+      textAlign: 'center',
+      borderRadius: '5px',
+      border:'none'
+    }}
+  >
+    View All
+  </button>
+</div>
+
   </div>
     </>
   )
