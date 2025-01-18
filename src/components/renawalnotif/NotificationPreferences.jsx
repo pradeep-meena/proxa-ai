@@ -30,15 +30,56 @@ const NotificationPreferences = () => {
       <div className="form">
         <div className="form-group">
           <label className="form-label">Remind me before renewal</label>
-          <select className="form-select">
-            <option value="" disabled selected>
+          <select className="form-select ">
+            <option value=" disabled selected">
               Select renewal Days
             </option>
-            <option value="7">7 Days</option>
-            <option value="14">14 Days</option>
-            <option value="30">30 Days</option>
+            <option value="7">180 Days</option>
+            <option value="14">120 Days</option>
+            <option value="30">60 Days</option>
+            <option><button data-bs-toggle="modal" data-bs-target="#exampleModal">Custom</button></option>
           </select>
         </div>
+
+
+    
+
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">This is the modal content.</div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
         <div className="form-group">
           <label className="form-label">Enable/Disable Reminders by Contract Type</label>
