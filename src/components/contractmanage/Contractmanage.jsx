@@ -1,6 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const Contractmanage = () => {
+  const [selectedContract, setSelectedContract] = useState(null);
+
+  const contracts = [
+    {
+      id: "001",
+      department: "IT",
+      businessStackholder: "Stackholder 1",
+      type: "Procurment",
+      sourcingLead: "Lead 1",
+      sourcingDirector: "Director 1",
+      status: "Active",
+    },
+    {
+      id: "006",
+      department: "Sales",
+      businessStackholder: "Stackholder 2",
+      type: "Vendor",
+      sourcingLead: "Lead 2",
+      sourcingDirector: "Director 2",
+      status: "Expired",
+    },
+    {
+      id: "007",
+      department: "IT",
+      businessStackholder: "Stackholder 3",
+      type: "Procurment",
+      sourcingLead: "Lead 3",
+      sourcingDirector: "Director 3",
+      status: "Under Renewal",
+    },
+    {
+      id: "008",
+      department: "Security",
+      businessStackholder: "Stackholder 4",
+      type: "Procurment",
+      sourcingLead: "Lead 4",
+      sourcingDirector: "Director 4",
+      status: "Terminated",
+    },
+    // Add more contracts if needed
+  ];
+
+  const handleViewDetails = (contract) => {
+    setSelectedContract(contract);
+  };
+
   return (
     <>
       <div className="container mt-5">
@@ -98,7 +144,7 @@ const Contractmanage = () => {
                     aria-expanded="false"
                     style={{ backgroundColor: "#578E7E", color: "white" }}
                   >
-                    Add New Contarct
+                   <span><i class="fa-solid fa-book"></i></span> Add New Contarct
                   </button>
                   <ul
                     class="dropdown-menu"
@@ -127,6 +173,20 @@ const Contractmanage = () => {
                   </ul>
                 </div>
               </button>
+              <button
+              className="btn btn-success ms-3  mt-2 d-flex align-items-center justify-content-center contrabtn"
+              style={{
+                borderRadius: "5px",
+                width: "240px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+              }}
+            >
+              <i className="fa-solid fa-file-upload me-2"></i>
+              Upload Contract
+            </button>
             </div>
           </div>
         </div>
@@ -135,218 +195,76 @@ const Contractmanage = () => {
             <thead>
               <tr>
                 <th>Contract ID</th>
-                <th>Type Of Contract</th>
                 <th>Department</th>
-                <th>Last Upadate</th>
-                <th>Description</th>
+                <th>Business Stackholder</th>
+                <th>Type</th>
+                <th>Sourcing Lead</th>
+                <th>Sourcing Director</th>
                 <th>Status</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>001</td>
-                <td>Procurement</td>
-                <td>It</td>
-                <td>2024-12-20</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill px-5 py-1 activebadge">
-                    Active
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-target="#exampleModalToggle2"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
-                    <i
-                      class="fa-regular fa-comment"
-                      style={{ color: "#518bbb" }}
-                    ></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>006</td>
-                <td>Vendor</td>
-                <td>Marketing</td>
-                <td>2024-12-18</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill  px-5 py-1 expiredbadge">
-                    Expired
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <i
-                    class="fa-regular fa-comment"
-                    style={{ color: "#518bbb",cursor:"pointer" }}
-                  ></i>
-                </td>
-              </tr>
-              <tr>
-                <td>007</td>
-                <td>Procurement</td>
-                <td>It Network</td>
-                <td>2024-12-20</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill  px-4 py-1 renewalbadge">
-                    Under Renewal
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <i
-                    class="fa-regular fa-comment"
-                    style={{ color: "#518bbb",cursor:"pointer" }}
-                  ></i>
-                </td>
-              </tr>
-              <tr>
-                <td>008</td>
-                <td>Procurement</td>
-                <td>It</td>
-                <td>2024-12-18</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill  px-5 py-1 expiredbadge">
-                    Expired
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <i
-                    class="fa-regular fa-comment"
-                    style={{ color: "#518bbb",cursor:"pointer" }}
-                  ></i>
-                </td>
-              </tr>
-              <tr>
-                <td>009</td>
-                <td>Vendor</td>
-                <td>Marketing</td>
-                <td>2024-12-20</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill  px-5 py-1 activebadge">
-                    Active
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <i
-                    class="fa-regular fa-comment"
-                    style={{ color: "#518bbb",cursor:"pointer" }}
-                  ></i>
-                </td>
-              </tr>
-              <tr>
-                <td>010</td>
-                <td>Procurement</td>
-                <td>It Network</td>
-                <td>2024-12-18</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill  px-5 py-1 activebadge">
-                    Active
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <i
-                    class="fa-regular fa-comment"
-                    style={{ color: "#518bbb",cursor:"pointer" }}
-                  ></i>
-                </td>
-              </tr>
-              <tr>
-                <td>011</td>
-                <td>Vendor</td>
-                <td>It</td>
-                <td>2024-12-20</td>
-                <td>Description....</td>
-                <td>
-                  <span className="badge rounded-pill  px-4 py-1 renewalbadge">
-                    Under Renewal
-                  </span>
-                </td>
-                <td>
-                  <button
-                    style={{ border: "none", backgroundColor: "transparent" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <i
-                      className="fa-regular fa-eye approvalicon me-2"
-                      style={{ color: "#0d99ff" }}
-                    />
-                  </button>
-                  <i
-                    class="fa-regular fa-comment"
-                    style={{ color: "#518bbb",cursor:"pointer" }}
-                  ></i>
-                </td>
-              </tr>
+              {contracts.map((contract) => (
+                <tr key={contract.id}>
+                  <td>{contract.id}</td>
+                  <td>{contract.businessStackholder}</td>
+                  <td>{contract.department}</td>
+                  <td>{contract.type}</td>
+                  <td>{contract.sourcingLead}</td>
+                  <td>{contract.sourcingDirector}</td>
+                  <td>
+                    <span
+                      className={`badge rounded-pill px-5 py-1 ${
+                        contract.status === "Active"
+                          ? "activebadge"
+                          : contract.status === "Expired"
+                          ? "expiredbadge"
+                          : contract.status === "Under Renewal"
+                          ? "renewalbadge"
+                          : contract.status === "Terminated"
+                          ? "terminatedbadge"
+                          : ""
+                      }`}
+                    >
+                      {contract.status}
+                    </span>
+                  </td>
+
+                  <td>
+                    <button
+                      style={{ border: "none", backgroundColor: "transparent" }}
+                    >
+                      <i
+                        className="fa-regular fa-eye approvalicon me-2"
+                        style={{ color: "#0d99ff" }}
+                        data-bs-placement="top"
+                        title="View"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        onClick={() => handleViewDetails(contract)}
+                      />
+
+                      <i
+                        className="fa-regular fa-comment approvalicon me-2"
+                        style={{ color: "#0d99ff" }}
+                        data-bs-placement="top"
+                        title="Comments"
+                        data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal"
+                        data-bs-dismiss="modal"
+                      />
+                      <a href="download.pdf" download="pdf">
+                        <i
+                          className="fa-solid fa-download mx-2 renewaldownload"
+                          data-bs-placement="top"
+                          title="Download"
+                        />
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -406,6 +324,7 @@ const Contractmanage = () => {
           </ul>
         </nav>
 
+        {/* Modal for Details */}
         <div
           className="modal fade"
           id="exampleModal"
@@ -414,8 +333,6 @@ const Contractmanage = () => {
           aria-hidden="true"
         >
           <div className="modal-dialog modal-dialog-centered modal-lg">
-            {" "}
-            {/* Add `modal-lg` for larger screens */}
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLabel">
@@ -429,16 +346,47 @@ const Contractmanage = () => {
                 ></button>
               </div>
               <div className="modal-body">
-                <ul>    
-                  <li><strong>Contract ID:</strong><span> 001</span></li>
-                  <li><strong>Type of contract:</strong><span> Procurment</span></li>
-                  <li><strong>Department:</strong><span> IT</span></li>
-                  <li><strong>Last Update:</strong><span> 2024-12-20</span></li>
-                  <li><strong>Status:</strong> <span className="badge rounded-pill px-5 py-1 activebadge">
-                    Active
-                  </span></li>
-                  <li><strong>Description:</strong><span> Description...</span></li>
-                </ul>
+                {selectedContract ? (
+                  <ul>
+                    <li>
+                      <strong>Contract ID:</strong> {selectedContract.id}
+                    </li>
+                    <li>
+                      <strong>Type of Contract:</strong> {selectedContract.type}
+                    </li>
+                    <li>
+                      <strong>Department:</strong> {selectedContract.department}
+                    </li>
+                    <li>
+                      <strong>Last Update:</strong>{" "}
+                      {selectedContract.lastUpdate}
+                    </li>
+                    <li>
+                      <strong>Status:</strong>{" "}
+                      <span
+                        className={`badge rounded-pill px-5 py-1 ${
+                          selectedContract.status === "Active"
+                            ? "activebadge"
+                            : selectedContract.status === "Expired"
+                            ? "expiredbadge"
+                            : selectedContract.status === "Under Renewal"
+                            ? "renewalbadge"
+                            : selectedContract.status === "Terminated"
+                            ? "terminatedbadge"
+                            : ""
+                        }`}
+                      >
+                        {selectedContract.status}
+                      </span>
+                    </li>
+                    <li>
+                      <strong>Description:</strong>{" "}
+                      {selectedContract.description}
+                    </li>
+                  </ul>
+                ) : (
+                  <p>No contract selected.</p>
+                )}
               </div>
               <div className="modal-footer">
                 <button
@@ -481,7 +429,7 @@ const Contractmanage = () => {
                     id="floatingTextarea"
                   ></textarea>
                   <label for="floatingTextarea">Comments</label>
-                </div>  
+                </div>
               </div>
               <div class="modal-footer">
                 <button
@@ -489,9 +437,9 @@ const Contractmanage = () => {
                   data-bs-target="#exampleModalToggle"
                   data-bs-toggle="modal"
                   data-bs-dismiss="modal"
-                  style={{backgroundColor: "#578e7e",color:"white"}}
+                  style={{ backgroundColor: "#578e7e", color: "white" }}
                 >
-                 Save
+                  Save
                 </button>
               </div>
             </div>

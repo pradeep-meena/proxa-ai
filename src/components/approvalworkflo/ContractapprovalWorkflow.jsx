@@ -39,7 +39,8 @@ const ContractapprovalWorkflow = () => {
             </div>
           </div>
           {/* Second Column */}
-          <div className="col-md-3">
+          <div className="col-md-3 position-relative" style={{top: "-28px"}}>
+            <i className="fa-solid fa-arrow-right text-success"></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-solid fa-i bg-success rounded-circle px-2 py-1 text-white " />

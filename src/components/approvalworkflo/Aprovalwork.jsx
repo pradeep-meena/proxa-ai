@@ -80,18 +80,21 @@ const ApprovalWork = () => {
                     <Link to="/contractapproval">
                       <i
                         className="fa-regular fa-eye"
-                        style={{ color: "#0d99ff" }}
+                        style={{ color: "#0d99ff" }} 
+                        data-bs-placement="top" title="View"
                       />
                     </Link>
                     <i
                       className="fa-solid fa-check text-success mx-2"
                       onClick={confirm}
                       style={{ cursor: "pointer" }}
+                      data-bs-placement="top" title="Confirm"
                     />
                     <i
                       className="fa-solid fa-xmark text-danger"
                       onClick={() => setVisible(true)} // Show dialog for reject action
                       style={{ cursor: "pointer" }}
+                      data-bs-placement="top" title="Delete"
                     />
                   </td>
                 </tr>

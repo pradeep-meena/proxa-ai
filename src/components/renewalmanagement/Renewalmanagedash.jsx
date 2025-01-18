@@ -37,13 +37,16 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload"
+                    data-bs-placement="top" title="Download"
+                    />
                   </a>
                   <Link to="/renewalform">
-                    <button className="btn btn-renewal">Renew</button>
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
                   </Link>
                 </td>
               </tr>
@@ -63,11 +66,17 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload" 
+                    data-bs-placement="top" title="Download"
+                    />
                   </a>
+                  <Link to="/renewalform">
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -86,13 +95,16 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload"
+                    data-bs-placement="top" title="Download"
+                    />
                   </a>
                   <Link to="/renewalform">
-                    <button className="btn btn-renewal">Renew</button>
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
                   </Link>
                 </td>
               </tr>
@@ -112,11 +124,17 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload" 
+                    data-bs-placement="top" title="Download"
+                    />
                   </a>
+                  <Link to="/renewalform">
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -135,11 +153,17 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload" 
+                    data-bs-placement="top" title="Download"
+                    />
                   </a>
+                  <Link to="/renewalform">
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -158,13 +182,16 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload"
+                    data-bs-placement="top" title="Download" 
+                    />
                   </a>
                   <Link to="/renewalform">
-                    <button className="btn btn-renewal">Renew</button>
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
                   </Link>
                 </td>
               </tr>
@@ -184,11 +211,17 @@ const Renewalmanagedash = () => {
                     <i
                       className="fa-regular fa-eye approvalicon "
                       style={{ color: "#0d99ff" }}
+                      data-bs-placement="top" title="View"
                     />
                   </button>
                   <a href="download.pdf" download="pdf">
-                    <i className="fa-solid fa-download mx-2 renewaldownload" />
+                    <i className="fa-solid fa-download mx-2 renewaldownload" 
+                    data-bs-placement="top" title="Download"
+                    />
                   </a>
+                  <Link to="/renewalform">
+                    <button className="btn btn-renewal" data-bs-placement="top" title="Renewal From">Renew</button>
+                  </Link>
                 </td>
               </tr>
               {/* Add more rows as needed */}
