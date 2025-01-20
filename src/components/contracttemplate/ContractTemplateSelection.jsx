@@ -70,8 +70,10 @@ function ContractTemplateSelection() {
       ></i>
       <h5 className="mb-3">Master Service Agreement</h5>
       <div className="d-flex justify-content-between mt-auto">
-        <button className="btn  btn-sm w-50 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
-        <button className="btn  btn-sm w-50" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button>
+        <button className="btn  btn-sm w-100 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
+        <div className="w-100">
+        <Link to="/documentpre"> <button className="btn  btn-sm w-100" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button></Link>
+        </div>
       </div>
     </div>
   </div>
@@ -96,8 +98,11 @@ function ContractTemplateSelection() {
       ></i>
       <h5 className="mb-3">Master Consulting Agreement</h5>
       <div className="d-flex justify-content-between mt-auto">
-        <button className="btn  btn-sm w-50 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
-        <button className="btn  btn-sm w-50" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button>
+       
+        <button className="btn  btn-sm w-100 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
+        <div className="w-100">
+        <Link to="/documentpre"> <button className="btn  btn-sm w-100" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button></Link>
+        </div>
       </div>
     </div>
   </div>
@@ -122,8 +127,10 @@ function ContractTemplateSelection() {
       ></i>
       <h5 className="mb-3">Master Purchase Agreement</h5>
       <div className="d-flex justify-content-between mt-auto">
-        <button className="btn  btn-sm w-50 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
-        <button className="btn btn-sm w-50" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button>
+        <button className="btn  btn-sm w-100 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
+        <div className="w-100">
+        <Link to="/documentpre"> <button className="btn  btn-sm w-100" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button></Link>
+        </div>
       </div>
     </div>
   </div>
@@ -148,8 +155,10 @@ function ContractTemplateSelection() {
       ></i>
       <h5 className="mb-3">Statement of Work</h5>
       <div className="d-flex justify-content-between mt-auto">
-        <button className="btn  btn-sm w-50 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
-        <button className="btn  btn-sm w-50" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button>
+        <button className="btn  btn-sm w-100 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
+        <div className="w-100">
+        <Link to="/documentpre"> <button className="btn  btn-sm w-100" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button></Link>
+        </div>
       </div>
     </div>
   </div>
@@ -174,8 +183,10 @@ function ContractTemplateSelection() {
       ></i>
       <h5 className="mb-3">Amendment</h5>
       <div className="d-flex justify-content-between mt-auto">
-        <button className="btn  btn-sm w-50 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
-        <button className="btn btn-sm w-50" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button>
+        <button className="btn  btn-sm w-100 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
+        <div className="w-100">
+        <Link to="/documentpre"> <button className="btn  btn-sm w-100" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button></Link>
+        </div>
       </div>
     </div>
   </div>
@@ -200,8 +211,10 @@ function ContractTemplateSelection() {
       ></i>
       <h5 className="mb-3">Letter of Extension</h5>
       <div className="d-flex justify-content-between mt-auto">
-        <button className="btn  btn-sm w-50 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
-        <button className="btn  btn-sm w-50" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button>
+        <button className="btn  btn-sm w-100 me-1" style={{backgroundColor:'#39BF1B',color:'white'}}>Select</button>
+        <div className="w-100">
+        <Link to="/documentpre"> <button className="btn  btn-sm w-100" style={{backgroundColor:'#0D99FF',color:'white'}}>View</button></Link>
+        </div>
       </div>
     </div>
   </div>

@@ -145,6 +145,16 @@ const Sidebar = ({ collapsed }) => {
               <i className="fa-solid fa-arrow-trend-up"></i> Multi-Year
               Contracting
             </li>
+            <li
+              className={`submenu-item ${
+                isActive("/others") ? "active" : ""
+              }`}
+              onClick={() => {
+                navigate("/others");
+                setOpenSubmenu(null);
+              }}>
+              <i className="fa-solid fa-arrow-trend-up"></i> Others
+            </li>
           </ul>
 
           {/* Approval Workflow Section */}
@@ -258,9 +268,6 @@ const Sidebar = ({ collapsed }) => {
             </div>
           </li>
         </ul>
-        git add .
-        git commit -m "changes"
-        git pull
       </div>
     </div>
   );

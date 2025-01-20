@@ -22,7 +22,6 @@ import Dashboard from "./components/dashbord/Dashbord";
 import IntakeManagement from "./components/intakemnagement/IntakeManagement";
 import CreateNewRequest from "./components/intakemnagement/CreateNewRequest";
 import Login from "./authtication/Login";
-import Signup from "./authtication/Signup";
 import AditionalComplementry from "./components/costsaving/AditionalComplementry";
 import SpendDetail from "./components/spendanalytics/SpendDetail";
 import MultiYearContracting from "./components/costsaving/MultiYaerContracting";
@@ -33,6 +32,7 @@ import NotificationPreferences from "./components/renawalnotif/NotificationPrefe
 import ContractDetails from "./components/contractmanage/ContractDetails";
 import RenewalRequestForm from "./components/renewalmanagement/RenewalRequestForm";
 import RenewalWebform from "./components/renewalmanagement/RenewalWebform";
+import DocumentPriview from "./components/contracttemplate/DocumentPriview";
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
 
@@ -80,6 +80,8 @@ function App() {
             <Route path="/contractdetail" element={<ContractDetails/>}/>
             <Route path="/renewalform" element={<RenewalRequestForm/>}/>
             <Route path="/renewaldocument" element={<RenewalWebform/>}/>
+            <Route path="/documentpre" element={<DocumentPriview/>}/>
+
 
             
           </Routes>

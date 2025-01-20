@@ -151,6 +151,8 @@ const SpendDetail = () => {
           <th>Vendor Name</th>
           <th>Department</th>
           <th>Category</th>
+          <th>Year/Multiple Years</th>
+          <th>Quarter</th>
           <th>Amount</th>
           <th>Comments/Notes</th>
         </tr>
@@ -161,6 +163,8 @@ const SpendDetail = () => {
           <td>John Doe</td>
           <td>IT</td>
           <td>Software Purchase</td>
+          <td>2024-25</td>
+          <td>One</td>
           <td>433</td>
           <td>This is Comment.</td>
         </tr>
@@ -169,6 +173,8 @@ const SpendDetail = () => {
           <td>Sarah Lee</td>
           <td>Marketing</td>
           <td>Vendor Service</td>
+          <td>2024-25</td>
+          <td>Two</td>
           <td>2144</td>
           <td>This is Comment.</td>
         </tr>
@@ -177,6 +183,8 @@ const SpendDetail = () => {
           <td>John Doe</td>
           <td>HR</td>
           <td>Software Purchase</td>
+          <td>2024-25</td>
+          <td>one</td>
           <td>3541</td>
           <td>This is Comment.</td>
         </tr>
@@ -185,6 +193,8 @@ const SpendDetail = () => {
           <td>Sarah Lee</td>
           <td>Marketing</td>
           <td>Vendor Service</td>
+          <td>2024-25</td>
+          <td>Three</td>
           <td>7686</td>
           <td>This is Comment.</td>
         </tr>
@@ -193,6 +203,8 @@ const SpendDetail = () => {
           <td>John Doe</td>
           <td>IT</td>
           <td>Software Purchase</td>
+          <td>2024-25</td>
+          <td>Two</td>
           <td>6363</td>
           <td>This is Comment.</td>
         </tr>

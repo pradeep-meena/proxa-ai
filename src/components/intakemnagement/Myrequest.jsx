@@ -38,7 +38,6 @@ const Myrequest = () => {
     setIsModalOpen(false); // Modal close karna
   };
 
-
   const handleOpenModal = (request) => {
     setSelectedRequest(request);
     setShowModal(true);
@@ -67,7 +66,9 @@ const Myrequest = () => {
         <div className="d-flex justify-content-between align-items-center mb-3 flex-wrap">
           <div>
             <h3 className="fw-bold">My Requests</h3>
-            <p className="text-dark mb-0">Track the status of your submitted requests</p>
+            <p className="text-dark mb-0">
+              Track the status of your submitted requests
+            </p>
           </div>
           <Link to="/intakenewreq">
             <button
@@ -124,12 +125,27 @@ const Myrequest = () => {
                       className="fa-regular fa-eye me-2 myrequesteye"
                       style={{ cursor: "pointer" }}
                       onClick={() => handleOpenModal(request)}
+                      data-bs-placement="top"
+                      title="View"
                     />
                     <i
-        className="fa-regular fa-pen-to-square myrequestedit"
-        style={{ fontSize: "15px", cursor: "pointer" }}
-        onClick={handleIconClick}
-      />
+                      className="fa-regular fa-pen-to-square me-2 myrequestedit"
+                      style={{ fontSize: "15px", cursor: "pointer" }}
+                      onClick={handleIconClick}
+                      data-bs-placement="top"
+                      title="Edit"
+                    />
+                    <button
+                      style={{ border: "none", backgroundColor: "transparent" }}
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      <i
+                        class="fa-regular fa-comment"
+                        style={{ color: "#518bbb" }}
+                      ></i>
+                    </button>
                   </td>
                 </tr>
               ))}
@@ -145,9 +161,10 @@ const Myrequest = () => {
           <Modal.Body>
             {selectedRequest ? (
               <>
-                
                 <ul>
-                  <li><strong> Request ID:</strong> {selectedRequest.id}</li>
+                  <li>
+                    <strong> Request ID:</strong> {selectedRequest.id}
+                  </li>
                   <li>
                     <strong>Request Type:</strong> {selectedRequest.type}
                   </li>
@@ -174,7 +191,11 @@ const Myrequest = () => {
         <nav aria-label="Page navigation" className="mt-4">
           <ul className="pagination justify-content-center flex-wrap">
             <li className="page-item">
-              <a className="page-link text-secondary" href="#" style={{ border: "none" }}>
+              <a
+                className="page-link text-secondary"
+                href="#"
+                style={{ border: "none" }}
+              >
                 Previous
               </a>
             </li>
@@ -206,134 +227,241 @@ const Myrequest = () => {
               </a>
             </li>
             <li className="page-item">
-              <a className="page-link text-secondary" href="#" style={{ border: "none" }}>
+              <a
+                className="page-link text-secondary"
+                href="#"
+                style={{ border: "none" }}
+              >
                 Next
               </a>
             </li>
           </ul>
         </nav>
 
-       {/* Modal */}
-       {isModalOpen && (
-        <div
-          style={{
-            position: "fixed",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            backgroundColor: "white",
-            padding: "20px",
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-            borderRadius: "8px",
-            zIndex: 1000,
-          }}
-        >
-          <h3>Edit Request</h3>
-          {/* Inputs */}
-          <input
-            type="text"
-            name="id"
-            value={formValues.id}
-            onChange={handleInputChange}
-            placeholder="001"
+        {/* Modal */}
+        {isModalOpen && (
+          <div
             style={{
-              width: "100%",
-              padding: "8px",
-              marginBottom: "10px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
+              position: "fixed",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              backgroundColor: "white",
+              padding: "20px",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              borderRadius: "8px",
+              zIndex: 1000,
             }}
-          />
-          <input
-            type="text"
-            name="item"
-            value={formValues.item}
-            onChange={handleInputChange}
-            placeholder="Goods"
-            style={{
-              width: "100%",
-              padding: "8px",
-              marginBottom: "10px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-            }}
-          />
-          <input
-            type="text"
-            name="date"
-            value={formValues.date}
-            onChange={handleInputChange}
-            placeholder="2024-12-18"
-            style={{
-              width: "100%",
-              padding: "8px",
-              marginBottom: "10px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-            }}
-          />
-          <input
-            type="text"
-            name="status"
-            value={formValues.status}
-            onChange={handleInputChange}
-            placeholder="Pending"
-            style={{
-              width: "100%",
-              padding: "8px",
-              marginBottom: "10px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-            }}
-          />
+          >
+            <h3>Edit Request</h3>
+            {/* Inputs */}
+            <input
+              type="text"
+              name="id"
+              value={formValues.id}
+              onChange={handleInputChange}
+              placeholder="001"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+            <input
+              type="text"
+              name="item"
+              value={formValues.item}
+              onChange={handleInputChange}
+              placeholder="Goods"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+            <input
+              type="text"
+              name="date"
+              value={formValues.date}
+              onChange={handleInputChange}
+              placeholder="2024-12-18"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+            <input
+              type="text"
+              name="status"
+              value={formValues.status}
+              onChange={handleInputChange}
+              placeholder="Pending"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
 
-          {/* Buttons */}
-          <div style={{ textAlign: "right" }}>
-            <button
-              onClick={handleCancelModal}
+            <input
+              type="text"
+              name="item"
+              value={formValues.item}
+              onChange={handleInputChange}
+              placeholder="Request Type"
               style={{
-                padding: "8px 12px",
-                marginRight: "10px",
-                backgroundColor: "#f5f5f5",
-                border: "none",
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
                 borderRadius: "4px",
-                cursor: "pointer",
               }}
-            >
-              Cancel
-            </button>
-            <button
-              onClick={handleSave}
+            />
+            <input
+              type="text"
+              name="date"
+              value={formValues.date}
+              onChange={handleInputChange}
+              placeholder="Submission Date"
               style={{
-                padding: "8px 12px",
-                backgroundColor: "#007bff",
-                color: "white",
-                border: "none",
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
                 borderRadius: "4px",
-                cursor: "pointer",
               }}
-            >
-              Save
-            </button>
+            />
+            <input
+              type="text"
+              name="status"
+              value={formValues.status}
+              onChange={handleInputChange}
+              placeholder="Status"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+
+            {/* Buttons */}
+            <div style={{ textAlign: "right" }}>
+              <button
+                onClick={handleCancelModal}
+                style={{
+                  padding: "8px 12px",
+                  marginRight: "10px",
+                  backgroundColor: "#f5f5f5",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSave}
+                style={{
+                  padding: "8px 12px",
+                  backgroundColor: "#007bff",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Overlay */}
+        {isModalOpen && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              zIndex: 999,
+            }}
+            onClick={handleCancelModal}
+          />
+        )}
+        {/* Overlay */}
+        {isModalOpen && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              zIndex: 999,
+            }}
+            onClick={handleCancelModal}
+          />
+        )}
+
+        <div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">
+                  Enter Comments
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn"
+                  data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  style={{ backgroundColor: "#578e7e", color: "white" }}
+                >
+                  Save
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      )}
-
-      {/* Overlay */}
-      {isModalOpen && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: 999,
-          }}
-          onClick={handleCancelModal}
-        />
-      )}
       </div>
     </>
   );
