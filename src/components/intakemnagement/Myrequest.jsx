@@ -84,14 +84,14 @@ const Myrequest = () => {
         {/* Filters Section */}
         <div className="row mb-4 mt-5 gx-3">
           <h5>Filters</h5>
-          <div className="col-12 col-md-6 col-lg-6 mb-3">
+          <div className="col-12 col-md-6 col-lg-4 mb-3">
             <select className="form-select p-3 text-secondary fw-semibold">
               <option defaultValue>Request Type</option>
               <option value="1">Goods</option>
               <option value="2">Services</option>
             </select>
           </div>
-          <div className="col-12 col-md-6 col-lg-6">
+          <div className="col-12 col-md-6 col-lg-4">
             <select className="form-select p-3 text-secondary fw-semibold">
               <option defaultValue>Status</option>
               <option value="1">Pending</option>
@@ -143,7 +143,7 @@ const Myrequest = () => {
                     >
                       <i
                         class="fa-regular fa-comment"
-                        style={{ color: "#518bbb" }}
+                        style={{ color: "	#32CD32" }}
                       ></i>
                     </button>
                   </td>

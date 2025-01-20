@@ -126,7 +126,7 @@ const CreateNewRequest = () => {
               <option value="">Renewal</option>
             </select>
           </div>
-        <div className="col-md-4 mb-3 p-3" style={{marginTop:'-16'}}>
+        <div className="col-md-4 mb-3 " style={{marginTop:'-16'}}>
   <button
     className="text-secondary text-center p-3 w-100"
     style={{
@@ -144,17 +144,18 @@ const CreateNewRequest = () => {
     }}
   >
     <label
-      className="text-secondary"
+      className="text-secondary m-0"
       htmlFor="fileInput"
       style={{
         cursor: 'pointer',
         color: 'black',
         marginLeft:'50px',
         textAlign:'center', 
-        gap: '8px', 
+        gap: '8px',
+         
       }}
     >
-      <i className="fa-solid fa-file-circle-plus"></i>
+     <i class="fa-solid fa-file-import pe-2"></i>
       Upload Contract Document
     </label>
   </button>
@@ -238,7 +239,7 @@ const CreateNewRequest = () => {
         gap: '8px', 
       }}
     >
-      <i className="fa-solid fa-file-circle-plus " ></i>
+      <i class="fa-solid fa-file-import pe-2"></i>
       Click to Upload
     </label>
   </button>
