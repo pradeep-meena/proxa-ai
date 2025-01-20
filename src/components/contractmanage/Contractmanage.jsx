@@ -247,7 +247,7 @@ const Contractmanage = () => {
 
                       <i
                         className="fa-regular fa-comment approvalicon me-2"
-                        style={{ color: "#0d99ff" }}
+                        style={{ color: "	#32CD32" }}
                         data-bs-placement="top"
                         title="Comments"
                         data-bs-target="#exampleModalToggle2"
