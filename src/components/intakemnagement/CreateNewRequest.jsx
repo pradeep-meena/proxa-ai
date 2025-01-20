@@ -272,7 +272,7 @@ const CreateNewRequest = () => {
         <div className="row mb-3">
                <div className="col-md-4 mb-3 ">
             <input 
-             type="checkbox"/><span>is there a subcontractor involved </span>
+             type="checkbox" className="me-2"/><span>is there a subcontractor involved </span>
           </div>
            <div className="col-md-8 mb-3">
            <input  type="text" id="department"placeholder="Additional information about the subcontractor(if checked)" className="form-control p-3" />
@@ -326,8 +326,8 @@ const CreateNewRequest = () => {
 
         </div>
         
-        <input type="checkbox"/>Does it involve cloud?<br/>
-        <input type="checkbox"/>Does this contract need to share customer or employee information?
+        <input type="checkbox" className="me-2"/>Does it involve cloud?<br/>
+        <input type="checkbox" className="me-2"/>Does this contract need to share customer or employee information?
 
         {/* Buttons */}
         <div className="d-flex justify-content-center ">
