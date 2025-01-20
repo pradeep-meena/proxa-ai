@@ -126,7 +126,7 @@ const CreateNewRequest = () => {
               <option value="">Renewal</option>
             </select>
           </div>
-        <div className="col-md-4 mb-3 p-3" style={{marginTop:'-16'}}>
+        <div className="col-md-4 mb-3 " style={{marginTop:'-16'}}>
   <button
     className="text-secondary text-center p-3 w-100"
     style={{
@@ -154,7 +154,7 @@ const CreateNewRequest = () => {
         gap: '8px', 
       }}
     >
-      <i className="fa-solid fa-file-circle-plus"></i>
+     <i class="fa-light fa-file"></i>
       Upload Contract Document
     </label>
   </button>
