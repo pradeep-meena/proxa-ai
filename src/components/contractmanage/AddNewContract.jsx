@@ -176,7 +176,7 @@ const AddNewContract = () => {
                 gap: '8px',
               }}
             >
-              <i className="fa-solid fa-file-circle-plus"></i>
+              <i class="fa-solid fa-file-import pe-2"></i>
               Click to Upload
               <input type="file" style={{ display: 'none' }} />
             </button>

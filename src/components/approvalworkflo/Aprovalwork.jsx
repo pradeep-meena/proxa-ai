@@ -85,7 +85,7 @@ const ApprovalWork = () => {
                       />
                     </Link>
                     <i
-                      className="fa-solid fa-check text-success mx-2"
+                      className="fa-solid fa-circle-check text-success mx-2"
                       onClick={confirm}
                       style={{ cursor: "pointer" }}
                       data-bs-placement="top" title="Confirm"

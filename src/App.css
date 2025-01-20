@@ -707,7 +707,7 @@ select.form-input {
   cursor: pointer;
   transition: all 0.5 linear;
 }
-.fa-check:hover{
+.fa-circle-check:hover{
   color: green;
   text-shadow: 1px 1px 20px green, 1px 1px 20px green;
   transform: scale(1.5);

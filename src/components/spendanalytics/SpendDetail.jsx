@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SpendDetail = () => {
   return (
@@ -9,6 +10,7 @@ const SpendDetail = () => {
       <h3 className="mb-3 fw-semibold">Spend Details</h3>
     </div>
     <div className="mt-3 mt-md-0">
+      <a href="download.pdf" download="pdf">
       <button
         type="button"
         className="btn ms-3 px-4 py-1 rounded-3 fw-semibold text-white "
@@ -19,6 +21,7 @@ const SpendDetail = () => {
           <i className="fa-solid fa-arrow-down ms-2" />
         </span>
       </button>
+      </a>
     </div>
   </div>
   {/* Summary Cards */}

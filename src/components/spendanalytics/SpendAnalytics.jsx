@@ -180,9 +180,6 @@ const SpendAnalytics = () => {
         style={{ backgroundColor: "#578e7e" }}
       >
         <Link className="text-white" to="/spenddetail">Spend Details</Link>
-        <span>
-          <i className="fa-solid fa-arrow-right ms-2" />
-        </span>
       </button>
     </div>
   </div>

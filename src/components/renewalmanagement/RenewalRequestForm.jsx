@@ -98,11 +98,42 @@ const RenewalRequestForm = () => {
       Attachments
     </h5>
     <div className="row mb-3 mt-3">
-      <div className="col-md-4">
-        <div className="mb-3  rounded-5">
-        <Link to="/renewaldocument"><button className="back-button">Upload File</button></Link>
-        </div>
-      </div>
+    <div className="col-md-4 mb-3 " style={{marginTop:'-16'}}>
+  <Link to="/renewaldocument" >
+  <button
+    className="text-secondary text-center p-3 w-100"
+    style={{
+      backgroundColor: 'white',
+      borderRadius: '5px',
+      border: 'none',
+      color: 'black',
+      cursor: 'pointer',
+      fontSize: '16px',
+      textAlign: 'center',
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      transition: 'all 0.3s ease',
+      display: 'flex', 
+      alignItems: 'center', 
+    }}
+  >
+    <label
+      className="text-secondary m-0"
+      htmlFor="fileInput"
+      style={{
+        cursor: 'pointer',
+        color: 'black',
+        marginLeft:'50px',
+        textAlign:'center', 
+        gap: '8px',
+         
+      }}
+    >
+     <i class="fa-solid fa-file-import pe-2"></i>
+      Click to Upload
+    </label>
+  </button>
+  </Link>
+  </div>
     </div>
   </div>
   <div className="actionbtn d-flex justify-content-center mt-5">
