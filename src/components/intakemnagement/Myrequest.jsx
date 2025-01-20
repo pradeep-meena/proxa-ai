@@ -6,6 +6,39 @@ const Myrequest = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedRequest, setSelectedRequest] = useState(null);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Multiple input fields ke liye ek object state
+  const [formValues, setFormValues] = useState({
+    id: "",
+    item: "",
+    date: "",
+    status: "",
+  });
+
+  const handleIconClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCancelModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // Input change handle karne ke liye function
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+
+  const handleSave = () => {
+    console.log("Saved Data:", formValues);
+    setIsModalOpen(false); // Modal close karna
+  };
+
+
   const handleOpenModal = (request) => {
     setSelectedRequest(request);
     setShowModal(true);
@@ -92,7 +125,11 @@ const Myrequest = () => {
                       style={{ cursor: "pointer" }}
                       onClick={() => handleOpenModal(request)}
                     />
-                    <i className="fa-regular fa-pen-to-square myrequestedit" />
+                    <i
+        className="fa-regular fa-pen-to-square myrequestedit"
+        style={{ fontSize: "15px", cursor: "pointer" }}
+        onClick={handleIconClick}
+      />
                   </td>
                 </tr>
               ))}
@@ -103,13 +140,14 @@ const Myrequest = () => {
         {/* Modal Section */}
         <Modal show={showModal} onHide={handleCloseModal} centered>
           <Modal.Header closeButton>
-            <Modal.Title>Request Details</Modal.Title>
+            <Modal.Title>More Details</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             {selectedRequest ? (
               <>
-                <h5>Details for Request ID: {selectedRequest.id}</h5>
+                
                 <ul>
+                  <li><strong> Request ID:</strong> {selectedRequest.id}</li>
                   <li>
                     <strong>Request Type:</strong> {selectedRequest.type}
                   </li>
@@ -174,6 +212,128 @@ const Myrequest = () => {
             </li>
           </ul>
         </nav>
+
+       {/* Modal */}
+       {isModalOpen && (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "white",
+            padding: "20px",
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            borderRadius: "8px",
+            zIndex: 1000,
+          }}
+        >
+          <h3>Edit Request</h3>
+          {/* Inputs */}
+          <input
+            type="text"
+            name="id"
+            value={formValues.id}
+            onChange={handleInputChange}
+            placeholder="001"
+            style={{
+              width: "100%",
+              padding: "8px",
+              marginBottom: "10px",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+            }}
+          />
+          <input
+            type="text"
+            name="item"
+            value={formValues.item}
+            onChange={handleInputChange}
+            placeholder="Goods"
+            style={{
+              width: "100%",
+              padding: "8px",
+              marginBottom: "10px",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+            }}
+          />
+          <input
+            type="text"
+            name="date"
+            value={formValues.date}
+            onChange={handleInputChange}
+            placeholder="2024-12-18"
+            style={{
+              width: "100%",
+              padding: "8px",
+              marginBottom: "10px",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+            }}
+          />
+          <input
+            type="text"
+            name="status"
+            value={formValues.status}
+            onChange={handleInputChange}
+            placeholder="Pending"
+            style={{
+              width: "100%",
+              padding: "8px",
+              marginBottom: "10px",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+            }}
+          />
+
+          {/* Buttons */}
+          <div style={{ textAlign: "right" }}>
+            <button
+              onClick={handleCancelModal}
+              style={{
+                padding: "8px 12px",
+                marginRight: "10px",
+                backgroundColor: "#f5f5f5",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Cancel
+            </button>
+            <button
+              onClick={handleSave}
+              style={{
+                padding: "8px 12px",
+                backgroundColor: "#007bff",
+                color: "white",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Overlay */}
+      {isModalOpen && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            zIndex: 999,
+          }}
+          onClick={handleCancelModal}
+        />
+      )}
       </div>
     </>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 const Contractmanage = () => {
   return (
     <>
@@ -204,7 +203,7 @@ const Contractmanage = () => {
                   </button>
                   <i
                     class="fa-regular fa-comment"
-                    style={{ color: "#518bbb" }}
+                    style={{ color: "#518bbb",cursor:"pointer" }}
                   ></i>
                 </td>
               </tr>
@@ -232,7 +231,7 @@ const Contractmanage = () => {
                   </button>
                   <i
                     class="fa-regular fa-comment"
-                    style={{ color: "#518bbb" }}
+                    style={{ color: "#518bbb",cursor:"pointer" }}
                   ></i>
                 </td>
               </tr>
@@ -260,7 +259,7 @@ const Contractmanage = () => {
                   </button>
                   <i
                     class="fa-regular fa-comment"
-                    style={{ color: "#518bbb" }}
+                    style={{ color: "#518bbb",cursor:"pointer" }}
                   ></i>
                 </td>
               </tr>
@@ -288,7 +287,7 @@ const Contractmanage = () => {
                   </button>
                   <i
                     class="fa-regular fa-comment"
-                    style={{ color: "#518bbb" }}
+                    style={{ color: "#518bbb",cursor:"pointer" }}
                   ></i>
                 </td>
               </tr>
@@ -316,7 +315,7 @@ const Contractmanage = () => {
                   </button>
                   <i
                     class="fa-regular fa-comment"
-                    style={{ color: "#518bbb" }}
+                    style={{ color: "#518bbb",cursor:"pointer" }}
                   ></i>
                 </td>
               </tr>
@@ -344,7 +343,7 @@ const Contractmanage = () => {
                   </button>
                   <i
                     class="fa-regular fa-comment"
-                    style={{ color: "#518bbb" }}
+                    style={{ color: "#518bbb",cursor:"pointer" }}
                   ></i>
                 </td>
               </tr>
@@ -430,106 +429,16 @@ const Contractmanage = () => {
                 ></button>
               </div>
               <div className="modal-body">
-                <div className="table-responsive">
-                  <table className="table table-bordered text-center align-middle table-striped">
-                    <thead>
-                      <tr>
-                        <th>Contract ID</th>
-                        <th>Type Of Contract</th>
-                        <th>Department</th>
-                        <th>Last Upadate</th>
-                        <th>Description</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>001</td>
-                        <td>Procurement</td>
-                        <td>It</td>
-                        <td>2024-12-20</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill px-5 py-1 activebadge">
-                            Active
-                          </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>006</td>
-                        <td>Vendor</td>
-                        <td>Marketing</td>
-                        <td>2024-12-18</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill  px-5 py-1 expiredbadge">
-                            Expired
-                          </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>007</td>
-                        <td>Procurement</td>
-                        <td>It Network</td>
-                        <td>2024-12-20</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill  px-4 py-1 renewalbadge">
-                            Under Renewal
-                          </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>008</td>
-                        <td>Procurement</td>
-                        <td>It</td>
-                        <td>2024-12-18</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill  px-5 py-1 expiredbadge">
-                            Expired
-                          </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>009</td>
-                        <td>Vendor</td>
-                        <td>Marketing</td>
-                        <td>2024-12-20</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill  px-5 py-1 activebadge">
-                            Active
-                          </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>010</td>
-                        <td>Procurement</td>
-                        <td>It Network</td>
-                        <td>2024-12-18</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill  px-5 py-1 activebadge">
-                            Active
-                          </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>011</td>
-                        <td>Vendor</td>
-                        <td>It</td>
-                        <td>2024-12-20</td>
-                        <td>Description....</td>
-                        <td>
-                          <span className="badge rounded-pill  px-4 py-1 renewalbadge">
-                            Under Renewal
-                          </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <ul>    
+                  <li><strong>Contract ID:</strong><span> 001</span></li>
+                  <li><strong>Type of contract:</strong><span> Procurment</span></li>
+                  <li><strong>Department:</strong><span> IT</span></li>
+                  <li><strong>Last Update:</strong><span> 2024-12-20</span></li>
+                  <li><strong>Status:</strong> <span className="badge rounded-pill px-5 py-1 activebadge">
+                    Active
+                  </span></li>
+                  <li><strong>Description:</strong><span> Description...</span></li>
+                </ul>
               </div>
               <div className="modal-footer">
                 <button
@@ -538,13 +447,6 @@ const Contractmanage = () => {
                   data-bs-dismiss="modal"
                 >
                   Close
-                </button>
-                <button
-                  type="button"
-                  className="btn"
-                  style={{ backgroundColor: "#578e7e", color: "white" }}
-                >
-                  Save changes
                 </button>
               </div>
             </div>
