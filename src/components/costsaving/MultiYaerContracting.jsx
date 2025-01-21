@@ -17,13 +17,17 @@ function MultiYearContracting() {
     <div className="container my-5">
       {/* Header Section */}
       <div className="mb-4 text-start">
-        <h3 className="fw-bold"
+        <div className="d-flex justify-content-between">  
+          <h3 className="fw-bold"
           style={{
             lineHeight: "42px",
           }}
         >
           Multi-Year Contracting
         </h3>
+        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Multi Year</button>
+        </div>
+      
 
         {/* Summary Cards */}
         <div className="row text-center mb-4 mt-4">

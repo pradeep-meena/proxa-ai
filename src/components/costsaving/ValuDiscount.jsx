@@ -5,9 +5,12 @@ const ValuDiscount = () => {
 <>
 <div className="container my-5">
   <div className="top d-flex flex-wrap justify-content-between align-items-center">
-    <div className="heading">
+    <div className=" heading">
       <h2 className="mb-3 fw-bold">Volume Discounts</h2>
+
+    
     </div>
+
   </div>
   <div className="totalheading mt-4">
     <h5>
