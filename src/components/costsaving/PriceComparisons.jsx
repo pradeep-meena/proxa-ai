@@ -17,6 +17,7 @@ function PriceComparisons() {
     <div className="container my-5">
       {/* Header Section */}
       <div className="mb-4 text-start">
+      <div className="d-flex justify-content-between"> 
         <h1
           style={{
             fontFamily: "Urbanist",
@@ -27,6 +28,9 @@ function PriceComparisons() {
         >
           Price Comparisons
         </h1>
+
+        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Old Price</button>
+        </div>
         <h5 className="mt-5"
           style={{
             fontFamily: "Urbanist",
