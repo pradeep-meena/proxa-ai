@@ -48,7 +48,7 @@ const Sidebar = ({ collapsed }) => {
             <div
               className="menu-link menu-i"
               onClick={() => navigate("/contracttemplate")}>
-              <i class="fa-solid fa-file-contract"></i>
+              <i className="fa-solid fa-file-contract"></i>
               <span className="menu-text">Contract Template</span>
             </div>
           </li>
@@ -178,7 +178,7 @@ const Sidebar = ({ collapsed }) => {
             <div
               className="menu-link menu-i"
               onClick={() => navigate("/renewalnotifi")}>
-              <i class="fa-regular fa-comment-dots"></i>
+              <i className="fa-regular fa-comment-dots"></i>
               <span className="menu-text">Renewal Notifications</span>
             </div>
           </li>
@@ -191,7 +191,7 @@ const Sidebar = ({ collapsed }) => {
             <div
               className="menu-link menu-i"
               onClick={() => navigate("/renewalmanage")}>
-              <i class="fa-solid fa-envelope-open-text"></i>
+              <i className="fa-solid fa-envelope-open-text"></i>
               <span className="menu-text">Renewal Management</span>
             </div>
           </li>
@@ -252,7 +252,7 @@ const Sidebar = ({ collapsed }) => {
             <div
               className="menu-link menu-i"
               onClick={() => navigate("/vendorper")}>
-              <i class="fa-solid fa-file-signature"></i>
+              <i className="fa-solid fa-file-signature"></i>
               <span className="menu-text">Vendor Performance</span>
             </div>
           </li>

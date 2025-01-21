@@ -223,9 +223,6 @@ const ContractapprovalWorkflow = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2">
-          <i className="fa-solid fa-arrow-right text-success"></i>
-        </div> <i className="fa-solid fa-arrow-right text-success"></i>
         </div>
         </div>
       </div>
