@@ -53,7 +53,15 @@ const RenewalWebform = () => {
                 placeholder="New End Date"
               />
             </div>
-
+            <div className="mb-3 p-2">
+             
+             <input
+               type="text"
+               className="form-control p-3"
+               id="AddService"
+               placeholder="Add Service"
+             />
+           </div>
 
             <div className="mb-3 p-2 ">
              
@@ -65,15 +73,7 @@ const RenewalWebform = () => {
                 style={{height:'200px'}}
               ></textarea>
             </div>
-            <div className="mb-3 p-2">
-             
-             <input
-               type="text"
-               className="form-control p-3"
-               id="AddService"
-               placeholder="Add Service"
-             />
-           </div>
+          
             <div 
   className="d-flex justify-content-center align-items-center flex-wrap" 
   style={{ height: "100%" }}

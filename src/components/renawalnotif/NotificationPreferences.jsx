@@ -80,36 +80,41 @@ const NotificationPreferences = () => {
       <div className="form">
         <div className="form-group">
           <label className="form-label">Remind me before renewal</label>
-         <div className='row'>
-          <div className='col-md-4'>
-          <select id="renewalType"
-        value={selectedOption}
-        onChange={handleSelectChange} className="form-select ">
-            
-            
-            <option value=" selected hidden">
-            Select renewal Days
-        </option>
-        <option value="">180 Days</option>
-        <option value="">120 Days</option>
-        <option value="">60 Days</option>
-        
-        <option value="Other">Custom</option>
+          <div className="row g-3">
+        {/* First Select Box */}
+        <div className="col-12 col-md-4">
+          <select
+            id="renewalDays"
+            value={selectedOption}
+            onChange={handleSelectChange}
+            className="form-select"
+          >
+            <option value="" disabled hidden>
+              Select renewal Days
+            </option>
+            <option value="180">180 Days</option>
+            <option value="120">120 Days</option>
+            <option value="60">60 Days</option>
+            <option value="Other">Custom</option>
           </select>
-          </div>
-          <div className='col-md-4'>
-          <select id="renewalType"
-        value={selectedOption}
-        onChange={handleSelectChange} className="form-select ">
-            
-            
-            <option value=" selected hidden">
-            Renewal or New Engagement
-        </option>
-      
+        </div>
+
+        {/* Second Select Box */}
+        <div className="col-12 col-md-4">
+          <select
+            id="renewalType"
+            value={selectedOption}
+            onChange={handleSelectChange}
+            className="form-select"
+          >
+            <option value="" disabled hidden>
+              Renewal or New Engagement
+            </option>
+            <option value="Renewal">Renewal</option>
+            <option value="NewEngagement">New Engagement</option>
           </select>
-          </div>
-          </div>
+        </div>
+      </div>
           {selectedOption === "Other" && (
         <div className=" mt-3">
         

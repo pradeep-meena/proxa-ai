@@ -1,7 +1,13 @@
-import React from 'react';
+import React , {useRef} from 'react';
 import { Link } from 'react-router-dom';
 
 function      EditRenewal() {
+
+  const editorRef = useRef(null);
+
+  const handleCommand = (command) => {
+    document.execCommand(command, false, null);
+  };
   return (
     <div className="container mt-5">
       <div className="d-flex justify-content-between align-items-center flex-wrap">
@@ -46,38 +52,102 @@ function      EditRenewal() {
         <p className="fw-normal fs-6 mt-3">Body</p>
         <div className="bg-white border rounded p-3 mb-4" style={{maxWidth: '649px' }}>
         <div className="d-flex flex-wrap gap-1 mb-3 align-items-center">
-        <select className="form-select border-0 d-inline-block me-2 "style={{width:'130px',fontSize:'15px'}}>
-  <option>Normal text</option>
-</select>
-<select className="form-select border-0 d-inline-block me-2 "style={{width:'50px'}}>
-  <option></option>
-</select>
-<select className="form-select border-0 d-inline-block me-2 " style={{width:'50px'}}>
-<option></option>
-  <option></option>
-</select>
+        <select
+          className="form-select border-0 d-inline-block me-2"
+          style={{ width: '130px', fontSize: '15px' }}
+        >
+          <option>Normal text</option>
+        </select>
+        <select
+          className="form-select border-0 d-inline-block me-2"
+          style={{ width: '50px' }}
+        >
+          <option></option>
+        </select>
+        <select
+          className="form-select border-0 d-inline-block me-2"
+          style={{ width: '50px' }}
+        >
+          <option></option>
+          <option></option>
+        </select>
 
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2"><b>B</b></button>
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2"><i>I</i></button>
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2"><u>U</u></button>
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2"><s>S</s></button>
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2">
-    <i className="fa-solid fa-greater-than"></i><i className="fa-solid fa-less-than"></i>
-  </button>
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2">
-    <i className="fa-solid fa-code"></i>
-  </button>
-  <button className="btn btn-outline-secondary border-0 d-inline-block me-2">
-    <i className="fa-solid fa-minus"></i>
-  </button>
-</div>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('bold')}
+        >
+          <b>B</b>
+        </button>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('italic')}
+        >
+          <i>I</i>
+        </button>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('underline')}
+        >
+          <u>U</u>
+        </button>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('strikeThrough')}
+        >
+          <s>S</s>
+        </button>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('superscript')}
+        >
+          <i className="fa-solid fa-greater-than"></i>
+          <i className="fa-solid fa-less-than"></i>
+        </button>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('insertHTML')}
+        >
+          <i className="fa-solid fa-code"></i>
+        </button>
+        <button
+          className="btn btn-outline-secondary border-0 d-inline-block me-2"
+          onClick={() => handleCommand('removeFormat')}
+        >
+          <i className="fa-solid fa-minus"></i>
+        </button>
+      </div>
+
+      {/* Editable content area */}
+      <div
+        ref={editorRef}
+        contentEditable
+        className="border p-3"
+        style={{
+          minHeight: '200px',
+          borderRadius: '5px',
+          border: '1px solid #ccc',
+        }}
+      >
+        Start typing here...
+      </div>
 
 
-  <p>
-    Dear Recipient Name , <br />
-    This is a reminder that your Contract Name is due for renewal on Renewal Date.<br />
-    Please review the terms and take appropriate action.
-  </p>
+{/* <div className="bg-white border rounded p-3 mb-4" style={{ maxWidth: '649px' }}>
+  <textarea
+    placeholder={`Dear Recipient Name, \nThis is a reminder that your Contract Name is due for renewal on Renewal Date.\nPlease review the terms and take appropriate action.`}
+    style={{
+      border: 'none',
+      width: '600px',
+      height: 'auto',
+      minHeight: '190px',
+      resize: 'none', // To disable resizing
+      outline: 'none', // Removes focus border
+      fontSize: '15px',
+    }}
+  />
+</div> */}
+
+  
 </div>
 
 
