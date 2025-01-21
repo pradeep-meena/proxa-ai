@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { Link } from "react-router-dom";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -60,7 +61,9 @@ function HonoringOldPricing() {
         >
           Honoring Old Pricing
         </h3>
+        <Link to="/addoldpricehonering">
         <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Honoring</button>
+        </Link>
         </div>
         <h5 className="mt-5"
           style={{

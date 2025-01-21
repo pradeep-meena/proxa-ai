@@ -30,7 +30,7 @@ const ContractapprovalWorkflow = () => {
           <div className="col-md-2 " style={{top: "-28px"}}> 
          
           
-          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3'}}></i>
+          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3',color:"silver"}}></i>
           
             <div className="workflow-card" >
            
@@ -54,7 +54,7 @@ const ContractapprovalWorkflow = () => {
           {/* Second Column */}
         
           <div className="col-md-2 position-relative " style={{top: "-160px"}}>
-          <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+          <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3' ,color:"silver"}}></i>
             <div className="workflow-card" >
             <span>
                 <i className="fa-solid fa-i bg-success rounded-circle px-2 py-1 text-white " />
@@ -69,7 +69,7 @@ const ContractapprovalWorkflow = () => {
               </small>
             </div>
             
-            <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+            <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3' ,color:"silver"}}></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-brands fa-atlassian bg-primary rounded-circle p-2 text-white " />
@@ -84,7 +84,7 @@ const ContractapprovalWorkflow = () => {
               </small>
             </div>
            
-            <i className="fa-solid fa-arrow-right  " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+            <i className="fa-solid fa-arrow-right  " style={{marginLeft:'7px',zIndex:' 3',color:"silver"}}></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-solid fa-lock bg-success rounded-circle px-2 py-2 text-white " />
@@ -98,7 +98,7 @@ const ContractapprovalWorkflow = () => {
                 Richard Roe
               </small>
             </div>
-            <div className="workflow-line" style={{ borderRight: '4px solid black',
+            <div className="workflow-line" style={{ borderRight: '2px solid silver',
                 height: '830px',
                 position: 'absolute',
                  Right: '100%',
@@ -108,7 +108,7 @@ const ContractapprovalWorkflow = () => {
                }}>
              
             </div>
-            <i className="fa-solid fa-arrow-right  z-index-1" style={{marginLeft:'7px',zIndex:' 3'}}></i>
+            <i className="fa-solid fa-arrow-right  z-index-1" style={{marginLeft:'7px',zIndex:' 3', color:"silver"}}></i>
             <div className="workflow-card">
               <span>
               <i className="fa-solid fa-i bg-success rounded-circle px-2 py-1 text-white " />
@@ -123,7 +123,7 @@ const ContractapprovalWorkflow = () => {
               </small>
             </div>
            
-            <i className="fa-solid fa-arrow-right  z-index-1" style={{marginLeft:'7px',zIndex:' 3'}}></i>
+            <i className="fa-solid fa-arrow-right  z-index-1" style={{marginLeft:'7px',zIndex:' 3', color:"silver"}}></i>
             <div className="workflow-card">
               <span>
               <i className="fa-brands fa-atlassian bg-primary rounded-circle p-2 text-white " />
@@ -138,7 +138,7 @@ const ContractapprovalWorkflow = () => {
               </small>
             </div>
             
-            <i className="fa-solid fa-arrow-right  " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+            <i className="fa-solid fa-arrow-right  " style={{marginLeft:'7px',zIndex:' 3', color:"silver"}}></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-solid fa-lock bg-success rounded-circle px-2 py-2 text-white " />
@@ -155,7 +155,7 @@ const ContractapprovalWorkflow = () => {
           </div>
           {/* Third Column */}
           <div className="col-md-2">
-          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3'}}></i>
+          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3', color:"silver"}}></i>
 
             <div className="workflow-card " style={{height:'103px'}}>
           
@@ -174,7 +174,7 @@ const ContractapprovalWorkflow = () => {
           </div>
           {/* Fourth Column */}
           <div className="col-md-2">
-          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3'}}></i>
+          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3',color:"silver"}}></i>
          
           <div className="workflow-card"  style={{height:'103px'}}>
             
@@ -197,9 +197,9 @@ const ContractapprovalWorkflow = () => {
           
               <div className="col-md-12">
              
-              <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+              <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3',color:"silver"}}></i>
              
-              <div className="workflow-line" style={{ borderRight: '4px solid black',
+              <div className="workflow-line" style={{ borderRight: '2px solid silver',
                 height: '180px',
                 position: 'absolute',
                  Right: '30%',
@@ -229,7 +229,7 @@ const ContractapprovalWorkflow = () => {
               </div>
               
               <div className="col-md-12">
-              <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+              <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3', color:"silver"}}></i>
               <div className="workflow-card"  style={{height:'103px' }}>
               <span>
                 <i className="fa-solid fa-check bg-success rounded-circle p-1 text-white " />

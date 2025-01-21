@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { Link } from "react-router-dom";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -28,8 +29,9 @@ function PriceComparisons() {
         >
           Price Comparisons
         </h1>
-
+        <Link to="/pricecomparisonsprice">
         <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Old Price</button>
+        </Link>
         </div>
         <h5 className="mt-5"
           style={{

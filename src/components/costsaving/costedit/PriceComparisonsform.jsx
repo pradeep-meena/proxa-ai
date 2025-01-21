@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PriceComparisons() {
+function PriceComparisonsform() {
   return (
     <div>
      <form className="row g-3">
@@ -37,4 +37,4 @@ function PriceComparisons() {
   )
 }
 
-export default PriceComparisons
+export default PriceComparisonsform

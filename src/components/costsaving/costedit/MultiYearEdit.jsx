@@ -2,7 +2,8 @@ import React from 'react'
 
 function MultiYearEdit() {
   return (
-    <div>
+    <div className='container'>
+      <h3>Multi Year Edit Page</h3>
       <form className="row g-3">
   <div className="col-md-6">
     <label for="inputEmail4" className="form-label">Vendor Name </label>
