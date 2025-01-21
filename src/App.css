@@ -802,6 +802,11 @@ select.form-input {
   text-shadow: 1px 1px 20px green, 1px 1px 20px green;
   transform: scale(1.5)
 }
+.fa-pen-to-square:hover{
+  color: #624de3 !important;
+  text-shadow: 1px 1px 20px #624de3, 1px 1px 20px #624de3;
+  transform: scale(1.5)
+}
 .fa-eye:hover{
   color: rgb(13, 153, 255) !important;
   text-shadow: 1px 1px 20px rgb(13, 153, 255), 1px 1px 20px rgb(13, 153, 255);

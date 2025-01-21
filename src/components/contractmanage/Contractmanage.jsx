@@ -236,6 +236,12 @@ const Contractmanage = () => {
                       style={{ border: "none", backgroundColor: "transparent" }}
                     >
                       <i
+                        className="fa-regular fa-pen-to-square me-2"
+                        style={{ color: "#624de3" }}
+                        data-bs-placement="top"
+                        title="Edit"
+                      />
+                      <i
                         className="fa-regular fa-eye approvalicon me-2"
                         style={{ color: "#0d99ff" }}
                         data-bs-placement="top"
