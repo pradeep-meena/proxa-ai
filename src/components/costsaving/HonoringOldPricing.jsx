@@ -52,6 +52,7 @@ function HonoringOldPricing() {
     <div className="container my-5">
       {/* Header Section */}
       <div className="mb-4 text-start">
+        <div className="d-flex justify-content-between">
         <h3 className="fw-bold"
           style={{
             lineHeight: "42px",
@@ -59,6 +60,8 @@ function HonoringOldPricing() {
         >
           Honoring Old Pricing
         </h3>
+        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Honoring</button>
+        </div>
         <h5 className="mt-5"
           style={{
             lineHeight: "24px",

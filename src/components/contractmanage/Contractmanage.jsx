@@ -73,10 +73,10 @@ const Contractmanage = () => {
               className="card portalcard text-white fw-semibold h-100 d-flex justify-content-center"
               style={{ backgroundColor: "#ff6567" }}
             >
-              <div className="content d-flex justify-content-start align-items-center p-3">
+              <div className="content d-flex justify-content-start align-items-center p-2">
                 <div className="icon">
                   <i
-                    className="fa-regular fa-user rounded-circle p-3"
+                    className="fa-regular fa-user rounded-circle p-2"
                     style={{ backgroundColor: "#fdabab" }}
                   />
                 </div>
@@ -93,10 +93,10 @@ const Contractmanage = () => {
               className="card portalcard text-white fw-semibold h-100 d-flex justify-content-center"
               style={{ backgroundColor: "#ff9318" }}
             >
-              <div className="content d-flex justify-content-start align-items-center p-3">
+              <div className="content d-flex justify-content-start align-items-center p-2">
                 <div className="icon">
                   <i
-                    className="fa-regular fa-user rounded-circle p-3"
+                    className="fa-regular fa-user rounded-circle p-2"
                     style={{ backgroundColor: "#fcc586" }}
                   />
                 </div>
@@ -113,10 +113,10 @@ const Contractmanage = () => {
               className="card portalcard text-white fw-semibold h-100 d-flex justify-content-center"
               style={{ backgroundColor: "#39bf1b" }}
             >
-              <div className="content d-flex justify-content-start align-items-center p-3">
+              <div className="content d-flex justify-content-start align-items-center p-2">
                 <div className="icon">
                   <i
-                    className="fa-regular fa-user rounded-circle p-3"
+                    className="fa-regular fa-user rounded-circle p-2"
                     style={{ backgroundColor: "#74d25f" }}
                   />
                 </div>

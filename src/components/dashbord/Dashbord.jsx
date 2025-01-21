@@ -172,10 +172,10 @@ const Dashboard = () => {
   <div className="row text-center mb-4 mt-4">
     <div className="col-12 col-sm-6 col-lg-3 mb-3">
       <div
-        className="card dashboardcard text-white fw-semibold h-100 d-flex justify-content-center"
+        className="card dashboardcard text-white fw-semibold h-80 d-flex justify-content-center"
         style={{ backgroundColor: "#ff6567" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="content d-flex justify-content-start align-items-center p-2">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -191,10 +191,10 @@ const Dashboard = () => {
     </div>
     <div className="col-12 col-sm-6 col-lg-3 mb-3">
       <div
-        className="card dashboardcard text-white fw-semibold h-100 d-flex justify-content-center"
+        className="card dashboardcard text-white fw-semibold h-80 d-flex justify-content-center"
         style={{ backgroundColor: "#ff9318" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="content d-flex justify-content-start align-items-center p-2">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -210,10 +210,10 @@ const Dashboard = () => {
     </div>
     <div className="col-12 col-sm-6 col-lg-3 mb-3">
       <div
-        className="card dashboardcard text-white fw-semibold h-100 d-flex justify-content-center"
+        className="card dashboardcard text-white fw-semibold h-80 d-flex justify-content-center"
         style={{ backgroundColor: "#39bf1b" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="content d-flex justify-content-start align-items-center p-2">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
