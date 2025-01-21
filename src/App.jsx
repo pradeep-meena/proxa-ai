@@ -33,6 +33,7 @@ import ContractDetails from "./components/contractmanage/ContractDetails";
 import RenewalRequestForm from "./components/renewalmanagement/RenewalRequestForm";
 import RenewalWebform from "./components/renewalmanagement/RenewalWebform";
 import DocumentPriview from "./components/contracttemplate/DocumentPriview";
+
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
 
@@ -81,6 +82,7 @@ function App() {
             <Route path="/renewalform" element={<RenewalRequestForm/>}/>
             <Route path="/renewaldocument" element={<RenewalWebform/>}/>
             <Route path="/documentpre" element={<DocumentPriview/>}/>
+            
 
 
             

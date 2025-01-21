@@ -25,7 +25,7 @@ function MultiYearContracting() {
         >
           Multi-Year Contracting
         </h3>
-        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Multi Year</button>
+       <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Multi Year</button>
         </div>
       
 

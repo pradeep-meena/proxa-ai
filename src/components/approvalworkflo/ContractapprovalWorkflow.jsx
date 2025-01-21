@@ -7,11 +7,10 @@ const ContractapprovalWorkflow = () => {
       <div className="container py-5">
         <h3 className="mb-5 fw-semibold">Contract Approval Workflow</h3>
         <div className="position-absulate">
-        <div className="row gy-7"style={{marginTop:'190px'}}>
+        <div className="row gy-7 "style={{marginTop:'190px'}}> 
           {/* First Column */}
-          <div className="col-md-2">
-         
-            <div className="workflow-card">
+          <div className="col-md-2 ">
+            <div className="workflow-card"style={{top:'30px'}}>
               <span>
                 <i className="fa-solid fa-check bg-success rounded-circle p-1 text-white " />
               </span>{" "}
@@ -27,13 +26,13 @@ const ContractapprovalWorkflow = () => {
            
           </div>
           
-           
+          
           <div className="col-md-2 " style={{top: "-28px"}}> 
          
-
-          <i className="fa-solid fa-arrow-right text-success"></i>
           
-            <div className="workflow-card">
+          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3'}}></i>
+          
+            <div className="workflow-card" >
            
               <span>
                 <i className="fa-solid fa-check bg-success rounded-circle p-1 text-white " />
@@ -47,15 +46,17 @@ const ContractapprovalWorkflow = () => {
                 Paola Martinez
               </small>
             </div>
+            
             </div>
            
            
            
           {/* Second Column */}
+        
           <div className="col-md-2 position-relative " style={{top: "-160px"}}>
-          
-            <div className="workflow-card">
-              <span>
+          <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+            <div className="workflow-card" >
+            <span>
                 <i className="fa-solid fa-i bg-success rounded-circle px-2 py-1 text-white " />
               </span>{" "}
               <br /> Legal review
@@ -67,12 +68,8 @@ const ContractapprovalWorkflow = () => {
                 Jonathan Garwood
               </small>
             </div>
-            <ImArrowUpRight2 className="text-success" />
-            <div className="workflow-line">
             
-              
-            </div>
-            <i className="fa-solid fa-arrow-right text-success"></i>
+            <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-brands fa-atlassian bg-primary rounded-circle p-2 text-white " />
@@ -86,9 +83,8 @@ const ContractapprovalWorkflow = () => {
                 Ciara Dakota
               </small>
             </div>
-            <div className="workflow-line">
-              <i className="fa-solid fa-arrow-down text-success"></i>
-            </div>
+           
+            <i className="fa-solid fa-arrow-right  " style={{marginLeft:'7px',zIndex:' 3'}}></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-solid fa-lock bg-success rounded-circle px-2 py-2 text-white " />
@@ -102,9 +98,17 @@ const ContractapprovalWorkflow = () => {
                 Richard Roe
               </small>
             </div>
-            <div className="workflow-line">
-              <i className="fa-solid fa-arrow-down text-success"></i>
+            <div className="workflow-line" style={{ borderRight: '4px solid black',
+                height: '830px',
+                position: 'absolute',
+                 Right: '100%',
+                 marginLeft: '-13px',
+                 top:'85px'
+                
+               }}>
+             
             </div>
+            <i className="fa-solid fa-arrow-right  z-index-1" style={{marginLeft:'7px',zIndex:' 3'}}></i>
             <div className="workflow-card">
               <span>
               <i className="fa-solid fa-i bg-success rounded-circle px-2 py-1 text-white " />
@@ -118,9 +122,8 @@ const ContractapprovalWorkflow = () => {
                  Jonathan Garwood
               </small>
             </div>
-            <div className="workflow-line">
-              <i className="fa-solid fa-arrow-down text-success"></i>
-            </div>
+           
+            <i className="fa-solid fa-arrow-right  z-index-1" style={{marginLeft:'7px',zIndex:' 3'}}></i>
             <div className="workflow-card">
               <span>
               <i className="fa-brands fa-atlassian bg-primary rounded-circle p-2 text-white " />
@@ -134,9 +137,8 @@ const ContractapprovalWorkflow = () => {
                 Clara Dakota 
               </small>
             </div>
-            <div className="workflow-line">
-              <i className="fa-solid fa-arrow-down text-success"></i>
-            </div>
+            
+            <i className="fa-solid fa-arrow-right  " style={{marginLeft:'7px',zIndex:' 3'}}></i>
             <div className="workflow-card">
               <span>
                 <i className="fa-solid fa-lock bg-success rounded-circle px-2 py-2 text-white " />
@@ -153,7 +155,7 @@ const ContractapprovalWorkflow = () => {
           </div>
           {/* Third Column */}
           <div className="col-md-2">
-          <i className="fa-solid fa-arrow-right text-success"></i>
+          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3'}}></i>
 
             <div className="workflow-card " style={{height:'103px'}}>
           
@@ -172,7 +174,7 @@ const ContractapprovalWorkflow = () => {
           </div>
           {/* Fourth Column */}
           <div className="col-md-2">
-          <i className="fa-solid fa-arrow-right text-success"></i>
+          <i className="fa-solid fa-arrow-right " style={{zIndex:' 3'}}></i>
          
           <div className="workflow-card"  style={{height:'103px'}}>
             
@@ -185,17 +187,31 @@ const ContractapprovalWorkflow = () => {
           </div> 
           
           </div>
+          
          
           
           <div className="col-md-2 position-relative "style={{top:'-80px'}} >
+         
        
             <div className="row">
-            
+          
               <div className="col-md-12">
-              
-              
+             
+              <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
+             
+              <div className="workflow-line" style={{ borderRight: '4px solid black',
+                height: '180px',
+                position: 'absolute',
+                 Right: '30%',
+                 marginLeft: '-16px',
+               
+                top: '77px',
+               }}>
+             
+            </div>
               <div className="workflow-card" >
-              
+             
+           
               <span>
                 <i className="fa-solid fa-check bg-success rounded-circle p-1 text-white " />
               </span>{" "}
@@ -209,11 +225,11 @@ const ContractapprovalWorkflow = () => {
               </small>
              
             </div>
-            <ImArrowUpRight2 className="text-success" />
+            
               </div>
               
               <div className="col-md-12">
-              <ImArrowDownRight2 className="text-success"/>
+              <i className="fa-solid fa-arrow-right " style={{marginLeft:'7px',zIndex:' 3'}}></i>
               <div className="workflow-card"  style={{height:'103px' }}>
               <span>
                 <i className="fa-solid fa-check bg-success rounded-circle p-1 text-white " />
@@ -223,9 +239,7 @@ const ContractapprovalWorkflow = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2">
-          <i className="fa-solid fa-arrow-right text-success"></i>
-        </div> <i className="fa-solid fa-arrow-right text-success"></i>
+          
         </div>
         </div>
       </div>

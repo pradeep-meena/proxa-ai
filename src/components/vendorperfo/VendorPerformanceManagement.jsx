@@ -101,15 +101,15 @@ const VendorPerformanceManagement = () => {
               <td className="table-success">38 / 50</td>
               <td className="table-warning">31 / 50</td>
             </tr>
+           
             <tr>
-              <td>KPI 5</td>
-              <td className="table-success">9 / 10</td>
-              <td className="table-success">9 / 10</td>
-              <td className="table-danger">1 / 10</td>
-            </tr>
+    <td rowSpan="3">Total</td>
+    <td >BCD</td> 
+  </tr>
           </tbody>
         </table>
       </div>
+      
     </div>
   );
 };
