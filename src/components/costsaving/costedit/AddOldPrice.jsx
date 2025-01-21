@@ -3,6 +3,7 @@ import React from 'react'
 function AddOldPrice() {
   return (
     <div>
+        
       <form className="row g-3">
   <div className="col-md-6">
     <label for="inputEmail4" className="form-label">Supplier Name</label>
@@ -30,6 +31,7 @@ function AddOldPrice() {
     <button type="submit" className="btn btn-primary">Submit</button>
   </div>
 </form>
+</div>
     </div>
   )
 }

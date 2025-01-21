@@ -24,7 +24,7 @@ import CreateNewRequest from "./components/intakemnagement/CreateNewRequest";
 import Login from "./authtication/Login";
 import AditionalComplementry from "./components/costsaving/AditionalComplementry";
 import SpendDetail from "./components/spendanalytics/SpendDetail";
-import MultiYearContracting from "./components/costsaving/MultiYaerContracting";
+import MultiYearContracting from "./components/costsaving/MultiYearContracting";
 import AddNewContract from "./components/contractmanage/AddNewContract";
 import ContractapprovalWorkflow from "./components/approvalworkflo/ContractapprovalWorkflow";
 import AllContractWearehouse from "./components/contractmanage/AllContractWearehouse";

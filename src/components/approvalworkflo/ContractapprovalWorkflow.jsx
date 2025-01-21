@@ -1,5 +1,4 @@
 import React from "react";
-import { ImArrowUpRight2 , ImArrowDownRight2 } from "react-icons/im";
 
 const ContractapprovalWorkflow = () => {
   return (
