@@ -29,7 +29,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
           <li className={`menu-item ${isActive("/dashboard") ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
-              onClick={() => {navigate("/dashboard"); menuItemClick();}} >
+              onClick={() => {navigate("/dashboard"); menuItemClick();} } >
               <i className="fa-solid fa-cubes"></i>
               <span className="menu-text">Dashboard</span>
             </div>
@@ -45,16 +45,13 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
           </li>
           <ul className={`submenu ${openSubmenu === "intakemanagement" ? "expanded" : "collapsed"}`}>
             <li className={`submenu-item ${isActive("/intakemanagement") ? "active" : ""}`}
-              onClick={() => {
-                navigate("/intakemanagement");
-                setOpenSubmenu(null);
-              }}>
+              onClick={() => {navigate("/intakemanagement");setOpenSubmenu(null);menuItemClick();}}>
               <i className="fa-solid fa-arrow-trend-up"></i> Intake Management Dashboard
             </li>
             <li className={`submenu-item ${isActive("/intakecateedit") ? "active" : ""}`}
               onClick={() => {
                 navigate("/intakecateedit");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null);menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Edit Category
             </li>
@@ -66,7 +63,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
             }`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/contracttemplate")}>
+              onClick={() => {navigate("/contracttemplate");menuItemClick();}}>
               <i className="fa-solid fa-file-contract"></i>
               <span className="menu-text">Contract Template</span>
             </div>
@@ -95,7 +92,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/volumedisc");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Volume Discounts
             </li>
@@ -105,7 +102,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/suppliercons");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Supplier
               Consolidation
@@ -116,7 +113,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/serviceswo");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Service/SOW
               Consolidation
@@ -127,7 +124,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/honoring");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Honoring Old
               Pricing
@@ -138,7 +135,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/additionalcomp");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i>{" "}
               Additional/Complementary Service
@@ -149,7 +146,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/pricecomp");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Price Comparisons
             </li>
@@ -159,7 +156,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/multiyear");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Multi-Year
               Contracting
@@ -170,7 +167,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/others");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null); menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Others
             </li>
@@ -183,7 +180,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
             }`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/approvalworkflow")}>
+              onClick={() => {navigate("/approvalworkflow");menuItemClick();}}>
               <i className="fa-solid fa-check-circle"></i>
               <span className="menu-text">Approval Workflow</span>
             </div>
@@ -196,7 +193,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
             }`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/renewalnotifi")}>
+              onClick={() => {navigate("/renewalnotifi");menuItemClick();}}>
               <i className="fa-regular fa-comment-dots"></i>
               <span className="menu-text">Renewal Notifications</span>
             </div>
@@ -209,7 +206,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
             }`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/renewalmanage")}>
+              onClick={() => {navigate("/renewalmanage");menuItemClick();}}>
               <i className="fa-solid fa-envelope-open-text"></i>
               <span className="menu-text">Renewal Management</span>
             </div>
@@ -239,7 +236,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/contractmanage");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null);menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Contract Dashbord
             </li>
@@ -249,7 +246,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/contractwearhouse");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null);menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> All Contract /
               Contract warehouse
@@ -260,7 +257,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/addnewcontact");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null);menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Add Contract
             </li>
@@ -270,7 +267,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
           <li className={`menu-item ${isActive("/vendorper") ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/vendorper")}>
+              onClick={() => {navigate("/vendorper");menuItemClick();}}>
               <i className="fa-solid fa-file-signature"></i>
               <span className="menu-text">Vendor Performance</span>
             </div>
@@ -281,7 +278,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
             className={`menu-item ${isActive("/spendanalyt") ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/spendanalyt")}>
+              onClick={() => {navigate("/spendanalyt");menuItemClick();}}>
               <i className="fa-solid fa-chart-line"></i>
               <span className="menu-text">Spend Analytics</span>
             </div>
@@ -309,7 +306,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/adddepartment");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null);menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Add Department
             </li>
@@ -319,7 +316,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               }`}
               onClick={() => {
                 navigate("/addtransaction");
-                setOpenSubmenu(null);
+                setOpenSubmenu(null);menuItemClick();
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Add Transaction
             </li>
