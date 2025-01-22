@@ -432,29 +432,6 @@ select.form-input {
 } */
 
 /* sidebar end  */
-/* right-side-content start*/
-.right-side-content {
-  width: 100%;
-  padding-top: 60px !important;
-  padding-left: 340px !important;
-  background-color: #f2f2f2;
-  height: 668px;
-  overflow: scroll;
-  transition: padding-left 0.3s;
-}
-
-@media (max-width: 768px) {
-  .right-side-content.collapsed {
-    padding-left: 80px !important;
-  }
-
-}
-
-.right-side-content.collapsed {
-  padding-left: 40px;
-}
-
-/* right-side-content end */
 /* dashbord */
 .dashboardcard {
   text-align: center;

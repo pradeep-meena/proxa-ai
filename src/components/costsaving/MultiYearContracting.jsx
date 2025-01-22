@@ -1,5 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -25,7 +26,9 @@ function MultiYearContracting() {
         >
           Multi-Year Contracting
         </h3>
+       <Link to="/multiyearedit">
        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Multi Year</button>
+       </Link>
         </div>
       
 

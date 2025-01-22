@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AditionalComplementry = () => {
   return (
@@ -8,7 +9,9 @@ const AditionalComplementry = () => {
     <div className="heading">
       <h3 className="mb-3 fw-bold">Additional/Complementary Services</h3>
     </div>
-    <div className="mt-3 mt-md-0">
+   
+   <div className="mt-3 mt-md-0">
+   <Link to="/additionaledit"> 
       <button
         type="button"
         className="btn ms-3 px-4 py-1 rounded-3 fw-semibold text-white "
@@ -19,6 +22,7 @@ const AditionalComplementry = () => {
         </span>{" "}
         Vendor Profiles
       </button>
+      </Link>
     </div>
   </div>
   {/* Summary Cards */}

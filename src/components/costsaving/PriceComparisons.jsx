@@ -30,7 +30,7 @@ function PriceComparisons() {
           Price Comparisons
         </h1>
         <Link to="/pricecomparisonsprice">
-        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Old Price</button>
+        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Price Compari</button>
         </Link>
         </div>
         <h5 className="mt-5"

@@ -1,56 +1,52 @@
 import React from "react";
 
-function AddOldPrice() {
+function AditionalEditPage() {
   return (
     <>
-      <div className="addoldpric-section my-5">
+      <div className="priceeditcompr-section my-5">
         <div className="container">
-          <h3>Add Old Price Edit Page</h3>
-          <form className="row g-3">
+          <h3> Additional Complementary Edit Page</h3>
+          <form className="row g-3 mt-5">
             <div className="col-md-6">
-              <label className="form-label">Supplier Name</label>
+              <label className="form-label">Vendor Name</label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter The Supplier Name "
-              />
-            </div>
-            <div className="col-md-6">
-              <label className="form-label">Product/Service Name</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder=" Choice The Product"
-              />
-            </div>
-            <div className="col-6">
-              <label className="form-label">Old Pricing</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Enter The Old Price "
-              />
-            </div>
-            <div className="col-6">
-              <label className="form-label">Current Quotation</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Enter The Current Quotation"
+                placeholder="Enter The Name"
               />
             </div>
             <div className="col-md-6">
-              <label className="form-label">
-                Saving from Honoring Old Pricing
-              </label>
+              <label className="form-label">Product Parchased</label>
               <input
                 type="text"
                 className="form-control"
-                id="inputCity"
-                placeholder=" Enter The Saving"
+                placeholder="Enetr The Products"
               />
             </div>
-
+            <div className="col-md-6">
+              <label className="form-label">Complementary Service</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enetr The Service"
+              />
+            </div>
+            <div className="col-md-6">
+              <label className="form-label">Cost</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enetr The Cost"
+              />
+            </div>
+            <div className="col-md-6">
+              <label className="form-label">Saving / Value - Added</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enetr The Saving"
+              />
+            </div>
             <div className="col-12">
               <button
                 type="submit"
@@ -67,4 +63,4 @@ function AddOldPrice() {
   );
 }
 
-export default AddOldPrice;
+export default AditionalEditPage;
