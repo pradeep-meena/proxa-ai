@@ -80,7 +80,9 @@ function App() {
             <Route path="/intakemyrequ" element={<Myrequest/>}/>
             <Route path="/intakecateedit" element={<CategoryEditPage/>}/>
             {/* intakemanagement */}
+            {/* contracttemplate */}
             <Route path="/contracttemplate" element={<ContractTemplateSelection/>}/>
+            {/* contracttemplate */}
             <Route path="/costumeagent" element={<PathSelection/>}/>
             <Route path="/volumedisc" element={<ValuDiscount/>}/>
             <Route path="/suppliercons" element={<SupplierConsolidation/>}/>
@@ -115,8 +117,6 @@ function App() {
             <Route path="/additionaledit" element={<AditionalEditPage/>}/>
             <Route path="/adddepartment" element={<AddDepartmenet/>}/>
              <Route path="/addtransaction" element={<AddTransaction/>}/>
-            
-            
           </Routes>
         </div>
         {/* right end  */}
