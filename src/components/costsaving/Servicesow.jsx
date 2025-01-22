@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Servicesow = () => {
   return (
@@ -9,6 +10,7 @@ const Servicesow = () => {
       <h3 className="mb-3 fw-bold">Service/SOW Consolidation</h3>
     </div>
     <div className="mt-3 mt-md-0">
+      <Link to="/sowedit">
       <button
         type="button"
         className="btn ms-3 px-4 py-1 rounded-3 fw-semibold text-white "
@@ -19,6 +21,7 @@ const Servicesow = () => {
         </span>{" "}
         Create New SOW
       </button>
+      </Link>
     </div>
   </div>
   {/* Summary Cards */}

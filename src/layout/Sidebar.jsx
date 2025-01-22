@@ -267,6 +267,33 @@ const Sidebar = ({ collapsed }) => {
               <span className="menu-text">Spend Analytics</span>
             </div>
           </li>
+          {/* <li className="menu-item">
+            <div
+              className="menu-link menu-i"
+              onClick={() => toggleSubmenu("addcategory")}>
+              <i className="fa-solid fa-arrow-trend-up"></i>
+              <span className="menu-text">Add Category</span>
+              <i
+                className={`fa-solid fa-chevron-down submenu-arrow ${
+                  openSubmenu === "addcategory" ? "rotated" : ""
+                }`}></i>
+            </div>
+          </li>
+          <ul
+            className={`submenu ${
+              openSubmenu === "contractmanage" ? "expanded" : "collapsed"
+            }`}>
+            <li
+              className={`submenu-item ${
+                isActive("/contractmanage") ? "active" : ""
+              }`}
+              onClick={() => {
+                navigate("/contractmanage");
+                setOpenSubmenu(null);
+              }}>
+              <i className="fa-solid fa-arrow-trend-up"></i> Contract Dashbord
+            </li>
+            </ul> */}
         </ul>
       </div>
     </div>

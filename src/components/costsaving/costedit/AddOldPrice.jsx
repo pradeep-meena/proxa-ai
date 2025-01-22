@@ -4,6 +4,8 @@ function AddOldPrice() {
   return (
     <div>
         
+    <div className='container'>
+      <h3>Add Old Price Edit Page</h3>
       <form className="row g-3">
   <div className="col-md-6">
     <label for="inputEmail4" className="form-label">Supplier Name</label>

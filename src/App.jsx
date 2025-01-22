@@ -33,6 +33,10 @@ import ContractDetails from "./components/contractmanage/ContractDetails";
 import RenewalRequestForm from "./components/renewalmanagement/RenewalRequestForm";
 import RenewalWebform from "./components/renewalmanagement/RenewalWebform";
 import DocumentPriview from "./components/contracttemplate/DocumentPriview";
+import SupplierEditPage from "./components/costsaving/costedit/SupplierEditPage";
+import SowEditPage from "./components/costsaving/costedit/SowEditPage";
+import AddOldPrice from "./components/costsaving/costedit/AddOldPrice";
+import PriceComparisonsform from "./components/costsaving/costedit/PriceComparisonsform";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
@@ -64,6 +68,7 @@ function App() {
             <Route path="/suppliercons" element={<SupplierConsolidation/>}/>
             <Route path="/serviceswo" element={<Servicesow/>}/>
             <Route path="/honoring" element={<HonoringOldPricing/>}/>
+            <Route path="/addoldpricehonering" element={<AddOldPrice/>}/>
             <Route path="/pricecomp" element={<PriceComparisons/>}/>
             <Route path="/approvalworkflow" element={<Aprovalwork/>}/>
             <Route path="/editrenewalnoti" element={<EditRenewal/>}/>
@@ -82,6 +87,12 @@ function App() {
             <Route path="/renewalform" element={<RenewalRequestForm/>}/>
             <Route path="/renewaldocument" element={<RenewalWebform/>}/>
             <Route path="/documentpre" element={<DocumentPriview/>}/>
+            <Route path="/supplieredit" element={<SupplierEditPage
+            />}/>
+            <Route path="/pricecomparisonsprice" element={<PriceComparisonsform
+            />}/>
+            {/* <Route path="/sowedit" element={<SowEditPage
+            />}/> */}
             
 
 

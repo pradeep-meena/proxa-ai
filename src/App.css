@@ -435,8 +435,8 @@ select.form-input {
 /* right-side-content start*/
 .right-side-content {
   width: 100%;
-  margin-top: 60px;
-  padding-left: 260px;
+  padding-top: 60px !important;
+  padding-left: 340px !important;
   background-color: #f2f2f2;
   height: 668px;
   overflow: scroll;
