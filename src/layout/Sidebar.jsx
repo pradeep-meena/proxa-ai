@@ -28,17 +28,44 @@ const Sidebar = ({ collapsed }) => {
           </li>
 
           {/* Intake Management Section */}
-          <li
-            className={`menu-item ${
-              isActive("/intakemanagement") ? "active" : ""
-            }`}>
+          <li className="menu-item">
             <div
               className="menu-link menu-i"
-              onClick={() => navigate("/intakemanagement")}>
-              <i className="fa-solid fa-list-check"></i>
+              onClick={() => toggleSubmenu("intakemanagement")}>
+              <i className="fa-solid fa-arrow-trend-up"></i>
               <span className="menu-text">Intake Management</span>
+              <i
+                className={`fa-solid fa-chevron-down submenu-arrow ${
+                  openSubmenu === "intakemanagement" ? "rotated" : ""
+                }`}></i>
             </div>
           </li>
+          <ul
+            className={`submenu ${
+              openSubmenu === "intakemanagement" ? "expanded" : "collapsed"
+            }`}>
+            <li
+              className={`submenu-item ${
+                isActive("/intakemanagement") ? "active" : ""
+              }`}
+              onClick={() => {
+                navigate("/intakemanagement");
+                setOpenSubmenu(null);
+              }}>
+              <i className="fa-solid fa-arrow-trend-up"></i> Intake Management Dashbord
+            </li>
+            <li
+              className={`submenu-item ${
+                isActive("/intakecateedit") ? "active" : ""
+              }`}
+              onClick={() => {
+                navigate("/intakecateedit");
+                setOpenSubmenu(null);
+              }}>
+              <i className="fa-solid fa-arrow-trend-up"></i>
+              Edit Category
+            </li>
+            </ul>
 
           {/* Contract Template Section */}
           <li

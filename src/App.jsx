@@ -41,6 +41,7 @@ import MultiYearEdit from "./components/costsaving/costedit/MultiYearEdit";
 import AditionalEditPage from "./components/costsaving/costedit/AditionalEditPage";
 import AddDepartmenet from "./components/Add Category/Sub Category/AddDepartmenet";
 import AddTransaction from "./components/Add Category/Sub Category/AddTransaction";
+import CategoryEditPage from "./components/intakemnagement/addcate/CategoryEditPage";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
@@ -74,6 +75,7 @@ function App() {
             <Route path="/intakemanagement" element={<IntakeManagement/>}/>
             <Route path="/intakenewreq" element={<CreateNewRequest/>}/>
             <Route path="/intakemyrequ" element={<Myrequest/>}/>
+            <Route path="/intakecateedit" element={<CategoryEditPage/>}/>
             {/* intakemanagement */}
             <Route path="/contracttemplate" element={<ContractTemplateSelection/>}/>
             <Route path="/costumeagent" element={<PathSelection/>}/>
