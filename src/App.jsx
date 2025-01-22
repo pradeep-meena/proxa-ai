@@ -42,6 +42,7 @@ import AditionalEditPage from "./components/costsaving/costedit/AditionalEditPag
 import AddDepartmenet from "./components/Add Category/Sub Category/AddDepartmenet";
 import AddTransaction from "./components/Add Category/Sub Category/AddTransaction";
 import CategoryEditPage from "./components/intakemnagement/addcate/CategoryEditPage";
+import CostOther from "./components/costsaving/CostOther";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
@@ -117,6 +118,8 @@ function App() {
             <Route path="/additionaledit" element={<AditionalEditPage/>}/>
             <Route path="/adddepartment" element={<AddDepartmenet/>}/>
              <Route path="/addtransaction" element={<AddTransaction/>}/>
+            <Route path="/others" element={<CostOther/>}/>
+            
           </Routes>
         </div>
         {/* right end  */}
