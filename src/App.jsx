@@ -54,15 +54,24 @@ function App() {
     {/* navbar */}
     {!hideLayout && <Navbar toggleSidebar={toggleSidebar} />}
     {/* navbar end */}
+    {/* sidebar start */}
       <div className={`main-content  ${hideLayout ? "" : ""}`}>
       {!hideLayout && <Sidebar collapsed={isSidebarCollapsed} />}
+    {/* sidebar end */}
+    {/* right side  */}
       <div className={`right-side-content ${isSidebarCollapsed ? "collapsed " : ""  }`} >
           <Routes>
+            {/* login signup */}
             <Route path="/" element={<Login/>}/>
+            {/* login signup */}
+            {/* dashbord */}
             <Route path="/dashboard" element={<Dashboard/>}/>
+            {/* dashbord */}
+            {/* intakemanagement */}
             <Route path="/intakemanagement" element={<IntakeManagement/>}/>
             <Route path="/intakenewreq" element={<CreateNewRequest/>}/>
             <Route path="/intakemyrequ" element={<Myrequest/>}/>
+            {/* intakemanagement */}
             <Route path="/contracttemplate" element={<ContractTemplateSelection/>}/>
             <Route path="/costumeagent" element={<PathSelection/>}/>
             <Route path="/volumedisc" element={<ValuDiscount/>}/>
@@ -101,6 +110,7 @@ function App() {
             
           </Routes>
         </div>
+        {/* right end  */}
       </div>
     </>
   );

@@ -13,6 +13,7 @@
 
 body {
   font-family: "Unbanist", sans-serif !important;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -261,7 +262,7 @@ select.form-input {
 
 @media (max-width: 768px) {
   .nav-brand {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .nav-taggle-icon {
@@ -331,107 +332,29 @@ select.form-input {
 }
 
 /* navbar end  */
-/* sidebar start  */
-/* .sidebar-container {
-  width: 250px;
-  background-color: white;
-  color: #fff;
-  height: 100vh;
-  overflow-y: auto;
-  transition: width 0.3s ease;
+/* right-side-content start*/
+.right-side-content {
+  width: 100%;
   margin-top: 85px;
-  z-index: 1;
-  position: fixed;
+  padding-left: 320px;
+  /* background-color: #f2f2f2; */
+  /* height: 668px; */
+  /* overflow: scroll; */
+  transition: padding-left 0.3s;
 }
 
-.sidebar-container.collapsed {
-  width: 80px;
+@media (max-width: 820px) {
+  .right-side-content.collapsed {
+    padding-left: 80px !important;
+  }
+
 }
 
-.sidebar-container.collapsed .submenu .submenu-item {
-  opacity: 0;
-  visibility: hidden;
+.right-side-content.collapsed {
+  padding-left: 40px;
 }
 
-.sidebar-container.collapsed .menu .menu-text {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.sidebar {
-  padding: 10px;
-}
-
-.menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-item {
-  margin-bottom: 10px;
-}
-
-.menu-link:hover {
-  color: #578E7E;
-}
-
-.menu-link {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  text-decoration: none;
-  color: #578E7E;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.menu-link:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.menu-text {
-  margin-left: 10px;
-}
-
-.submenu {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 20px;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.submenu.collapsed {
-  max-height: 0;
-  visibility: hidden;
-}
-
-.submenu.expanded {
-  max-height: 300px;
-  visibility: visible;
-}
-
-.submenu-item {
-  padding: 5px 0;
-  color: #bbb;
-  cursor: pointer;
-}
-
-.submenu-item:hover {
-  color: #fff;
-}
-
-.submenu-arrow {
-  margin-left: auto;
-  transition: transform 0.3s ease;
-}
-
-.submenu-arrow.rotated {
-  transform: rotate(90deg);
-} */
-
-/* sidebar end  */
+/* right-side-content end */
 /* dashbord */
 .dashboardcard {
   text-align: center;
