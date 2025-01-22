@@ -45,9 +45,12 @@ import CategoryEditPage from "./components/intakemnagement/addcate/CategoryEditP
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
+  const  menusidebarcollaps =()=>{
+    setIsSidebarCollapsed(true);
+  }
 
   const toggleSidebar = () => {
-    setIsSidebarCollapsed(!isSidebarCollapsed);
+    setIsSidebarCollapsed((prev) => !prev);
   };
   const location = useLocation();
 
@@ -60,7 +63,7 @@ function App() {
     {/* navbar end */}
     {/* sidebar start */}
       <div className={`main-content  ${hideLayout ? "" : ""}`}>
-      {!hideLayout && <Sidebar collapsed={isSidebarCollapsed} />}
+      {!hideLayout && <Sidebar collapsed={isSidebarCollapsed} menuItemClick={menusidebarcollaps}/>}
     {/* sidebar end */}
     {/* right side  */}
       <div className={`right-side-content ${isSidebarCollapsed ? "collapsed " : ""  }`} >

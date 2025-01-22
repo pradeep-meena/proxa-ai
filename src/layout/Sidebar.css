@@ -14,7 +14,7 @@
 }
 
 .sidebar-container.collapsed .submenu .submenu-item {
-  opacity: 0;
+  /* opacity: 0; */
   visibility: hidden;
 }
 .sidebar-container.collapsed .menu .menu-text {
@@ -71,6 +71,7 @@
   font-size: 17px;
   background-color: #fff9f1;
   font-weight: 700;
+  padding-left: 10px;
 }
 
 .submenu-item i {
@@ -97,3 +98,16 @@
   color: white; /* Active text color */
   border-radius: 12px;
 }
+.sidebar-container.collapsed .submenu .submenu-item i{
+  visibility: visible !important;
+  opacity: 1 !important;
+  padding-left: 0px !important;
+}
+
+.submenu-item.active {
+  background-color: #578E7E;
+  color: white;
+  border-radius: 12px;
+  padding-left: 20px;
+}
+
