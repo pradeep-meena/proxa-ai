@@ -72,54 +72,91 @@ function App() {
             {/* login signup */}
             <Route path="/" element={<Login/>}/>
             {/* login signup */}
+
             {/* dashbord */}
             <Route path="/dashboard" element={<Dashboard/>}/>
             {/* dashbord */}
+
             {/* intakemanagement */}
             <Route path="/intakemanagement" element={<IntakeManagement/>}/>
             <Route path="/intakenewreq" element={<CreateNewRequest/>}/>
             <Route path="/intakemyrequ" element={<Myrequest/>}/>
             <Route path="/intakecateedit" element={<CategoryEditPage/>}/>
             {/* intakemanagement */}
+
             {/* contracttemplate */}
             <Route path="/contracttemplate" element={<ContractTemplateSelection/>}/>
-            {/* contracttemplate */}
             <Route path="/costumeagent" element={<PathSelection/>}/>
+            {/* contracttemplate */}
+
+            {/* const saving */}
             <Route path="/volumedisc" element={<ValuDiscount/>}/>
             <Route path="/suppliercons" element={<SupplierConsolidation/>}/>
-            <Route path="/serviceswo" element={<Servicesow/>}/>
-            <Route path="/honoring" element={<HonoringOldPricing/>}/>
-            <Route path="/addoldpricehonering" element={<AddOldPrice/>}/>
-            <Route path="/pricecomp" element={<PriceComparisons/>}/>
-            <Route path="/approvalworkflow" element={<Aprovalwork/>}/>
-            <Route path="/editrenewalnoti" element={<EditRenewal/>}/>
-            <Route path="/renewalmanage" element={<Renewalmanagedash/>}/>
-            <Route path="/contractmanage" element={<Contractmanage/>}/>
-            <Route path="/addnewcontact" element={<AddNewContract/>}/>
-            <Route path="/vendorper" element={<VendorPerformanceManagement/>}/>
-            <Route path="/spendanalyt" element={<SpendAnalytics/>}/>
-            <Route path="/spenddetail" element={<SpendDetail/>}/>
-            <Route path="/multiyear" element={<MultiYearContracting/>}/>
-            <Route path="/multiyearedit" element={<MultiYearEdit/>}/>
-            <Route path="/additionalcomp" element={<AditionalComplementry/>}/>
-            <Route path="/contractapproval" element={<ContractapprovalWorkflow/>}/>
-            <Route path="/contractwearhouse" element={<AllContractWearehouse/>}/>
-            <Route path="/renewalnotifi" element={<NotificationPreferences/>}/>
-            <Route path="/contractdetail" element={<ContractDetails/>}/>
-            <Route path="/renewalform" element={<RenewalRequestForm/>}/>
-            <Route path="/renewaldocument" element={<RenewalWebform/>}/>
-            <Route path="/documentpre" element={<DocumentPriview/>}/>
             <Route path="/supplieredit" element={<SupplierEditPage
             />}/>
-            <Route path="/pricecomparisonsprice" element={<PriceComparisonsform
-            />}/>
+            <Route path="/serviceswo" element={<Servicesow/>}/>
             <Route path="/sowedit" element={<SowEditPage
             />}/> 
+            <Route path="/honoring" element={<HonoringOldPricing/>}/>
+            <Route path="/addoldpricehonering" element={<AddOldPrice/>}/>
+            <Route path="/additionalcomp" element={<AditionalComplementry/>}/>
             <Route path="/additionaledit" element={<AditionalEditPage/>}/>
+            <Route path="/pricecomp" element={<PriceComparisons/>}/>
+            <Route path="/pricecomparisonsprice" element={<PriceComparisonsform
+            />}/>
+            <Route path="/multiyear" element= {<MultiYearContracting/>}/>
+            <Route path="/multiyearedit" element={<MultiYearEdit/>}/>
+            <Route path="/others" element={<CostOther/>}/>
+            {/* const saving */}
+
+            {/* approval workflow */}
+            <Route path="/approvalworkflow" element=
+            {<Aprovalwork/>}/>
+            <Route path="/contractapproval" element={<ContractapprovalWorkflow/>}/>
+            {/* approval workflow */}
+
+            {/* renewal notification */}
+            <Route path="/renewalnotifi" element={<NotificationPreferences/>}/>
+            <Route path="/editrenewalnoti" element={<EditRenewal/>}/>
+            {/* renewal notification */}
+
+            {/* renewal management */}
+            <Route path="/renewalmanage" element={<Renewalmanagedash/>}/>
+            <Route path="/renewalform" element={<RenewalRequestForm/>}/>
+            <Route path="/renewaldocument" element={<RenewalWebform/>}/>
+            {/* renewal management */}
+
+            {/* contract management */}
+            <Route path="/contractmanage" element={<Contractmanage/>}/>
+            <Route path="/contractwearhouse" element={<AllContractWearehouse/>}/>
+            <Route path="/addnewcontact" element={<AddNewContract/>}/>
+            <Route path="/contractdetail" element={<ContractDetails/>}/>
+            {/* contract management */}
+
+            {/* vendorperformance */}
+            <Route path="/vendorper" element={<VendorPerformanceManagement/>}/>
+            {/* vendorperformance */}
+
+            {/* spend analytics */}
+            <Route path="/spendanalyt" element={<SpendAnalytics/>}/>
+            <Route path="/spenddetail" element={<SpendDetail/>}/>
+            {/* spend analytics */}
+
+            {/* add category sub category  */}
             <Route path="/adddepartment" element={<AddDepartmenet/>}/>
              <Route path="/addtransaction" element={<AddTransaction/>}/>
-            <Route path="/others" element={<CostOther/>}/>
+            {/* add category sub category  */}
             
+
+
+            
+
+
+
+
+            <Route path="/documentpre" element={<DocumentPriview/>}/>
+
+
           </Routes>
         </div>
         {/* right end  */}
