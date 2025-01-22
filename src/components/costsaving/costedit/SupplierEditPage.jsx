@@ -4,6 +4,7 @@ function SupplierEditPage() {
   return (
     <div className="supplier-edit-section my-5">
       <div className="container">
+        <h3>Supplier Edit</h3>
         <form className="row g-3 mt-4">
           <div className="col-md-6">
             <label className="form-label">Category Name </label>

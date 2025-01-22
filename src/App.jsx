@@ -87,6 +87,7 @@ function App() {
             {/* contracttemplate */}
             <Route path="/contracttemplate" element={<ContractTemplateSelection/>}/>
             <Route path="/costumeagent" element={<PathSelection/>}/>
+            <Route path="/documentpre" element={<DocumentPriview/>}/>
             {/* contracttemplate */}
 
             {/* const saving */}
@@ -146,16 +147,6 @@ function App() {
             <Route path="/adddepartment" element={<AddDepartmenet/>}/>
              <Route path="/addtransaction" element={<AddTransaction/>}/>
             {/* add category sub category  */}
-            
-
-
-            
-
-
-
-
-            <Route path="/documentpre" element={<DocumentPriview/>}/>
-
 
           </Routes>
         </div>
