@@ -37,6 +37,7 @@ import SupplierEditPage from "./components/costsaving/costedit/SupplierEditPage"
 import SowEditPage from "./components/costsaving/costedit/SowEditPage";
 import AddOldPrice from "./components/costsaving/costedit/AddOldPrice";
 import PriceComparisonsform from "./components/costsaving/costedit/PriceComparisonsform";
+import MultiYearEdit from "./components/costsaving/costedit/MultiYearEdit";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
@@ -79,6 +80,7 @@ function App() {
             <Route path="/spendanalyt" element={<SpendAnalytics/>}/>
             <Route path="/spenddetail" element={<SpendDetail/>}/>
             <Route path="/multiyear" element={<MultiYearContracting/>}/>
+            <Route path="/multiyearedit" element={<MultiYearEdit/>}/>
             <Route path="/additionalcomp" element={<AditionalComplementry/>}/>
             <Route path="/contractapproval" element={<ContractapprovalWorkflow/>}/>
             <Route path="/contractwearhouse" element={<AllContractWearehouse/>}/>

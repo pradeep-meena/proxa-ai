@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 const Servicesow = () => {
   return (
     <>
+    <div className="service-sow-edit-section">
     <div className="container my-5">
   <div className="top d-flex flex-wrap justify-content-between align-items-center">
     <div className="heading">
@@ -177,6 +178,7 @@ const Servicesow = () => {
     </ul>
   </nav>
 </div>
+    </div>
     </>
   )
 }

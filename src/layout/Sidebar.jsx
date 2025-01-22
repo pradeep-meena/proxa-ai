@@ -267,12 +267,12 @@ const Sidebar = ({ collapsed }) => {
               <span className="menu-text">Spend Analytics</span>
             </div>
           </li>
-          {/* <li className="menu-item">
+          <li className="menu-item">
             <div
               className="menu-link menu-i"
               onClick={() => toggleSubmenu("addcategory")}>
               <i className="fa-solid fa-arrow-trend-up"></i>
-              <span className="menu-text">Add Category</span>
+              <span className="menu-text">Add Category/Sub Category</span>
               <i
                 className={`fa-solid fa-chevron-down submenu-arrow ${
                   openSubmenu === "addcategory" ? "rotated" : ""
@@ -293,7 +293,7 @@ const Sidebar = ({ collapsed }) => {
               }}>
               <i className="fa-solid fa-arrow-trend-up"></i> Contract Dashbord
             </li>
-            </ul> */}
+            </ul>
         </ul>
       </div>
     </div>
