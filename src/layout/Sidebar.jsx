@@ -11,7 +11,15 @@ const Sidebar = ({ collapsed }) => {
     setOpenSubmenu((prev) => (prev === menuName ? null : menuName));
   };
 
-  const isActive = (path) => location.pathname === path;
+   // Function to check if a path is active
+   const isActive = (path) => {
+    return location.pathname === path;
+  };
+
+    // Function to check if any of the submenu items are active
+    const isSubmenuActive = (paths) => {
+      return paths.some((path) => location.pathname.startsWith(path));
+    };
 
   return (
     <div className={`sidebar-container ${collapsed ? "collapsed" : ""}`}>
@@ -28,45 +36,29 @@ const Sidebar = ({ collapsed }) => {
           </li>
 
           {/* Intake Management Section */}
-          <li className="menu-item">
-            <div
-              className="menu-link menu-i"
-              onClick={() => toggleSubmenu("intakemanagement")}>
-              <i className="fa-solid fa-arrow-trend-up"></i>
+          <li className={`menu-item ${isSubmenuActive(["/intakemanagement", "/intakecateedit"]) ? "active" : ""}`}>
+            <div className="menu-link menu-i" onClick={() => toggleSubmenu("intakemanagement")}>
+              <i className="fa-solid fa-list-check"></i>
               <span className="menu-text">Intake Management</span>
-              <i
-                className={`fa-solid fa-chevron-down submenu-arrow ${
-                  openSubmenu === "intakemanagement" ? "rotated" : ""
-                }`}></i>
+              <i className={`fa-solid fa-chevron-down submenu-arrow ${openSubmenu === "intakemanagement" ? "rotated" : ""}`}></i>
             </div>
           </li>
-          <ul
-            className={`submenu ${
-              openSubmenu === "intakemanagement" ? "expanded" : "collapsed"
-            }`}>
-            <li
-              className={`submenu-item ${
-                isActive("/intakemanagement") ? "active" : ""
-              }`}
+          <ul className={`submenu ${openSubmenu === "intakemanagement" ? "expanded" : "collapsed"}`}>
+            <li className={`submenu-item ${isActive("/intakemanagement") ? "active" : ""}`}
               onClick={() => {
                 navigate("/intakemanagement");
                 setOpenSubmenu(null);
               }}>
-              <i className="fa-solid fa-arrow-trend-up"></i> Intake Management Dashbord
+              <i className="fa-solid fa-arrow-trend-up"></i> Intake Management Dashboard
             </li>
-            <li
-              className={`submenu-item ${
-                isActive("/intakecateedit") ? "active" : ""
-              }`}
+            <li className={`submenu-item ${isActive("/intakecateedit") ? "active" : ""}`}
               onClick={() => {
                 navigate("/intakecateedit");
                 setOpenSubmenu(null);
               }}>
-              <i className="fa-solid fa-arrow-trend-up"></i>
-              Edit Category
+              <i className="fa-solid fa-arrow-trend-up"></i> Edit Category
             </li>
-            </ul>
-
+          </ul>
           {/* Contract Template Section */}
           <li
             className={`menu-item ${
@@ -81,7 +73,7 @@ const Sidebar = ({ collapsed }) => {
           </li>
 
           {/* Cost Saving Opportunities Section */}
-          <li className="menu-item">
+          <li className={`menu-item ${isSubmenuActive(["/volumedisc","/suppliercons","/serviceswo","/honoring","/additionalcomp","/pricecomp","/multiyear","/others"]) ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
               onClick={() => toggleSubmenu("costSaving")}>
@@ -225,11 +217,11 @@ const Sidebar = ({ collapsed }) => {
 
           {/* Contract Management Section */}
 
-          <li className="menu-item">
+          <li className={`menu-item ${isSubmenuActive(["/contractmanage","/contractwearhouse","/addnewcontact"]) ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
               onClick={() => toggleSubmenu("contractmanage")}>
-              <i className="fa-solid fa-arrow-trend-up"></i>
+              <i className="fa-solid fa-file-contract"></i>
               <span className="menu-text">Contract Management</span>
               <i
                 className={`fa-solid fa-chevron-down submenu-arrow ${
@@ -295,7 +287,7 @@ const Sidebar = ({ collapsed }) => {
             </div>
           </li>
           {/* Add category and Sub Category */}
-          <li className="menu-item">
+          <li className={`menu-item ${isSubmenuActive(["/adddepartment","/addtransaction"]) ? "active" : ""}`}>
             <div
               className="menu-link menu-i"
               onClick={() => toggleSubmenu("addcategory")}>
