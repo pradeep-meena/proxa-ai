@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 const Login = () => {
   const [showSignUp, setShowSignUp] = useState(false);
 
@@ -96,14 +97,14 @@ const Login = () => {
                 <input
                   type="text"
                   placeholder="City *"
-                  className="form-input"
+                  className="form-input "
                 />
               </div>
-              <div className="form-row">
+              <div className="form-row ">
                 <input
                   type="text"
                   placeholder="State *"
-                  className="form-input"
+                  className="form-input "
                 />
                 <input
                   type="text"
@@ -125,7 +126,7 @@ const Login = () => {
                   className="form-input"
                 />
               </div>
-              <div className="form-row">
+              <div className="form-row ">
                 <input
                   type="password"
                   placeholder="Confirm Password *"
@@ -135,14 +136,14 @@ const Login = () => {
               <div className="d-flex">
                 <button
                   type="submit"
-                  className="px-4 py-2 ms-1 btn-primary shadow">
+                  className="px-4 py-2 ms-1 btn-primary shadow" style={{border:'none'}}>
                   Sign Up
                 </button>
                 <button
                   type="button"
                   onClick={toggleForm}
-                  className="px-4 py-2 ms-4 btn-outline-secondary">
-                  Back to Login
+                  className="px-4 py-2 ms-4 "style={{border:'2px solid #578e7e', color:'#578e7e'}}>
+                   Login
                 </button>
               </div>
             </form>

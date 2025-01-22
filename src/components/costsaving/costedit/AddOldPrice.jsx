@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AddOldPrice() {
   return (
@@ -52,13 +53,16 @@ function AddOldPrice() {
             </div>
 
             <div className="col-12">
-              <button
+             <Link to="/honoring">
+             
+             <button
                 type="submit"
                 className="btn "
                 style={{ backgroundColor: "#578e7e", color: "white" }}
               >
                 Submit
               </button>
+              </Link>
             </div>
           </form>
         </div>

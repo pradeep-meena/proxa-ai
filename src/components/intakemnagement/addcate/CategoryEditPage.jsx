@@ -5,6 +5,7 @@ function CategoryEditPage() {
     <>
       <div className="cateedit-section my-5">
         <div className="container">
+          <h3>Add Category</h3>
           <form className="row g-3">
             <div className="col-md-6">
               <label className="form-label">Category Name </label>
@@ -32,6 +33,15 @@ function CategoryEditPage() {
                 id="inputAddress"
                 placeholder="Category type"
               />
+            </div>
+            <div className="col-12">
+              <button
+                type="submit"
+                className="btn "
+                style={{ backgroundColor: "#578e7e", color: "white" }}
+              >
+                Submit
+              </button>
             </div>
           </form>
         </div>

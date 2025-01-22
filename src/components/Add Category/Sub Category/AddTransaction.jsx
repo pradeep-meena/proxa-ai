@@ -90,8 +90,12 @@ function AddTransaction() {
               />
             </div>
             <div className="col-12">
-              <button type="submit" className="btn btn-primary">
-                Sign in
+              <button
+                type="submit"
+                className="btn "
+                style={{ backgroundColor: "#578e7e", color: "white" }}
+              >
+                Submit
               </button>
             </div>
           </form>
