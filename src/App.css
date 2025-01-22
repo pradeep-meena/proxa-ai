@@ -27,22 +27,41 @@ li {
 
 /* login */
 main {
-  position: relative;
+  position: fixed;
   top: 61px;
-  left: 200px;
+  left: 535px;
   width: 100vh;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and  (max-width: 365px) {
   main {
-    top: 126px;
-    left: 15px;
-    width: 45vh;
-    height: 50vh;
+    top: -30px;
+    left: -326px;
+    width: 60vh;
+    /* height: 100vh; */
+    position: relative;
+  }
+
+}
+@media (min-width: 375px) and  (max-width: 768px) {
+  main {
+    top: 15px;
+    left: 40px;
+    width: auto;
+    height: 25vh;
     position: fixed;
   }
 
+}
+@media (min-width: 768px) and (max-width: 884px){
+  main {
+    top: 220px !important;
+    left: 150px !important;
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
 }
 
 .login-container {
@@ -948,8 +967,4 @@ select.form-input {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-
-
-/* Login css*/
-
 
