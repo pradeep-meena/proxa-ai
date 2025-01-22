@@ -267,6 +267,7 @@ const Sidebar = ({ collapsed }) => {
               <span className="menu-text">Spend Analytics</span>
             </div>
           </li>
+          {/* Add category and Sub Category */}
           <li className="menu-item">
             <div
               className="menu-link menu-i"
@@ -281,17 +282,27 @@ const Sidebar = ({ collapsed }) => {
           </li>
           <ul
             className={`submenu ${
-              openSubmenu === "contractmanage" ? "expanded" : "collapsed"
+              openSubmenu === "addcategory" ? "expanded" : "collapsed"
             }`}>
             <li
               className={`submenu-item ${
-                isActive("/contractmanage") ? "active" : ""
+                isActive("/adddepartment") ? "active" : ""
               }`}
               onClick={() => {
-                navigate("/contractmanage");
+                navigate("/adddepartment");
                 setOpenSubmenu(null);
               }}>
-              <i className="fa-solid fa-arrow-trend-up"></i> Contract Dashbord
+              <i className="fa-solid fa-arrow-trend-up"></i> Add Department
+            </li>
+            <li
+              className={`submenu-item ${
+                isActive("/addtransaction") ? "active" : ""
+              }`}
+              onClick={() => {
+                navigate("/addtransaction");
+                setOpenSubmenu(null);
+              }}>
+              <i className="fa-solid fa-arrow-trend-up"></i> Add Transaction
             </li>
             </ul>
         </ul>

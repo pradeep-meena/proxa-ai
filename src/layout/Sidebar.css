@@ -92,29 +92,6 @@
 .submenu-arrow.rotated {
   transform: rotate(360deg);
 }
-/* right-side-content start*/
-.right-side-content {
-  width: 100%;
-  margin-top: 85px;
-  padding-left: 320px;
-  background-color: #f2f2f2;
-  height: 668px;
-  overflow: scroll;
-  transition: padding-left 0.3s;
-}
-
-@media (max-width: 768px) {
-  .right-side-content.collapsed {
-    padding-left: 80px !important;
-  }
-
-}
-
-.right-side-content.collapsed {
-  padding-left: 40px;
-}
-
-/* right-side-content end */
 .menu-item.active .menu-link {
   background-color: #578E7E; /* Highlight active menu item */
   color: white; /* Active text color */

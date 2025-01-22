@@ -46,7 +46,7 @@ function MultiYearContracting() {
                 fontSize: "1.2rem",
               }}
             >
-              <div className="content d-flex justify-content-start align-items-center p-3">
+              <div className="content d-flex justify-content-start align-items-center p-2">
                 <div className="icon">
                   <i
                     className="fa-regular fa-user rounded-circle p-3"
@@ -73,7 +73,7 @@ function MultiYearContracting() {
                 fontSize: "1.2rem",
               }}
             >
-              <div className="content d-flex justify-content-start align-items-center p-3">
+              <div className="content d-flex justify-content-start align-items-center p-2">
                 <div className="icon">
                   <i
                     className="fa-regular fa-user rounded-circle p-3"
