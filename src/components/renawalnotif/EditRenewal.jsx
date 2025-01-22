@@ -167,7 +167,7 @@ function      EditRenewal() {
       </h4>
       <div
         className="border p-3 shadow-sm"
-        style={{ height: "295px", overflowY: "scroll", position: "relative" }}
+        style={{ height: "290px", overflowY: "scroll", position: "relative" }}
       >
         {image ? (
           <img
