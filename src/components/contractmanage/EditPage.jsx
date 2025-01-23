@@ -12,7 +12,7 @@ function EditPage() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter YOur Id"
+                placeholder="Enter Your Id"
               />
             </div>
             <div className="col-md-6">
@@ -20,7 +20,7 @@ function EditPage() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Entar YOur Department"
+                placeholder="Entar Your Department"
               />
             </div>
             <div className="col-6">

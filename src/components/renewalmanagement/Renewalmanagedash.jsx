@@ -318,7 +318,6 @@ const Renewalmanagedash = () => {
                       <tr>
                         <td>001</td>
                         <td>Supplier X</td>
-                        <td>Description...</td>
                         <td>Procurement</td>
                         <td>2024-12-18</td>
                         <td>2024-12-20</td>
