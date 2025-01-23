@@ -15,7 +15,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 function MultiYearContracting() {
   return (
-    <div className="container my-5">
+    <div className="container">
       {/* Header Section */}
       <div className="mb-4 text-start">
         <div className="d-flex justify-content-between">  

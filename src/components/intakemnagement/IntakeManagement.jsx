@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const IntakeManagement = () => {
   return (
     <>
-        <div className="container mt-5">
+        <div className="container">
     <div className="top d-flex flex-wrap justify-content-between align-items-center">
       <div className="heading">
         <h3 className="mb-3 fw-bold">

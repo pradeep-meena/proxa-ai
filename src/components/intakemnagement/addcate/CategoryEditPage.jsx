@@ -3,7 +3,7 @@ import React from "react";
 function CategoryEditPage() {
   return (
     <>
-      <div className="cateedit-section my-5">
+      <div className="cateedit-section">
         <div className="container">
           <h3>Add Category</h3>
           <form className="row g-3">

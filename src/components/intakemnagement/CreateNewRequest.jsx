@@ -267,6 +267,10 @@ const CreateNewRequest = () => {
               <option value="">Choose Your Contact</option>
             </select>
           </div>
+          <div className="col-md-4 mb-3">
+            <input 
+             type="text"  id="name" placeholder="Supplier Name" className="form-control p-3" />
+          </div>
            </div>
            
         <div className="row mb-3">

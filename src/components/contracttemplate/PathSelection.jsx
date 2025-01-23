@@ -2,7 +2,7 @@ import React from "react";
 
 function PathSelection() {
   return (
-    <div style={{paddingLeft:"20px"}} className="container my-5">
+    <div style={{paddingLeft:"20px"}} className="container">
       {/* Header Section */}
       <div className="mb-4">
         <h1

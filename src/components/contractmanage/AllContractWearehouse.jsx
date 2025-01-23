@@ -50,7 +50,7 @@ const AllContractWearehouse = () => {
 
   return (
     <>
-      <div className="container my-5">
+      <div className="container">
         <div className="top d-flex flex-wrap justify-content-between align-items-center">
           <div className="heading">
             <h2 className="mb-3 fw-bold">All Contract warehouse</h2>

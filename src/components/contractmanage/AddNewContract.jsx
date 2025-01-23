@@ -137,6 +137,14 @@ const AddNewContract = () => {
             />
           </div>
         </div>
+        <div className="row mb-3 ">
+          <div className="col-md-4 mb-3">
+            <input
+              type="text"
+              placeholder="Supplier Name"
+              className="form-control p-3"
+            />
+          </div> </div>
 
         {/* Financial Details */}
         <h5

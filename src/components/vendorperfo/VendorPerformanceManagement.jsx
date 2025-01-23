@@ -16,7 +16,7 @@ const VendorPerformanceManagement = () => {
   </p>
 
   {/* Search Bar */}
-  <div className="d-flex align-items-center">
+  <div className="d-column align-items-center">
     <input
       type="text"
       className="form-control"
@@ -27,7 +27,8 @@ const VendorPerformanceManagement = () => {
       }}
     />
 
-    {/* Dropdown */}
+    <button className="p-2 rounded"style={{backgroundColor:'#578e7e',color:'white' ,Width: "350px",
+        marginRight: "10px",marginTop:'10px',border:'none'}}>Add Supplier</button>
    
   </div>
 </div>
