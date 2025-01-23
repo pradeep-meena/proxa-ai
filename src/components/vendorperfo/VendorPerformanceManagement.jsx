@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const VendorPerformanceManagement = () => {
   return (
     <div className="container mt-5">
@@ -26,10 +26,10 @@ const VendorPerformanceManagement = () => {
         marginRight: "10px",
       }}
     />
-
-    <button className="p-2 rounded"style={{backgroundColor:'#578e7e',color:'white' ,Width: "350px",
-        marginRight: "10px",marginTop:'10px',border:'none'}}>Add Supplier</button>
-   
+       
+     <Link to="/supplieredit">
+        <button className="p-2 rounded mt-3"style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Supplier</button>
+        </Link>
   </div>
 </div>
 

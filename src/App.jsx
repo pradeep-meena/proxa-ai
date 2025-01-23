@@ -14,7 +14,7 @@ import HonoringOldPricing from "./components/costsaving/HonoringOldPricing";
 import PriceComparisons from "./components/costsaving/PriceComparisons";
 import Aprovalwork from "./components/approvalworkflo/Aprovalwork";
 import EditRenewal from "./components/renawalnotif/EditRenewal";
-import Renewalmanagedash from "./components/renewalmanagement/renewalmanagedash";
+import Renewalmanagedash from "./components/renewalmanagement/Renewalmanagedash";
 import Contractmanage from "./components/contractmanage/Contractmanage";
 import VendorPerformanceManagement from "./components/vendorperfo/VendorPerformanceManagement";
 import SpendAnalytics from "./components/spendanalytics/SpendAnalytics";
@@ -43,6 +43,7 @@ import AddDepartmenet from "./components/Add Category/Sub Category/AddDepartmene
 import AddTransaction from "./components/Add Category/Sub Category/AddTransaction";
 import CategoryEditPage from "./components/intakemnagement/addcate/CategoryEditPage";
 import CostOther from "./components/costsaving/CostOther";
+import EditPage from "./components/contractmanage/EditPAge";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -143,10 +144,8 @@ function App() {
 
             {/* contract management */}
             <Route path="/contractmanage" element={<Contractmanage />} />
-            <Route
-              path="/contractwearhouse"
-              element={<AllContractWearehouse />}
-            />
+            <Route path="/editpage" element={<EditPage/>}/>
+            <Route  path="/contractwearhouse" element={<AllContractWearehouse />}/>
             <Route path="/addnewcontact" element={<AddNewContract />} />
             <Route path="/contractdetail" element={<ContractDetails />} />
             {/* contract management */}

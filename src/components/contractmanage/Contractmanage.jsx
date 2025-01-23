@@ -235,12 +235,14 @@ const Contractmanage = () => {
                     <button
                       style={{ border: "none", backgroundColor: "transparent" }}
                     >
-                      <i
+                <Link to="/editpage">
+                     <i
                         className="fa-regular fa-pen-to-square me-2"
                         style={{ color: "#624de3" }}
                         data-bs-placement="top"
                         title="Edit"
                       />
+                  </Link>
                       <i
                         className="fa-regular fa-eye approvalicon me-2"
                         style={{ color: "#0d99ff" }}
