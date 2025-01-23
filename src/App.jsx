@@ -45,10 +45,10 @@ import CategoryEditPage from "./components/intakemnagement/addcate/CategoryEditP
 import CostOther from "./components/costsaving/CostOther";
 
 function App() {
-  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState (false);
-  const  menusidebarcollaps =()=>{
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+  const menusidebarcollaps = () => {
     setIsSidebarCollapsed(true);
-  }
+  };
 
   const toggleSidebar = () => {
     setIsSidebarCollapsed((prev) => !prev);
@@ -58,96 +58,116 @@ function App() {
   const hideLayout = location.pathname === "/";
   return (
     <>
-
-    {/* navbar */}
-    {!hideLayout && <Navbar toggleSidebar={toggleSidebar} />}
-    {/* navbar end */}
-    {/* sidebar start */}
+      {/* navbar */}
+      {!hideLayout && <Navbar toggleSidebar={toggleSidebar} />}
+      {/* navbar end */}
+      {/* sidebar start */}
       <div className={`main-content  ${hideLayout ? "" : ""}`}>
-      {!hideLayout && <Sidebar collapsed={isSidebarCollapsed} menuItemClick={menusidebarcollaps}/>}
-    {/* sidebar end */}
-    {/* right side  */}
-      <div className={`right-side-content ${isSidebarCollapsed ? "collapsed " : ""  }`} >
+        {!hideLayout && (
+          <Sidebar
+            collapsed={isSidebarCollapsed}
+            menuItemClick={menusidebarcollaps}
+          />
+        )}
+        {/* sidebar end */}
+        {/* right side  */}
+        <div
+          className={`right-side-content ${
+            isSidebarCollapsed ? "collapsed " : ""
+          }`}>
           <Routes>
             {/* login signup */}
-            <Route path="/" element={<Login/>}/>
+            <Route path="/" element={<Login />} />
             {/* login signup */}
 
             {/* dashbord */}
-            <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/dashboard" element={<Dashboard />} />
             {/* dashbord */}
 
             {/* intakemanagement */}
-            <Route path="/intakemanagement" element={<IntakeManagement/>}/>
-            <Route path="/intakenewreq" element={<CreateNewRequest/>}/>
-            <Route path="/intakemyrequ" element={<Myrequest/>}/>
-            <Route path="/intakecateedit" element={<CategoryEditPage/>}/>
+            <Route path="/intakemanagement" element={<IntakeManagement />} />
+            <Route path="/intakenewreq" element={<CreateNewRequest />} />
+            <Route path="/intakemyrequ" element={<Myrequest />} />
+            <Route path="/intakecateedit" element={<CategoryEditPage />} />
             {/* intakemanagement */}
 
             {/* contracttemplate */}
-            <Route path="/contracttemplate" element={<ContractTemplateSelection/>}/>
-            <Route path="/costumeagent" element={<PathSelection/>}/>
-            <Route path="/documentpre" element={<DocumentPriview/>}/>
+            <Route
+              path="/contracttemplate"
+              element={<ContractTemplateSelection />}
+            />
+            <Route path="/costumeagent" element={<PathSelection />} />
+            <Route path="/documentpre" element={<DocumentPriview />} />
             {/* contracttemplate */}
 
             {/* const saving */}
-            <Route path="/volumedisc" element={<ValuDiscount/>}/>
-            <Route path="/suppliercons" element={<SupplierConsolidation/>}/>
-            <Route path="/supplieredit" element={<SupplierEditPage
-            />}/>
-            <Route path="/serviceswo" element={<Servicesow/>}/>
-            <Route path="/sowedit" element={<SowEditPage
-            />}/> 
-            <Route path="/honoring" element={<HonoringOldPricing/>}/>
-            <Route path="/addoldpricehonering" element={<AddOldPrice/>}/>
-            <Route path="/additionalcomp" element={<AditionalComplementry/>}/>
-            <Route path="/additionaledit" element={<AditionalEditPage/>}/>
-            <Route path="/pricecomp" element={<PriceComparisons/>}/>
-            <Route path="/pricecomparisonsprice" element={<PriceComparisonsform
-            />}/>
-            <Route path="/multiyear" element= {<MultiYearContracting/>}/>
-            <Route path="/multiyearedit" element={<MultiYearEdit/>}/>
-            <Route path="/others" element={<CostOther/>}/>
+            <Route path="/volumedisc" element={<ValuDiscount />} />
+            <Route path="/suppliercons" element={<SupplierConsolidation />} />
+            <Route path="/supplieredit" element={<SupplierEditPage />} />
+            <Route path="/serviceswo" element={<Servicesow />} />
+            <Route path="/sowedit" element={<SowEditPage />} />
+            <Route path="/honoring" element={<HonoringOldPricing />} />
+            <Route path="/addoldpricehonering" element={<AddOldPrice />} />
+            <Route path="/additionalcomp" element={<AditionalComplementry />} />
+            <Route path="/additionaledit" element={<AditionalEditPage />} />
+            <Route path="/pricecomp" element={<PriceComparisons />} />
+            <Route
+              path="/pricecomparisonsprice"
+              element={<PriceComparisonsform />}
+            />
+            <Route path="/multiyear" element={<MultiYearContracting />} />
+            <Route path="/multiyearedit" element={<MultiYearEdit />} />
+            <Route path="/others" element={<CostOther />} />
             {/* const saving */}
 
             {/* approval workflow */}
-            <Route path="/approvalworkflow" element=
-            {<Aprovalwork/>}/>
-            <Route path="/contractapproval" element={<ContractapprovalWorkflow/>}/>
+            <Route path="/approvalworkflow" element={<Aprovalwork />} />
+            <Route
+              path="/contractapproval"
+              element={<ContractapprovalWorkflow />}
+            />
             {/* approval workflow */}
 
             {/* renewal notification */}
-            <Route path="/renewalnotifi" element={<NotificationPreferences/>}/>
-            <Route path="/editrenewalnoti" element={<EditRenewal/>}/>
+            <Route
+              path="/renewalnotifi"
+              element={<NotificationPreferences />}
+            />
+            <Route path="/editrenewalnoti" element={<EditRenewal />} />
             {/* renewal notification */}
 
             {/* renewal management */}
-            <Route path="/renewalmanage" element={<Renewalmanagedash/>}/>
-            <Route path="/renewalform" element={<RenewalRequestForm/>}/>
-            <Route path="/renewaldocument" element={<RenewalWebform/>}/>
+            <Route path="/renewalmanage" element={<Renewalmanagedash />} />
+            <Route path="/renewalform" element={<RenewalRequestForm />} />
+            <Route path="/renewaldocument" element={<RenewalWebform />} />
             {/* renewal management */}
 
             {/* contract management */}
-            <Route path="/contractmanage" element={<Contractmanage/>}/>
-            <Route path="/contractwearhouse" element={<AllContractWearehouse/>}/>
-            <Route path="/addnewcontact" element={<AddNewContract/>}/>
-            <Route path="/contractdetail" element={<ContractDetails/>}/>
+            <Route path="/contractmanage" element={<Contractmanage />} />
+            <Route
+              path="/contractwearhouse"
+              element={<AllContractWearehouse />}
+            />
+            <Route path="/addnewcontact" element={<AddNewContract />} />
+            <Route path="/contractdetail" element={<ContractDetails />} />
             {/* contract management */}
 
             {/* vendorperformance */}
-            <Route path="/vendorper" element={<VendorPerformanceManagement/>}/>
+            <Route
+              path="/vendorper"
+              element={<VendorPerformanceManagement />}
+            />
             {/* vendorperformance */}
 
             {/* spend analytics */}
-            <Route path="/spendanalyt" element={<SpendAnalytics/>}/>
-            <Route path="/spenddetail" element={<SpendDetail/>}/>
+            <Route path="/spendanalyt" element={<SpendAnalytics />} />
+            <Route path="/spenddetail" element={<SpendDetail />} />
             {/* spend analytics */}
 
             {/* add category sub category  */}
-            <Route path="/adddepartment" element={<AddDepartmenet/>}/>
-             <Route path="/addtransaction" element={<AddTransaction/>}/>
+            <Route path="/adddepartment" element={<AddDepartmenet />} />
+            <Route path="/addtransaction" element={<AddTransaction />} />
             {/* add category sub category  */}
-
           </Routes>
         </div>
         {/* right end  */}
@@ -156,5 +176,3 @@ function App() {
   );
 }
 export default App;
-
-
