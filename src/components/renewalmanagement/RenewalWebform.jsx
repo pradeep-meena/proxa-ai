@@ -17,7 +17,7 @@ const RenewalWebform = () => {
     setContent(event.target.value);
   };
   return (
-    <div className="container my-5">
+    <div className="container">
       <h2 className="text-start mb-4">Renewal Webform with Document Preview</h2>
       <div className="row">
         {/* Left Side - Form */}

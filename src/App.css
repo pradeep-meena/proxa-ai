@@ -2,7 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
-
+.container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 @font-face {
   font-family: 'Unbanist';
   src: url('path-to-your-font/Unbanist.woff2') format('woff2'),

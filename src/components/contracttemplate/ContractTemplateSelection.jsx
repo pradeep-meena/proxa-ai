@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ContractTemplateSelection() {
   return (
-    <div className="container my-5" style={{height:'100vh'}}>
+    <div className="container" style={{height:'100vh'}}>
       {/* Header Section */}
       <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
         {/* Left Side Content */}

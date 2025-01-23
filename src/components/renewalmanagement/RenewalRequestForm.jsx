@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const RenewalRequestForm = () => {
   return (
     <>
-        <div className="container my-5">
+        <div className="container">
   <h3 className="mb-4 fw-semibold">Renewal Request Form</h3>
   <div className="row">
     <div className="col-md-4">

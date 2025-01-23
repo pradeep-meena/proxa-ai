@@ -166,7 +166,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="container my-5">
+    <div className="container">
      <>
   {/* Hello world */}
   <div className="row text-center mb-4 mt-4">

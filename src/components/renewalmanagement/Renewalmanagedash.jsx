@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Renewalmanagedash = () => {
   return (
     <>
-      <div className="container my-5">
+      <div className="container">
         <div className="renual-top">
           <h3 className="mb-4 fw-bold">Renewals Dashboard</h3>
         </div>

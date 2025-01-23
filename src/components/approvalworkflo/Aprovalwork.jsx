@@ -48,7 +48,7 @@ const ApprovalWork = () => {
 
   return (
     <>
-      <div className="container my-5">
+      <div className="container">
         <h3 className="mb-4 fw-bold">Approval Requests</h3>
         <div className="table-responsive">
           <table className="table table-bordered text-center align-middle table-striped">
