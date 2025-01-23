@@ -107,7 +107,7 @@ function MultiYearContracting() {
           <thead className="table-light">
             <tr>
               <th>Vendor Name</th>
-              <th>Supplier </th>
+              <th>Supplier Name </th>
               <th>Current Contract Duration</th>
               <th>Multi-Year Proposal</th>
               <th>Saving Estimate</th>

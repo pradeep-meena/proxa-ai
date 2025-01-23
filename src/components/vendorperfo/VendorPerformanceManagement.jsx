@@ -27,7 +27,7 @@ const VendorPerformanceManagement = () => {
       }}
     />
        
-     <Link to="/supplieredit">
+     <Link to="/vendorcom">
         <button className="p-2 rounded mt-3"style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Add Supplier</button>
         </Link>
   </div>

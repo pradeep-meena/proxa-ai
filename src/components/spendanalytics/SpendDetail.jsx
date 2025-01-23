@@ -89,6 +89,17 @@ const SpendDetail = () => {
   <div className="selection">
     <h5 style={{ borderBottom: "2px solid" }}>Filters</h5>
     <div className="row mt-3">
+    <div className="col-md-4">
+        <select
+          className="form-select p-3 mt-3"
+          aria-label="Default select example"
+        >
+          <option selected="">Category</option>
+          <option value={1}>One</option>
+          <option value={2}>Two</option>
+          <option value={3}>Three</option>
+        </select>
+      </div>
       <div className="col-md-4">
         <select
           className="form-select p-3 mt-3"
@@ -151,6 +162,7 @@ const SpendDetail = () => {
       <thead>
         <tr>
           <th>Date of Transaction</th>
+          <th>Supplier Name</th>
           <th>Vendor Name</th>
           <th>Department</th>
           <th>Category</th>
@@ -163,6 +175,7 @@ const SpendDetail = () => {
       <tbody>
         <tr>
           <td>2024-12-20</td>
+          <td>Supplier A</td>
           <td>John Doe</td>
           <td>IT</td>
           <td>Software Purchase</td>
@@ -173,6 +186,7 @@ const SpendDetail = () => {
         </tr>
         <tr>
           <td>2024-12-18</td>
+          <td>Supplier B</td>
           <td>Sarah Lee</td>
           <td>Marketing</td>
           <td>Vendor Service</td>
@@ -183,6 +197,7 @@ const SpendDetail = () => {
         </tr>
         <tr>
           <td>2024-12-20</td>
+          <td>Supplier C</td>
           <td>John Doe</td>
           <td>HR</td>
           <td>Software Purchase</td>
@@ -193,6 +208,7 @@ const SpendDetail = () => {
         </tr>
         <tr>
           <td>2024-12-18</td>
+          <td>Supplier D</td>
           <td>Sarah Lee</td>
           <td>Marketing</td>
           <td>Vendor Service</td>
@@ -203,6 +219,7 @@ const SpendDetail = () => {
         </tr>
         <tr>
           <td>2024-12-20</td>
+          <td>Supplier X</td>
           <td>John Doe</td>
           <td>IT</td>
           <td>Software Purchase</td>

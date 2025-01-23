@@ -44,6 +44,7 @@ import AddTransaction from "./components/Add Category/Sub Category/AddTransactio
 import CategoryEditPage from "./components/intakemnagement/addcate/CategoryEditPage";
 import CostOther from "./components/costsaving/CostOther";
 import EditPage from "./components/contractmanage/EditPAge";
+import VendorComparisons from "./components/vendorperfo/VendorComparisons";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -154,7 +155,9 @@ function App() {
             <Route
               path="/vendorper"
               element={<VendorPerformanceManagement />}
+              
             />
+            <Route path="/vendorcom" element={<VendorComparisons/>}/>
             {/* vendorperformance */}
 
             {/* spend analytics */}

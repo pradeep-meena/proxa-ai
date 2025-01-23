@@ -81,6 +81,7 @@ const Servicesow = () => {
        <thead>
         <tr>
           <th>Requesting Team/ Department</th>
+          <th>Supplier Name</th>
           <th>Requested Service/Tool</th>
           <th>
             Existing Suppliers Offering <br /> Similar Service
@@ -94,6 +95,7 @@ const Servicesow = () => {
       <tbody>
         <tr>
           <td>IT Department</td>
+          <td>Supplier 1</td>
           <td>Research Tools</td>
           <td>Supplier D</td>
           <td>$7,000</td>
@@ -101,6 +103,7 @@ const Servicesow = () => {
         </tr>
         <tr>
           <td>Marketing Team</td>
+          <td>Supplier 2</td>
           <td>Social Media Analytics</td>
           <td>Supplier D</td>
           <td>$7,000</td>
@@ -108,6 +111,7 @@ const Servicesow = () => {
         </tr>
         <tr>
           <td>IT Department</td>
+          <td>Supplier 3</td>
           <td>Research Tools</td>
           <td>Supplier D</td>
           <td>$7,000</td>
@@ -115,6 +119,7 @@ const Servicesow = () => {
         </tr>
         <tr>
           <td>Finance Team</td>
+          <td>Supplier 4</td>
           <td>Budget Management Tool</td>
           <td>Supplier E</td>
           <td>$7,000</td>
@@ -122,6 +127,7 @@ const Servicesow = () => {
         </tr>
         <tr>
           <td>Finance Team</td>
+          <td>Supplier 5</td>
           <td>Budget Management Tool</td>
           <td>Supplier D</td>
           <td>$7,000</td>

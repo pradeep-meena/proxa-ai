@@ -12,7 +12,7 @@ const Renewalmanagedash = () => {
             <thead className="table-light">
               <tr>
                 <th>Contract ID</th>
-                <th>Supplier </th>
+                <th>Supplier Name</th>
                 <th>Type</th>
                 <th>Start Date</th>
                 <th>End Date</th>

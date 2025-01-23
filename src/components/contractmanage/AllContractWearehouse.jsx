@@ -7,6 +7,7 @@ const AllContractWearehouse = () => {
   const contracts = [
     {
       id: "001",
+      supplier:"supplier X ",
       department: "IT",
       businessStackholder: "Stackholder 1",
       type: "Procurment",
@@ -16,6 +17,7 @@ const AllContractWearehouse = () => {
     },
     {
       id: "006",
+      supplier:"supplier Y",
       department: "Sales",
       businessStackholder: "Stackholder 2",
       type: "Vendor",
@@ -25,6 +27,7 @@ const AllContractWearehouse = () => {
     },
     {
       id: "007",
+      supplier:"supplier Z",
       department: "IT",
       businessStackholder: "Stackholder 3",
       type: "Procurment",
@@ -34,6 +37,7 @@ const AllContractWearehouse = () => {
     },
     {
       id: "008",
+      supplier:"supplier A",
       department: "Security",
       businessStackholder: "Stackholder 4",
       type: "Procurment",
@@ -92,6 +96,7 @@ const AllContractWearehouse = () => {
             <thead>
               <tr>
                 <th>Contract ID</th>
+                <th>Supplier Name</th>
                 <th>Department</th>
                 <th>Business Stackholder</th>
                 <th>Type</th>
@@ -105,6 +110,7 @@ const AllContractWearehouse = () => {
               {contracts.map((contract) => (
                 <tr key={contract.id}>
                   <td>{contract.id}</td>
+                  <td>{contract.supplier}</td>
                   <td>{contract.businessStackholder}</td>
                   <td>{contract.department}</td>
                   <td>{contract.type}</td>
@@ -191,6 +197,9 @@ const AllContractWearehouse = () => {
                   <ul>
                     <li>
                       <strong>Contract ID:</strong> {selectedContract.id}
+                    </li>
+                    <li>
+                      <strong>Contract ID:</strong> {selectedContract.supplier}
                     </li>
                     <li>
                       <strong>Type of Contract:</strong> {selectedContract.type}
