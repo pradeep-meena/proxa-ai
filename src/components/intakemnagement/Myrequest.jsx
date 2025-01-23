@@ -11,6 +11,7 @@ const Myrequest = () => {
   // Multiple input fields ke liye ek object state
   const [formValues, setFormValues] = useState({
     id: "",
+    supplier:"",
     item: "",
     date: "",
     status: "",
@@ -50,13 +51,11 @@ const Myrequest = () => {
 
   // Sample request data
   const requests = [
-    { id: "001", type: "Goods", date: "2024-12-18", status: "Pending" },
-    { id: "006", type: "Goods", date: "2024-12-20", status: "Approved" },
-    { id: "007", type: "Services", date: "2024-12-20", status: "Pending" },
-    { id: "008", type: "Goods", date: "2024-12-18", status: "Rejected" },
-    { id: "009", type: "Services", date: "2024-12-20", status: "Approved" },
-    { id: "010", type: "Goods", date: "2024-12-18", status: "Pending" },
-    { id: "011", type: "Services", date: "2024-12-20", status: "Rejected" },
+    { id: "001", supplier:"Supplier A", type: "Goods", date: "2024-12-18", status: "Pending" },
+    { id: "006", supplier:"Supplier B",type: "Services", date: "2024-12-20", status: "Pending" },
+    { id: "008", supplier:"Supplier C", type: "Services", date: "2024-12-20", status: "Approved" },
+    { id: "010", supplier:"Supplier D",type: "Goods", date: "2024-12-18", status: "Pending" },
+    { id: "011", supplier:"Supplier E", type: "Services", date: "2024-12-20", status: "Rejected" },
   ];
 
   return (
@@ -107,6 +106,7 @@ const Myrequest = () => {
             <thead className="table-light">
               <tr>
                 <th>Request ID</th>
+                <th>Supplier Name</th>
                 <th>Request Type</th>
                 <th>Submission Date</th>
                 <th>Status</th>
@@ -117,6 +117,7 @@ const Myrequest = () => {
               {requests.map((request) => (
                 <tr key={request.id}>
                   <td>{request.id}</td>
+                  <td>{request.supplier}</td>
                   <td>{request.type}</td>
                   <td>{request.date}</td>
                   <td>{request.status}</td>
@@ -164,6 +165,10 @@ const Myrequest = () => {
                 <ul>
                   <li>
                     <strong> Request ID:</strong> {selectedRequest.id}
+                  </li>
+
+                  <li>
+                    <strong> Request Name:</strong> {selectedRequest.supplier}
                   </li>
                   <li>
                     <strong>Request Type:</strong> {selectedRequest.type}
@@ -259,6 +264,20 @@ const Myrequest = () => {
               type="text"
               name="id"
               value={formValues.id}
+              onChange={handleInputChange}
+              placeholder="001"
+              style={{
+                width: "100%",
+                padding: "8px",
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+             <input
+              type="text"
+              name="id"
+              value={formValues.supplier}
               onChange={handleInputChange}
               placeholder="001"
               style={{

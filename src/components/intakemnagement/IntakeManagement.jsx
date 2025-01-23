@@ -114,9 +114,9 @@ const IntakeManagement = () => {
             <th>Supplier Name</th>
             <th>Request Name</th>
             <th>Department</th>
+            <th>Status</th>
             <th>Request Type</th>
             <th>Submission Date</th>
-            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -125,77 +125,77 @@ const IntakeManagement = () => {
             <td>Supplier A</td>
             <td>Mayank</td>
             <td>IT</td>
-            <td>Goods</td>
-            <td>2024-12-18</td>
             <td>
               <span className="status-pending">Pending</span>
             </td>
+            <td>Goods</td>
+            <td>2024-12-18</td>
           </tr>
           <tr>
             <td>006</td>
             <td>Supplier B</td>
             <td>tushar</td>
             <td>Marketing</td>
-            <td>Goods</td>
-            <td>2024-12-20</td>
             <td>
               <span className="status-approved">Approved</span>
             </td>
+            <td>Goods</td>   
+            <td>2024-12-20</td>
           </tr>
           <tr>
             <td>007</td>
             <td>Supplier C</td>
             <td>Kunal</td>
             <td>IT</td>
-            <td>Services</td>
-            <td>2024-12-20</td>
             <td>
               <span className="status-pending">Pending</span>
             </td>
+            <td>Services</td>
+            <td>2024-12-20</td>
           </tr>
           <tr>
             <td>008</td>
             <td>Supplier D</td>
             <td>Kushal</td>
             <td>Marketing</td>
-            <td>Goods</td>
-            <td>2024-12-18</td>
             <td>
               <span className="status-rejected">Rejected</span>
             </td>
+            <td>Goods</td>
+            <td>2024-12-18</td>
           </tr>
           <tr>
             <td>009</td>
             <td>Supplier E  </td>
             <td>Dipanshu</td>
             <td>IT</td>
-            <td>Services</td>
-            <td>2024-12-20</td>
             <td>
               <span className="status-approved">Approved</span>
             </td>
+            <td>Services</td>
+            <td>2024-12-20</td>
           </tr>
           <tr>
             <td>010</td>
             <td>Supplier F</td>
             <td>Pradeep</td>
             <td>Marketing</td>
-            <td>Goods</td>
-            <td>2024-12-18</td>
             <td>
               <span className="status-pending">Pending</span>
             </td>
+            <td>Goods</td>
+            <td>2024-12-18</td>
           </tr>
           <tr>
             <td>011</td>
             <td>Supplier G</td>
             <td>Vishal</td>
             <td>IT</td>
-            <td>Services</td>
-            <td>2024-12-20</td>
             <td>
               <span className="status-rejected">Rejected</span>
             </td>
+            <td>Services</td>
+            <td>2024-12-20</td>
           </tr>
         </tbody>
       </table>
