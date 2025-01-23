@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 import { Link } from 'react-router-dom'
 
 const Servicesow = () => {
+ 
   return (
     <>
     <div className="service-sow-edit-section">
@@ -75,7 +76,9 @@ const Servicesow = () => {
   </div>
   <div className="table-responsive mt-3">
     <table className="table table-striped table-bordered text-center">
-      <thead>
+
+
+       <thead>
         <tr>
           <th>Requesting Team/ Department</th>
           <th>Requested Service/Tool</th>
@@ -124,7 +127,7 @@ const Servicesow = () => {
           <td>$7,000</td>
           <td>Approved</td>
         </tr>
-      </tbody>
+      </tbody> 
     </table>
   </div>
   {/* Pagination */}

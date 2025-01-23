@@ -17,6 +17,7 @@ function HonoringOldPricing() {
   const data = [
     {
       "Vendor Name": "Supplier X",
+      "Supplier Name":"supplier 1",
       "Product/Service Name": "Office Supplies",
       "Old Pricing": "$20/unit",
       "Current Quotation": "$22/unit",
@@ -25,6 +26,7 @@ function HonoringOldPricing() {
     },
     {
       "Vendor Name": "Supplier X",
+      "Supplier Name":"Supplier 2",
       "Product/Service Name": "Laptops",
       "Old Pricing": "$800/unit",
       "Current Quotation": "$850/unit",
@@ -33,6 +35,7 @@ function HonoringOldPricing() {
     },
     {
       "Vendor Name": "Supplier Y",
+      "Supplier Name":"Supplier 3",
       "Product/Service Name": "Office Supplies",
       "Old Pricing": "$20/unit",
       "Current Quotation": "$22/unit",
@@ -41,6 +44,7 @@ function HonoringOldPricing() {
     },
     {
       "Vendor Name": "Supplier X",
+      "Supplier Name":"Supplier 4",
       "Product/Service Name": "Office Supplies",
       "Old Pricing": "$20/unit",
       "Current Quotation": "$22/unit",
@@ -80,6 +84,7 @@ function HonoringOldPricing() {
           <thead className="table-light">
             <tr>
               <th>Vendor Name</th>
+              <th>Supplier Name</th>
               <th>Product/Service Name</th>
               <th>Old Pricing</th>
               <th>Current Quotation</th>
@@ -91,6 +96,7 @@ function HonoringOldPricing() {
             {data.map((row, index) => (
               <tr key={index}>
                 <td>{row["Vendor Name"]}</td>
+                <td>{row["Supplier Name"]}</td>
                 <td>{row["Product/Service Name"]}</td>
                 <td>{row["Old Pricing"]}</td>
                 <td>{row["Current Quotation"]}</td>

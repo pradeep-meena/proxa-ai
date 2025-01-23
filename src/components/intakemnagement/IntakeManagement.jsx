@@ -111,6 +111,7 @@ const IntakeManagement = () => {
         <thead>
           <tr>
             <th>Request ID</th>
+            <th>Supplier Name</th>
             <th>Request Name</th>
             <th>Department</th>
             <th>Request Type</th>
@@ -121,7 +122,8 @@ const IntakeManagement = () => {
         <tbody>
           <tr>
             <td>001</td>
-            <td>Kushal</td>
+            <td>Supplier A</td>
+            <td>Mayank</td>
             <td>IT</td>
             <td>Goods</td>
             <td>2024-12-18</td>
@@ -131,6 +133,7 @@ const IntakeManagement = () => {
           </tr>
           <tr>
             <td>006</td>
+            <td>Supplier B</td>
             <td>tushar</td>
             <td>Marketing</td>
             <td>Goods</td>
@@ -141,6 +144,7 @@ const IntakeManagement = () => {
           </tr>
           <tr>
             <td>007</td>
+            <td>Supplier C</td>
             <td>Kunal</td>
             <td>IT</td>
             <td>Services</td>
@@ -151,7 +155,8 @@ const IntakeManagement = () => {
           </tr>
           <tr>
             <td>008</td>
-            <td>Krishna</td>
+            <td>Supplier D</td>
+            <td>Kushal</td>
             <td>Marketing</td>
             <td>Goods</td>
             <td>2024-12-18</td>
@@ -161,6 +166,7 @@ const IntakeManagement = () => {
           </tr>
           <tr>
             <td>009</td>
+            <td>Supplier E  </td>
             <td>Dipanshu</td>
             <td>IT</td>
             <td>Services</td>
@@ -171,6 +177,7 @@ const IntakeManagement = () => {
           </tr>
           <tr>
             <td>010</td>
+            <td>Supplier F</td>
             <td>Pradeep</td>
             <td>Marketing</td>
             <td>Goods</td>
@@ -181,6 +188,7 @@ const IntakeManagement = () => {
           </tr>
           <tr>
             <td>011</td>
+            <td>Supplier G</td>
             <td>Vishal</td>
             <td>IT</td>
             <td>Services</td>

@@ -107,6 +107,7 @@ function MultiYearContracting() {
           <thead className="table-light">
             <tr>
               <th>Vendor Name</th>
+              <th>Supplier </th>
               <th>Current Contract Duration</th>
               <th>Multi-Year Proposal</th>
               <th>Saving Estimate</th>
@@ -117,6 +118,7 @@ function MultiYearContracting() {
             {[
               {
                 "Vendor Name": "Supplier A",
+                "Supplier Name": "Supplier W",
                 "Current Contract Duration": "1 year",
                 "Multi-Year Proposal": "3 years at $50,000/year",
                 "Saving Estimate": "$10,000",
@@ -124,6 +126,7 @@ function MultiYearContracting() {
               },
               {
                 "Vendor Name": "Supplier B",
+                "Supplier Name": "Supplier X",
                 "Current Contract Duration": "2 years",
                 "Multi-Year Proposal": "5 years at $40,000/year",
                 "Saving Estimate": "$20,000",
@@ -131,6 +134,7 @@ function MultiYearContracting() {
               },
               {
                 "Vendor Name": "Supplier C",
+                "Supplier Name": "Supplier Y",
                 "Current Contract Duration": "1 year",
                 "Multi-Year Proposal": "3 years at $45,000/year",
                 "Saving Estimate": "$12,000",
@@ -138,6 +142,7 @@ function MultiYearContracting() {
               },
               {
                 "Vendor Name": "Supplier D",
+                "Supplier Name": "Supplier A",
                 "Current Contract Duration": "3 years",
                 "Multi-Year Proposal": "5 years at $38,000/year",
                 "Saving Estimate": "$15,000",
@@ -146,6 +151,7 @@ function MultiYearContracting() {
             ].map((row, index) => (
               <tr key={index}>
                 <td>{row["Vendor Name"]}</td>
+                <td>{row["Supplier Name"]}</td>
                 <td>{row["Current Contract Duration"]}</td>
                 <td>{row["Multi-Year Proposal"]}</td>
                 <td>{row["Saving Estimate"]}</td>

@@ -22,6 +22,7 @@ const ValuDiscount = () => {
       <thead>
         <tr>
           <th>Category Name</th>
+          <th>Supplier Name</th>
           <th>
             Historical Volume <br /> Purchased (last 12 months)
           </th>
@@ -34,6 +35,7 @@ const ValuDiscount = () => {
       <tbody>
         <tr>
           <td>Office Supplies</td>
+          <td>Supplier A</td>
           <td>10,000 units</td>
           <td>12,000 units (10%)</td>
           <td>$2,000</td>
@@ -42,6 +44,7 @@ const ValuDiscount = () => {
         </tr>
         <tr>
           <td>Laptop Computers</td>
+          <td>Supplier B</td>
           <td>200 units</td>
           <td>250 units (8%)</td>
           <td>$2,000</td>
@@ -50,6 +53,7 @@ const ValuDiscount = () => {
         </tr>
         <tr>
           <td>Cloud Storage</td>
+          <td>Supplier C</td>
           <td>500 TB</td>
           <td>600 TB (15%)</td>
           <td>$2,000</td>
@@ -58,6 +62,7 @@ const ValuDiscount = () => {
         </tr>
         <tr>
           <td>Office Supplies</td>
+          <td>Supplier D</td>
           <td>10,000 units</td>
           <td>12,000 units (10%)</td>
           <td>$2,000</td>
@@ -66,6 +71,7 @@ const ValuDiscount = () => {
         </tr>
         <tr>
           <td>Office Supplies</td>
+          <td>Supplier X</td>
           <td>10,000 units</td>
           <td>12,000 units (10%)</td>
           <td>$2,000</td>
@@ -74,6 +80,7 @@ const ValuDiscount = () => {
         </tr>
         <tr>
           <td>Cloud Storage</td>
+          <td>Supplier Y</td>
           <td>500 TB</td>
           <td>600 TB (15%)</td>
           <td>$2,000</td>
@@ -82,6 +89,7 @@ const ValuDiscount = () => {
         </tr>
         <tr>
           <td>Laptop Computers</td>
+          <td>Supplier Z</td>
           <td>200 units</td>
           <td>250 units (8%)</td>
           <td>$2,000</td>

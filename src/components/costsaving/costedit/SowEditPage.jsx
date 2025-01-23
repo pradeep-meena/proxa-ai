@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 function SowEditPage() {
   const [formData, setFormData] = useState({
-    createNewSow: "",
-    typeOfService: "",
-    requesterTeam: "",
-    requesterService: "",
+    RequestingTeam: "",
+    RequestedService: "",
+    ExistingSuppliersOffering: "",
+    SavingsfromConsolidating: "",
   });
 
   // Handle input change
@@ -21,22 +21,18 @@ function SowEditPage() {
   const handleSubmit = (e) => {
     e.preventDefault(); 
 
-    // Retrieve existing data from local storage
+    
     const existingData = JSON.parse(localStorage.getItem("sowFormData")) || [];
-
-    // Add new form data to the array
     const updatedData = [...existingData, formData];
-
-    // Save the updated array back to local storage
     localStorage.setItem("sowFormData", JSON.stringify(updatedData));
 
-    // Optional: Alert user and reset form
+    
     alert("Data submitted and saved as an array in local storage!");
     setFormData({
-      createNewSow: "",
-      typeOfService: "",
-      requesterTeam: "",
-      requesterService: "",
+      RequestingTeam: "",
+      RequestedService: "",
+      ExistingSuppliersOffering: "",
+      SavingsfromConsolidating: "",
     });
   };
 
@@ -50,8 +46,8 @@ function SowEditPage() {
               <label className="form-label">Create New Sow</label>
               <input
                 type="text"
-                name="createNewSow"
-                value={formData.createNewSow}
+                name="RequestingTeam"
+                value={formData.RequestingTeam}
                 onChange={handleChange}
                 className="form-control"
                 placeholder="Enter The Create New Sow"
@@ -61,8 +57,8 @@ function SowEditPage() {
               <label className="form-label">Type Of Service</label>
               <input
                 type="text"
-                name="typeOfService"
-                value={formData.typeOfService}
+                name="RequestedService"
+                value={formData.RequestedService}
                 onChange={handleChange}
                 className="form-control"
                 placeholder="Choice The Type"
@@ -72,8 +68,8 @@ function SowEditPage() {
               <label className="form-label">Requester Team</label>
               <input
                 type="text"
-                name="requesterTeam"
-                value={formData.requesterTeam}
+                name="ExistingSuppliersOffering"
+                value={formData.ExistingSuppliersOffering}
                 onChange={handleChange}
                 className="form-control"
                 placeholder="Enter The Requester Team"
@@ -83,8 +79,8 @@ function SowEditPage() {
               <label className="form-label">Requester Service</label>
               <input
                 type="text"
-                name="requesterService"
-                value={formData.requesterService}
+                name="SavingsfromConsolidating"
+                value={formData.SavingsfromConsolidating}
                 onChange={handleChange}
                 className="form-control"
                 placeholder="Enter The Current Service"
@@ -102,6 +98,7 @@ function SowEditPage() {
           </form>
         </div>
       </div>
+     
     </div>
   );
 }

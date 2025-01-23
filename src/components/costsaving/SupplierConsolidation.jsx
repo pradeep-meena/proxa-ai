@@ -45,6 +45,7 @@ function SupplierConsolidation() {
           <thead className="table-light">
             <tr>
               <th>Category Name</th>
+              <th>Supplier Name</th>
               <th>Current Suppliers</th>
               <th>Spend with Each Supplier</th>
               <th>Recommended Supplier</th>
@@ -56,6 +57,7 @@ function SupplierConsolidation() {
             {[
               {
                 category: "Office Furniture",
+                SupplierName:"Supplier A",
                 suppliers: "Supplier X, Supplier Y",
                 spend: "$50,000, $40,000",
                 recommended: "Supplier X",
@@ -64,6 +66,7 @@ function SupplierConsolidation() {
               },
               {
                 category: "IT Software",
+                SupplierName:"Supplier B",
                 suppliers: "Supplier A, Supplier B",
                 spend: "$150,000, $130,000",
                 recommended: "Supplier A",
@@ -72,6 +75,7 @@ function SupplierConsolidation() {
               },
               {
                 category: "Office Furniture",
+                SupplierName:"Supplier C",
                 suppliers: "Supplier X, Supplier Y",
                 spend: "$150,000, $130,000",
                 recommended: "Supplier C",
@@ -80,6 +84,7 @@ function SupplierConsolidation() {
               },
               {
                 category: "Marketing Services",
+                SupplierName:"Supplier D",
                 suppliers: "Supplier M, Supplier N, Supplier O",
                 spend: "$60,000, $40,000, $30,000",
                 recommended: "Supplier X",
@@ -89,6 +94,7 @@ function SupplierConsolidation() {
             ].map((row, index) => (
               <tr key={index}>
                 <td>{row.category}</td>
+                <td>{row.SupplierName}</td>
                 <td>{row.suppliers}</td>
                 <td>{row.spend}</td>
                 <td>{row.recommended}</td>

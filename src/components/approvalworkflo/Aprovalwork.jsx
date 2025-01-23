@@ -25,6 +25,7 @@ const ApprovalWork = () => {
   const approvalData = [
     {
       id: "001",
+      supplier:"Supplier A",
       requester: "John Doe",
       department: "IT",
       category: "Software Purchase",
@@ -35,6 +36,7 @@ const ApprovalWork = () => {
     },
     {
       id: "002",
+      supplier:"Supplier B",
       requester: "Sarah Lee",
       department: "Marketing",
       category: "Vendor Service",
@@ -55,6 +57,7 @@ const ApprovalWork = () => {
             <thead className="table-light">
               <tr>
                 <th>Request ID</th>
+                <th>Supplier Name</th>
                 <th>Requester Name</th>
                 <th>Department</th>
                 <th>Category</th>
@@ -69,6 +72,7 @@ const ApprovalWork = () => {
               {approvalData.map((item) => (
                 <tr key={item.id}>
                   <td>{item.id}</td>
+                  <td>{item.supplier}</td>
                   <td>{item.requester}</td>
                   <td>{item.department}</td>
                   <td>{item.category}</td>

@@ -78,6 +78,7 @@ const AditionalComplementry = () => {
       <thead>
         <tr>
           <th>Vendor Name</th>
+          <th>Supplier Name</th>
           <th>
             Current Service/ <br /> Product Purchased
           </th>
@@ -92,6 +93,7 @@ const AditionalComplementry = () => {
       <tbody>
         <tr>
           <td>Supplier A</td>
+          <td>jons</td>
           <td>Data Analytics Software</td>
           <td>Training for Staff</td>
           <td>$0</td>
@@ -100,6 +102,7 @@ const AditionalComplementry = () => {
         </tr>
         <tr>
           <td>Supplier B</td>
+          <td>Supplier X</td>
           <td>Marketing Software</td>
           <td>SEO Tools</td>
           <td>$0</td>
@@ -108,6 +111,7 @@ const AditionalComplementry = () => {
         </tr>
         <tr>
           <td>Supplier A</td>
+          <td>Supplier Y</td>
           <td>Data Analytics Software</td>
           <td>Training for Staff</td>
           <td>$500</td>
@@ -116,6 +120,7 @@ const AditionalComplementry = () => {
         </tr>
         <tr>
           <td>Supplier B</td>
+          <td>Supplier Z</td>
           <td>Data Analytics Software</td>
           <td>SEO Tools</td>
           <td>$500</td>
@@ -124,6 +129,7 @@ const AditionalComplementry = () => {
         </tr>
         <tr>
           <td>Supplier C</td>
+          <td>Supplier m</td>
           <td>Cloud Hosting</td>
           <td>Backup Services</td>
           <td>$0</td>

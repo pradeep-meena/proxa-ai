@@ -12,7 +12,7 @@ const Renewalmanagedash = () => {
             <thead className="table-light">
               <tr>
                 <th>Contract ID</th>
-                <th>Description</th>
+                <th>Supplier </th>
                 <th>Type</th>
                 <th>Start Date</th>
                 <th>End Date</th>
@@ -23,7 +23,7 @@ const Renewalmanagedash = () => {
             <tbody>
               <tr>
                 <td>001</td>
-                <td>Description...</td>
+                <td>Supplier C</td>
                 <td>Procurement</td>
                 <td>2024-12-18</td>
                 <td>2024-12-20</td>
@@ -52,7 +52,7 @@ const Renewalmanagedash = () => {
               </tr>
               <tr>
                 <td>006</td>
-                <td>Description...</td>
+                <td>Supplier D</td>
                 <td>Vendor</td>
                 <td>2024-12-20</td>
                 <td>2024-12-18</td>
@@ -81,7 +81,7 @@ const Renewalmanagedash = () => {
               </tr>
               <tr>
                 <td>007</td>
-                <td>Description...</td>
+                <td>Supplier E</td>
                 <td>Procurement</td>
                 <td>2024-12-20</td>
                 <td>2024-12-20</td>
@@ -110,7 +110,7 @@ const Renewalmanagedash = () => {
               </tr>
               <tr>
                 <td>008</td>
-                <td>Description...</td>
+                <td>Supplier W</td>
                 <td>Procurement</td>
                 <td>2024-12-18</td>
                 <td>2024-12-18</td>
@@ -139,7 +139,7 @@ const Renewalmanagedash = () => {
               </tr>
               <tr>
                 <td>009</td>
-                <td>Description...</td>
+                <td>Supplier x</td>
                 <td>Vendor</td>
                 <td>2024-12-20</td>
                 <td>2024-12-20</td>
@@ -168,7 +168,7 @@ const Renewalmanagedash = () => {
               </tr>
               <tr>
                 <td>010</td>
-                <td>Description...</td>
+                <td>Supplier Y</td>
                 <td>Procurement</td>
                 <td>2024-12-18</td>
                 <td>2024-12-18</td>
@@ -197,7 +197,7 @@ const Renewalmanagedash = () => {
               </tr>
               <tr>
                 <td>011</td>
-                <td>Description...</td>
+                <td>Supplier Z</td>
                 <td>Vendor</td>
                 <td>2024-12-20</td>
                 <td>2024-12-20</td>
@@ -307,7 +307,7 @@ const Renewalmanagedash = () => {
                     <thead className="table-light">
                       <tr>
                         <th>Contract ID</th>
-                        <th>Description</th>
+                        <th>Supplier Name</th>
                         <th>Type</th>
                         <th>Start Date</th>
                         <th>End Date</th>
@@ -317,6 +317,7 @@ const Renewalmanagedash = () => {
                     <tbody>
                       <tr>
                         <td>001</td>
+                        <td>Supplier X</td>
                         <td>Description...</td>
                         <td>Procurement</td>
                         <td>2024-12-18</td>
