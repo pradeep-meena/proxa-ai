@@ -1,11 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function MultiYearEdit() {
   return (
     <>
       <div className="multiyear-edit-section my-5">
         <div className="container">
+          <div className="multi-section d-flex justify-content-between">
           <h3>Multi Year Edit Page</h3>
+          <Link to="/multiyear">
+          <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
           <form className="row g-3 mt-4">
             <div className="col-md-6">
               <label className="form-label">Vendor Name </label>

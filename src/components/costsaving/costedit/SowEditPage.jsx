@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 function SowEditPage() {
   const [formData, setFormData] = useState({
     RequestingTeam: "",
@@ -40,7 +40,22 @@ function SowEditPage() {
     <div>
       <div className="sowedit-section my-5">
         <div className="container">
+          <div className="service-section d-flex justify-content-between">
           <h3>Service And Sow Edit Page</h3>
+          <Link to="/serviceswo">
+          <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
           <form className="row g-3 mt-4" onSubmit={handleSubmit}>
             <div className="col-md-6">
               <label className="form-label">Create New Sow</label>

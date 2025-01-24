@@ -68,16 +68,42 @@ const Myrequest = () => {
             <p className="text-dark mb-0">
               Track the status of your submitted requests
             </p>
-          </div>
-          <Link to="/intakenewreq">
-            <button
-              className="btn btn-create px-4 py-2 text-white fw-semibold mt-3 mt-md-0"
-              style={{ backgroundColor: "#578e7e" }}
-            >
-              <i className="fa-solid fa-book me-2" />
-              Create New Request
-            </button>
-          </Link>
+          </div >
+          <div>
+              <Link to="/intakenewreq">
+              <button
+                style={{
+                  width: '209px',
+                  height: '49px',
+                  border: 'none',
+                  opacity: '1',
+                  backgroundColor: '#578E7E',
+                  color: 'white',
+                  borderRadius: '5px',
+                  fontSize: '16px', // Ensures text scales well
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px', // Adds spacing between icon and text
+                }}
+              >
+                <i className="fa-solid fa-book"></i> My Request
+              </button></Link>
+              <Link to="/intakemanagement">
+              <button
+                        style={{
+                          width: "120px",
+                          height: "49px",
+                          border: "none",
+                          backgroundColor: "#578E7E",
+                          color: "white",
+                          borderRadius: "5px",
+                          marginTop:'10px'
+                        }}>
+                        <i className="fa-solid fa-arrow-left"></i> Back
+                      </button>
+                      </Link>
+            </div>
         </div>
 
         {/* Filters Section */}

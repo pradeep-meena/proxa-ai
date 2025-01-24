@@ -34,7 +34,7 @@ const Servicesow = () => {
         className="card sowcard text-white fw-semibold h-100 d-flex justify-content-center"
         style={{ backgroundColor: "#ff6567" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-2">
+        <div className="content d-flex justify-content-start align-items-center p-3">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -54,7 +54,7 @@ const Servicesow = () => {
         className="card sowcard text-white fw-semibold h-100 d-flex justify-content-center"
         style={{ backgroundColor: "#ff9318" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-2">
+        <div className="content d-flex justify-content-start align-items-center p-3">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"

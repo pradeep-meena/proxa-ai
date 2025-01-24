@@ -74,7 +74,10 @@ const NotificationPreferences = () => {
           Customize when and how you want to receive renewal reminders
         </p>
         </div>
-        <Link to="/editrenewalnoti"> <button className="email-template-btn">Email Template →</button></Link>
+        <Link to="/editrenewalnoti"> 
+        <button className="email-template-btn">Email Template <i className="fa-solid fa-arrow-right"></i></button>
+        </Link>
+       
       </div>
 
       <div className="form">

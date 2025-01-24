@@ -1,10 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ContractapprovalWorkflow = () => {
   return (
     <>
       <div className="container py-5">
-        <h3 className="mb-5 fw-semibold">Contract Approval Workflow</h3>
+        <div className="contractworkflow-section d-flex
+        justify-content-between">
+        <h3 className="fw-semibold">Contract Approval Workflow</h3>
+        <Link to="/approvalworkflow">
+        <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginTop:'10px'
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+        </div>
         <div className="position-absulate">
         <div className="row gy-7 "style={{marginTop:'190px'}}> 
           {/* First Column */}

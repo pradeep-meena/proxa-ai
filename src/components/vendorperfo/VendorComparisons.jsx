@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function VendorComparisons() {
   const [suppliers, setSuppliers] = useState([
@@ -10,7 +11,23 @@ function VendorComparisons() {
   return (
     <div>
         <div className="container">
+          <div className="vendorcompari-section d-flex justify-content-between">
             <h3 className='mt-5 mb-5'> Vendor Comparisons </h3>
+            <Link to="/vendorper"> 
+            <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginTop:'10px'
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
         <div className="table-responsive overflow-auto">
       <table  className="table table-bordered text-center table-light">
         <thead className="table-light">

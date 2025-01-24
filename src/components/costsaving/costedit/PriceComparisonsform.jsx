@@ -1,11 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function PriceComparisonsform() {
   return (
     <>
       <div className="priceeditcompr-section my-5">
         <div className="container">
+          <div className="pricecom-section d-flex justify-content-between">
           <h3> Price Comparisons Edit Page</h3>
+          <Link to="/pricecomp">
+          <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
           <form className="row g-3 mt-4">
             <div className="col-md-6">
               <label className="form-label">Product Service</label>

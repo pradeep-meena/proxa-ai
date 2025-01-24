@@ -1,11 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CategoryEditPage() {
   return (
     <>
       <div className="cateedit-section">
         <div className="container">
+          <div className="category-section d-flex justify-content-between mt-5">
           <h3>Add Category</h3>
+          <Link to="/intakemanagement">
+          <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
           <form className="row g-3">
             <div className="col-md-6">
               <label className="form-label">Category Name </label>

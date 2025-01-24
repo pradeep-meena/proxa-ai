@@ -44,64 +44,70 @@ const IntakeManagement = () => {
     </div>
     {/* Summary Cards */}
     <div className="row text-center mb-4 mt-5">
-      <div className="col-12 col-sm-6 col-lg-3 mb-3">
-        <div
-          className="card portalcard text-white fw-semibold"
-          style={{ backgroundColor: "#ff6567" }}
-        >
-          <div className="content d-flex justify-content-start align-items-center p-3">
-            <div className="icon">
-              <i
-                className="fa-regular fa-user rounded-circle p-3"
-                style={{ backgroundColor: "#fdabab" }}
-              />
-            </div>
-            <div className="text ms-4">
-              <h2 className="card-title mb-0 fw-bold text-start">7</h2>
-              <p>Total Requests</p>
-            </div>
-          </div>
+  {/* Card 1 */}
+  <div className="col-12 col-sm-6 col-lg-3 mb-3">
+    <div
+      className="card portalcard text-white fw-semibold h-100 d-flex flex-column justify-content-between"
+      style={{ backgroundColor: "#ff6567" }}
+    >
+      <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="icon">
+          <i
+            className="fa-regular fa-user rounded-circle p-3"
+            style={{ backgroundColor: "#fdabab" }}
+          />
         </div>
-      </div>
-      <div className="col-12 col-sm-6 col-lg-3 mb-3">
-        <div
-          className="card portalcard status-pending text-white fw-semibold"
-          style={{ backgroundColor: "#ff9318" }}
-        >
-          <div className="content d-flex justify-content-start align-items-center p-3">
-            <div className="icon">
-              <i
-                className="fa-regular fa-user rounded-circle p-3"
-                style={{ backgroundColor: "#fcc586" }}
-              />
-            </div>
-            <div className="text ms-4">
-              <h2 className="card-title mb-0 fw-bold text-start">40</h2>
-              <p>Pending Approvals</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-12 col-sm-6 col-lg-3 mb-3">
-        <div
-          className="card portalcard status-approved text-white fw-semibold"
-          style={{ backgroundColor: "#39bf1b" }}
-        >
-          <div className="content d-flex justify-content-start align-items-center p-3">
-            <div className="icon">
-              <i
-                className="fa-regular fa-user rounded-circle p-3"
-                style={{ backgroundColor: "#74d25f" }}
-              />
-            </div>
-            <div className="text ms-4">
-              <h2 className="card-title mb-0 fw-bold text-start">16</h2>
-              <p>Approved</p>
-            </div>
-          </div>
+        <div className="text ms-4">
+          <h2 className="card-title mb-0 fw-bold text-start">7</h2>
+          <p>Total Requests</p>
         </div>
       </div>
     </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="col-12 col-sm-6 col-lg-3 mb-3">
+    <div
+      className="card portalcard status-pending text-white fw-semibold h-100 d-flex flex-column justify-content-between"
+      style={{ backgroundColor: "#ff9318" }}
+    >
+      <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="icon">
+          <i
+            className="fa-regular fa-user rounded-circle p-3"
+            style={{ backgroundColor: "#fcc586" }}
+          />
+        </div>
+        <div className="text ms-4">
+          <h2 className="card-title mb-0 fw-bold text-start">40</h2>
+          <p>Pending Approvals</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Card 3 */}
+  <div className="col-12 col-sm-6 col-lg-3 mb-3">
+    <div
+      className="card portalcard status-approved text-white fw-semibold h-100 d-flex flex-column justify-content-between"
+      style={{ backgroundColor: "#39bf1b" }}
+    >
+      <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="icon">
+          <i
+            className="fa-regular fa-user rounded-circle p-3"
+            style={{ backgroundColor: "#74d25f" }}
+          />
+        </div>
+        <div className="text ms-4">
+          <h2 className="card-title mb-0 fw-bold text-start">16</h2>
+          <p>Approved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     {/* Recent Activity Table */}
     <h4 className="fw-semibold" style={{ borderBottom: "5px soild black" }}>
       <u className="underline fw-bold">Recent Activity</u>

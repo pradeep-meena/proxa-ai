@@ -73,7 +73,7 @@ const AllContractWearehouse = () => {
               aria-label="Search"
             />
           </div>
-          <div className="upload">
+          <div className="upload d-column">
             <button
               className="btn btn-success d-flex align-items-center justify-content-center contrabtn"
               style={{
@@ -88,6 +88,18 @@ const AllContractWearehouse = () => {
             >
               <i className="fa-solid fa-file-upload me-2"></i>
               Upload Contract
+            </button>
+            <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginTop:'10px'
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
             </button>
           </div>
         </div>

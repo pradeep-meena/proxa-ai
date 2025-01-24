@@ -29,6 +29,20 @@ const CreateNewRequest = () => {
     >
       <i className="fa-solid fa-book"></i> My Request
     </button></Link>
+    <Link to="/intakemanagement">
+    <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginTop:'10px'
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button></Link>
+    
   </div>
   <style>
     {`

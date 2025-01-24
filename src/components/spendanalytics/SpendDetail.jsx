@@ -9,7 +9,8 @@ const SpendDetail = () => {
     <div className="heading">
       <h3 className="mb-3 fw-semibold">Spend Details</h3>
     </div>
-    <div className="mt-3 mt-md-0">
+    
+    <div className="mt-3 mt-md-0 ">
       <a href="download.pdf" download="pdf">
       <button
         type="button"
@@ -22,7 +23,25 @@ const SpendDetail = () => {
         </span>
       </button>
       </a>
+      <Link to="/spendanalyt">
+      <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginTop:'10px',
+                marginLeft:'5px'
+                
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
     </div>
+    
+            
   </div>
   {/* Summary Cards */}
   <div className="row text-center mb-4 mt-4">

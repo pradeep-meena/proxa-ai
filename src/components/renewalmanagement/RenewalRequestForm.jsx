@@ -4,7 +4,24 @@ const RenewalRequestForm = () => {
   return (
     <>
         <div className="container">
+          <div className="renewal-section d-flex justify-content-between">
   <h3 className="mb-4 fw-semibold">Renewal Request Form</h3>
+  <Link to="/renewalmanage">
+  <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginTop:'10px',
+                marginBottom:'10px'
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
   <div className="row">
     <div className="col-md-4">
       <div className="mb-3">

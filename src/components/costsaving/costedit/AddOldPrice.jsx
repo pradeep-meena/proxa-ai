@@ -6,7 +6,22 @@ function AddOldPrice() {
     <>
       <div className="addoldpric-section my-5">
         <div className="container">
+          <div className="addoldprice-section d-flex justify-content-between">
           <h3>Add Old Price Edit Page</h3>
+          <Link to="/honoring">
+          <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+          </div>
           <form className="row g-3">
             <div className="col-md-6">
               <label className="form-label">Supplier Name</label>

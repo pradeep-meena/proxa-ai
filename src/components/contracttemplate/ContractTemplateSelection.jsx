@@ -45,7 +45,21 @@ function ContractTemplateSelection() {
             Upload Custom Agreement
           </button>
           </Link>
-        </div>
+          <Link to="/contractmanage"> 
+                     <button
+                       style={{
+                         width: "120px",
+                         height: "49px",
+                         border: "none",
+                         backgroundColor: "#578E7E",
+                         color: "white",
+                         borderRadius: "5px",
+                         marginTop:'10px'
+                       }}>
+                       <i className="fa-solid fa-arrow-left"></i> Back
+                     </button>
+                     </Link>
+                     </div>
       </div>
 
       {/* Cards Section */}

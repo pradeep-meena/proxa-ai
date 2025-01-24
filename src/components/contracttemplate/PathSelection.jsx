@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function PathSelection() {
   return (
     <div style={{paddingLeft:"20px"}} className="container">
       {/* Header Section */}
-      <div className="mb-4">
+      <div className="mb-4 d-flex justify-content-between">
+      <div>
         <h1
           className="fw-bold"
           style={{
@@ -35,6 +37,20 @@ function PathSelection() {
         >
           Define the type of engagement for your contract.
         </p>
+        </div>
+        <Link to="/contracttemplate">
+        <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
       </div>
     
 

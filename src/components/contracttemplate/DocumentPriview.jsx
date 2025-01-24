@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function DocumentPriview() {
       const [content, setContent] = useState(""); 
@@ -19,9 +20,25 @@ function DocumentPriview() {
   return (
     <div>
              <div className="col-md-12 mt-5 ml-10">
+              <div className="document-section d-flex justify-content-between">
       <h4>
         <u>Document Preview</u>
       </h4>
+      <Link to="/contracttemplate">
+      <button
+              style={{
+                width: "120px",
+                height: "49px",
+                border: "none",
+                backgroundColor: "#578E7E",
+                color: "white",
+                borderRadius: "5px",
+                marginBottom:'10px'
+              }}>
+              <i className="fa-solid fa-arrow-left"></i> Back
+            </button>
+            </Link>
+            </div>
       <div
         className="border p-3 shadow-sm"
         style={{ height: "700px", overflowY: "scroll", position: "relative" }}
