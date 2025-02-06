@@ -6,7 +6,7 @@ const Contractmanage = () => {
   const contracts = [
     {
       id: "001",
-      supplier:"supplier A",
+      Supplier:"Supplier A",
       department: "IT",
       businessStackholder: "Stackholder 1",
       type: "Procurment",
@@ -16,7 +16,7 @@ const Contractmanage = () => {
     },
     {
       id: "006",
-      supplier:"supplier B",
+      Supplier:"Supplier B",
       department: "Sales",
       businessStackholder: "Stackholder 2",
       type: "Vendor",
@@ -26,7 +26,7 @@ const Contractmanage = () => {
     },
     {
       id: "007",
-      supplier:"supplier C",
+      Supplier:"Supplier C",
       department: "IT",
       businessStackholder: "Stackholder 3",
       type: "Procurment",
@@ -36,7 +36,7 @@ const Contractmanage = () => {
     },
     {
       id: "008",
-      supplier:"supplier X",
+      Supplier:"Supplier X",
       department: "Security",
       businessStackholder: "Stackholder 4",
       type: "Procurment",
@@ -213,7 +213,7 @@ const Contractmanage = () => {
               {contracts.map((contract) => (
                 <tr key={contract.id}>
                   <td>{contract.id}</td>
-                  <td>{contract.supplier}</td>
+                  <td>{contract.Supplier}</td>
                   <td>{contract.businessStackholder}</td>
                   <td>{contract.department}</td>
                   <td>{contract.type}</td>
@@ -366,7 +366,7 @@ const Contractmanage = () => {
                       <strong>Contract ID:</strong> {selectedContract.id}
                     </li>
                     <li>
-                      <strong>Supplier Name:</strong> {selectedContract.supplier}
+                      <strong>Supplier Name:</strong> {selectedContract.Supplier}
                     </li>
                     <li>
                       <strong>Type of Contract:</strong> {selectedContract.type}

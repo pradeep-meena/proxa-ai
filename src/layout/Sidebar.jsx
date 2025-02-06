@@ -269,7 +269,7 @@ const Sidebar = ({ collapsed , menuItemClick}) => {
               className="menu-link menu-i"
               onClick={() => {navigate("/vendorper");menuItemClick();}}>
               <i className="fa-solid fa-file-signature"></i>
-              <span className="menu-text">Vendor Performance</span>
+              <span className="menu-text">Supplier Performance</span>
             </div>
           </li>
 

@@ -53,7 +53,7 @@ const Renewalmanagedash = () => {
               <tr>
                 <td>006</td>
                 <td>Supplier D</td>
-                <td>Vendor</td>
+                <td>Supplier</td>
                 <td>2024-12-20</td>
                 <td>2024-12-18</td>
                 <td>Renewed</td>
@@ -140,7 +140,7 @@ const Renewalmanagedash = () => {
               <tr>
                 <td>009</td>
                 <td>Supplier x</td>
-                <td>Vendor</td>
+                <td>Supplier</td>
                 <td>2024-12-20</td>
                 <td>2024-12-20</td>
                 <td>Renewed</td>
@@ -198,7 +198,7 @@ const Renewalmanagedash = () => {
               <tr>
                 <td>011</td>
                 <td>Supplier Z</td>
-                <td>Vendor</td>
+                <td>Supplier</td>
                 <td>2024-12-20</td>
                 <td>2024-12-20</td>
                 <td>Renewed</td>

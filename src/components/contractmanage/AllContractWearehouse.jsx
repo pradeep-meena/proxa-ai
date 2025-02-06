@@ -7,7 +7,7 @@ const AllContractWearehouse = () => {
   const contracts = [
     {
       id: "001",
-      supplier:"supplier X ",
+      Supplier:"Supplier X ",
       department: "IT",
       businessStackholder: "Stackholder 1",
       type: "Procurment",
@@ -17,7 +17,7 @@ const AllContractWearehouse = () => {
     },
     {
       id: "006",
-      supplier:"supplier Y",
+      Supplier:"Supplier Y",
       department: "Sales",
       businessStackholder: "Stackholder 2",
       type: "Vendor",
@@ -27,7 +27,7 @@ const AllContractWearehouse = () => {
     },
     {
       id: "007",
-      supplier:"supplier Z",
+      Supplier:"Supplier Z",
       department: "IT",
       businessStackholder: "Stackholder 3",
       type: "Procurment",
@@ -37,7 +37,7 @@ const AllContractWearehouse = () => {
     },
     {
       id: "008",
-      supplier:"supplier A",
+      Supplier:"Supplier A",
       department: "Security",
       businessStackholder: "Stackholder 4",
       type: "Procurment",
@@ -57,7 +57,7 @@ const AllContractWearehouse = () => {
       <div className="container">
         <div className="top d-flex flex-wrap justify-content-between align-items-center">
           <div className="heading">
-            <h2 className="mb-3 fw-bold">All Contract warehouse</h2>
+            <h2 className="mb-3 fw-bold">All Contract Warehouse</h2>
           </div>
         </div>
 
@@ -122,7 +122,7 @@ const AllContractWearehouse = () => {
               {contracts.map((contract) => (
                 <tr key={contract.id}>
                   <td>{contract.id}</td>
-                  <td>{contract.supplier}</td>
+                  <td>{contract.Supplier}</td>
                   <td>{contract.businessStackholder}</td>
                   <td>{contract.department}</td>
                   <td>{contract.type}</td>
@@ -211,7 +211,7 @@ const AllContractWearehouse = () => {
                       <strong>Contract ID:</strong> {selectedContract.id}
                     </li>
                     <li>
-                      <strong>Contract ID:</strong> {selectedContract.supplier}
+                      <strong>Contract ID:</strong> {selectedContract.Supplier}
                     </li>
                     <li>
                       <strong>Type of Contract:</strong> {selectedContract.type}

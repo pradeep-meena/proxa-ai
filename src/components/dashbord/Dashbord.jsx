@@ -175,7 +175,7 @@ const Dashboard = () => {
         className="card dashboardcard text-white fw-semibold h-80 d-flex justify-content-center"
         style={{ backgroundColor: "#ff6567" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-2">
+        <div className="content d-flex justify-content-start align-items-center">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -191,10 +191,10 @@ const Dashboard = () => {
     </div>
     <div className="col-12 col-sm-6 col-lg-3 mb-3">
       <div
-        className="card dashboardcard text-white fw-semibold h-80 d-flex justify-content-center"
+        className="card dashboardcard text-white fw-semibold h-100 d-flex justify-content-center"
         style={{ backgroundColor: "#ff9318" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-2">
+        <div className="content d-flex justify-content-start align-items-center">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -213,7 +213,7 @@ const Dashboard = () => {
         className="card dashboardcard text-white fw-semibold h-80 d-flex justify-content-center"
         style={{ backgroundColor: "#39bf1b" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-2">
+        <div className="content d-flex justify-content-start align-items-center">
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -251,7 +251,7 @@ const Dashboard = () => {
         </div>
         <div className="col-md-6">
           <h5>
-            <u className="fw-bold">Top Spending Vendors</u>
+            <u className="fw-bold">Top Spending Supplier</u>
           </h5>
           <div className="shadow-sm p-3 mt-3">
             <canvas ref={topSpendingVendorsRef} id="topSpendingVendorsChart" />

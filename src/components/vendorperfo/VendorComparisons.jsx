@@ -12,7 +12,7 @@ function VendorComparisons() {
     <div>
         <div className="container">
           <div className="vendorcompari-section d-flex justify-content-between">
-            <h3 className='mt-5 mb-5'> Vendor Comparisons </h3>
+            <h3 className='mt-5 mb-5 fw-semibold'> Supplier Comparisons </h3>
             <Link to="/vendorper"> 
             <button
               style={{
@@ -32,7 +32,7 @@ function VendorComparisons() {
       <table  className="table table-bordered text-center table-light">
         <thead className="table-light">
           <tr>
-            <th>Vendor Id</th>
+            <th>Supplier Id</th>
             <th>McConsult...
             Total Score 65/140</th>
             <th>BCD

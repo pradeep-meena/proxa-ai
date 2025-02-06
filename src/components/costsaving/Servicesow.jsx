@@ -31,10 +31,10 @@ const Servicesow = () => {
     {/* Card 1 */}
     <div className="col-12 col-sm-6 col-lg-3 mb-3">
       <div
-        className="card sowcard text-white fw-semibold h-100 d-flex justify-content-center"
+        className="card sowcard text-white fw-semibold d-flex justify-content-center"
         style={{ backgroundColor: "#ff6567" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="content d-flex justify-content-start align-items-center" style={{padding: "2px 7px"}}>
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -51,10 +51,10 @@ const Servicesow = () => {
     {/* Card 2 */}
     <div className="col-12 col-sm-6 col-lg-3 mb-3">
       <div
-        className="card sowcard text-white fw-semibold h-100 d-flex justify-content-center"
-        style={{ backgroundColor: "#ff9318" }}
+        className="card sowcard text-white fw-semibold d-flex justify-content-center"
+        style={{ backgroundColor: "#ff9318",width:"max-content" }}
       >
-        <div className="content d-flex justify-content-start align-items-center p-3">
+        <div className="content d-flex justify-content-start align-items-center" style={{padding: "2px 9px"}}>
           <div className="icon">
             <i
               className="fa-regular fa-user rounded-circle p-3"
@@ -63,7 +63,7 @@ const Servicesow = () => {
           </div>
           <div className="text ms-4 text-start">
             <h2 className="card-title mb-0 fw-bold">40</h2>
-            <p>Potential Consolidation Identified</p>
+            <p>Potential Consolidation <br /> Identified</p>
           </div>
         </div>
       </div>

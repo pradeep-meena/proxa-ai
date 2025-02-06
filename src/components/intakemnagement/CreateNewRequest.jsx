@@ -305,7 +305,7 @@ const CreateNewRequest = () => {
           <div className="col-md-4 mb-3">
             {/* <label htmlFor="vendor" className="form-label">Choose Your Vendor</label> */}
             <select id="vendor" className="form-select p-3" style={{fontSize:'16px',fontFamily:'inherit', color:'gray'}}>
-              <option value="" >Choose Your Vendor</option>
+              <option value="" >Choose Your Supplier</option>
             </select>
           </div>
           <div className="col-md-4 mb-3">
