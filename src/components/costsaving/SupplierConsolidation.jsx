@@ -10,10 +10,55 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+const Supplierdata = [
+  {
+    category: "Office Furniture",
+    supplier: "Supplier A",
+    Current: "Supplier X, Supplier Y",
+    Spend: "$50,000, $40,000",
+    Recommended: "Supplier X",
+    Potential: "$10,000",
+    status: "New Opportunity",
+    action: "",
+  },
+  {
+    category: "Office Furniture",
+    supplier: "Supplier A",
+    Current: "Supplier X, Supplier Y",
+    Spend: "$50,000, $40,000",
+    Recommended: "Supplier X",
+    Potential: "$10,000",
+    status: "New Opportunity",
+    action: "",
+  },
+  {
+    category: "Office Furniture",
+    supplier: "Supplier A",
+    Current: "Supplier X, Supplier Y",
+    Spend: "$50,000, $40,000",
+    Recommended: "Supplier X",
+    Potential: "$10,000",
+    status: "New Opportunity",
+    action: "",
+  },
+  {
+    category: "Office Furniture",
+    supplier: "Supplier A",
+    Current: "Supplier X, Supplier Y",
+    Spend: "$50,000, $40,000",
+    Recommended: "Supplier X",
+    Potential: "$10,000",
+    status: "New Opportunity",
+    action: "",
+  },
+];
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-function SupplierConsolidation() {
+function SupplierConsolidation () {
+
+
+ 
   return (
     <div className="container">
       {/* Header Section */}
@@ -55,52 +100,15 @@ function SupplierConsolidation() {
             </tr>
           </thead>
           <tbody>
-            {[
-              {
-                category: "Office Furniture",
-                SupplierName:"Supplier A",
-                suppliers: "Supplier X, Supplier Y",
-                spend: "$50,000, $40,000",
-                recommended: "Supplier X",
-                savings: "$10,000",
-                status: "New Opportunity",
-              },
-              {
-                category: "IT Software",
-                SupplierName:"Supplier B",
-                suppliers: "Supplier A, Supplier B",
-                spend: "$150,000, $130,000",
-                recommended: "Supplier A",
-                savings: "$10,000",
-                status: "Under Review",
-              },
-              {
-                category: "Office Furniture",
-                SupplierName:"Supplier C",
-                suppliers: "Supplier X, Supplier Y",
-                spend: "$150,000, $130,000",
-                recommended: "Supplier C",
-                savings: "$10,000",
-                status: "New Opportunity",
-              },
-              {
-                category: "Marketing Services",
-                SupplierName:"Supplier D",
-                suppliers: "Supplier M, Supplier N, Supplier O",
-                spend: "$60,000, $40,000, $30,000",
-                recommended: "Supplier X",
-                savings: "$10,000",
-                status: "Approved",
-              },
-            ].map((row, index) => (
+            {Supplierdata.map((item, index) => (
               <tr key={index}>
-                <td>{row.category}</td>
-                <td>{row.SupplierName}</td>
-                <td>{row.suppliers}</td>
-                <td>{row.spend}</td>
-                <td>{row.recommended}</td>
-                <td>{row.savings}</td>
-                <td>{row.status}</td>
+                <td>{item.category}</td>
+                <td>{item.supplier}</td>
+                <td>{item.Current}</td>
+                <td>{item.Spend}</td>
+                <td>{item. Recommended}</td>
+                <td>{item.recommendedSupplier}</td>
+                <td>{item.status}</td>
                 <td>
                   <i
                     className="fa-regular fa-eye text-primary mx-2"

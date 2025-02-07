@@ -1,5 +1,50 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+
+const Servicesowdata =[
+  {
+    Requesting:"IT Department",
+    Supplier:"Supplier 1",
+    Requested:"Research Tools",
+    Existing:"Supplier D",
+    Savings:"$7,000",
+    Status:"Under Review",
+    Action:"",
+
+  },
+  {
+    Requesting:"IT Department",
+    Supplier:"Supplier 1",
+    Requested:"Research Tools",
+    Existing:"Supplier D",
+    Savings:"$7,000",
+    Status:"Under Review",
+    Action:"",
+
+  },
+  {
+    Requesting:"IT Department",
+    Supplier:"Supplier 1",
+    Requested:"Research Tools",
+    Existing:"Supplier D",
+    Savings:"$7,000",
+    Status:"Under Review",
+    Action:"",
+
+  },
+  {
+    Requesting:"IT Department",
+    Supplier:"Supplier 1",
+    Requested:"Research Tools",
+    Existing:"Supplier D",
+    Savings:"$7,000",
+    Status:"Under Review",
+    Action:"",
+
+  },
+ 
+]
 
 const Servicesow = () => {
  
@@ -90,50 +135,42 @@ const Servicesow = () => {
             Savings from Consolidating <br /> Under an Existing Supplier
           </th>
           <th>Status</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>IT Department</td>
-          <td>Supplier 1</td>
-          <td>Research Tools</td>
-          <td>Supplier D</td>
-          <td>$7,000</td>
-          <td>Under Review</td>
-        </tr>
-        <tr>
-          <td>Marketing Team</td>
-          <td>Supplier 2</td>
-          <td>Social Media Analytics</td>
-          <td>Supplier D</td>
-          <td>$7,000</td>
-          <td>Approved</td>
-        </tr>
-        <tr>
-          <td>IT Department</td>
-          <td>Supplier 3</td>
-          <td>Research Tools</td>
-          <td>Supplier D</td>
-          <td>$7,000</td>
-          <td>Under Review</td>
-        </tr>
-        <tr>
-          <td>Finance Team</td>
-          <td>Supplier 4</td>
-          <td>Budget Management Tool</td>
-          <td>Supplier E</td>
-          <td>$7,000</td>
-          <td>Implemented</td>
-        </tr>
-        <tr>
-          <td>Finance Team</td>
-          <td>Supplier 5</td>
-          <td>Budget Management Tool</td>
-          <td>Supplier D</td>
-          <td>$7,000</td>
-          <td>Approved</td>
-        </tr>
-      </tbody> 
+            {Servicesowdata.map((item, index) => (
+              <tr key={index}>
+                <td>{item.Requesting}</td>
+                <td>{item.Supplier}</td>
+                <td>{item.Requested}</td>
+                <td>{item.Existing}</td>
+                <td>{item.Savings}</td>
+                <td>{item.Status}</td>
+                
+                <td>
+                  <i
+                    className="fa-regular fa-eye text-primary mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="View"
+                    onClick={() => handleVolumeAction("View", item)}
+                  />
+                  <i
+                    className="fa-solid fa-circle-check text-success mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Confirm"
+                    onClick={() => handleVolumeAction("Confirm", item)}
+                  />
+                  <i
+                    className="fa-solid fa-xmark text-danger mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Delete"
+                    onClick={() => handleVolumeAction("Delete", item)}
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
     </table>
   </div>
   {/* Pagination */}
