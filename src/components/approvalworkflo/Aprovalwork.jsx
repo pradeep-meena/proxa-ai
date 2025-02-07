@@ -25,7 +25,7 @@ const ApprovalWork = () => {
   const approvalData = [
     {
       id: "001",
-      supplier:"Supplier A",
+      supplier: "Supplier A",
       requester: "John Doe",
       department: "IT",
       category: "Software Purchase",
@@ -36,7 +36,7 @@ const ApprovalWork = () => {
     },
     {
       id: "002",
-      supplier:"Supplier B",
+      supplier: "Supplier B",
       requester: "Sarah Lee",
       department: "Marketing",
       category: "Vendor Service",
@@ -80,27 +80,30 @@ const ApprovalWork = () => {
                   <td>{item.status}</td>
                   <td>{item.urgency}</td>
                   <td>{item.approvers}</td>
-                    <td className="approvalicon">
-                      <Link to="/contractapproval">
-                        <i
-                          className="fa-regular fa-eye"
-                          style={{ color: "#0d99ff" }} 
-                          data-bs-placement="top" title="View"
-                        />
-                      </Link>
+                  <td className="approvalicon">
+                    <Link to="/contractapproval">
                       <i
-                        className="fa-solid fa-circle-check text-success mx-2"
-                        onClick={confirm}
-                        style={{ cursor: "pointer" }}
-                        data-bs-placement="top" title="Confirm"
+                        className="fa-regular fa-eye"
+                        style={{ color: "#0d99ff" }}
+                        data-bs-placement="top"
+                        title="View"
                       />
-                      <i
-                        className="fa-solid fa-xmark text-danger"
-                        onClick={() => setVisible(true)} // Show dialog for reject action
-                        style={{ cursor: "pointer" }}
-                        data-bs-placement="top" title="Delete"
-                      />
-                    </td>
+                    </Link>
+                    <i
+                      className="fa-solid fa-circle-check text-success mx-2"
+                      onClick={confirm}
+                      style={{ cursor: "pointer" }}
+                      data-bs-placement="top"
+                      title="Confirm"
+                    />
+                    <i
+                      className="fa-solid fa-xmark text-danger"
+                      onClick={() => setVisible(true)} // Show dialog for reject action
+                      style={{ cursor: "pointer" }}
+                      data-bs-placement="top"
+                      title="Delete"
+                    />
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -114,8 +117,7 @@ const ApprovalWork = () => {
               <a
                 className="page-link text-secondary"
                 href="#"
-                style={{ border: "none" }}
-              >
+                style={{ border: "none" }}>
                 Previous
               </a>
             </li>
@@ -123,8 +125,7 @@ const ApprovalWork = () => {
               <a
                 className="page-link rounded text-white fw-semibold"
                 href="#"
-                style={{ backgroundColor: "#0096d4" }}
-              >
+                style={{ backgroundColor: "#0096d4" }}>
                 1
               </a>
             </li>
@@ -132,8 +133,7 @@ const ApprovalWork = () => {
               <a
                 className="page-link rounded text-dark fw-semibold"
                 href="#"
-                style={{ backgroundColor: "rgb(212, 212, 212)" }}
-              >
+                style={{ backgroundColor: "rgb(212, 212, 212)" }}>
                 2
               </a>
             </li>
@@ -141,8 +141,7 @@ const ApprovalWork = () => {
               <a
                 className="page-link rounded text-dark fw-semibold"
                 href="#"
-                style={{ backgroundColor: "rgb(212, 212, 212)" }}
-              >
+                style={{ backgroundColor: "rgb(212, 212, 212)" }}>
                 3
               </a>
             </li>
@@ -150,8 +149,7 @@ const ApprovalWork = () => {
               <a
                 className="page-link text-secondary"
                 href="#"
-                style={{ border: "none" }}
-              >
+                style={{ border: "none" }}>
                 Next
               </a>
             </li>

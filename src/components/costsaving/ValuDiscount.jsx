@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-
+import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 const ValuDiscount = () => {
+  const [visible, setVisible] = useState(false);
 
+  // Placeholder functions for accept and reject actions
+  const acceptFunc = () => {
+    console.log("Action accepted");
+  };
+
+  const rejectFunc = () => {
+    console.log("Action rejected");
+  };
+
+  const confirm = () => {
+    setVisible(true); // Show the dialog
+  };
 
   const volumedata = [
     {
@@ -35,11 +47,6 @@ const ValuDiscount = () => {
     },
   ];
 
-  const handleVolumeAction = (action, item) => {
-    console.log(`${action} clicked for`, item);
-    // Add logic to handle view, confirm, and delete actions
-  };
-
   return (
     <>
       <div className="container">
@@ -54,53 +61,52 @@ const ValuDiscount = () => {
           </h5>
         </div>
         <div className="table-responsive mt-3">
-        <table className="table table-striped table-bordered text-center">
-          <thead>
-            <tr>
-              <th>Category Name</th>
-              <th>Supplier Name</th>
-              <th>Historical Volume Purchased (last 12 months)</th>
-              <th>Discount Threshold</th>
-              <th>Estimated Savings</th>
-              <th>Recommended Supplier</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {volumedata.map((item, index) => (
-              <tr key={index}>
-                <td>{item.category}</td>
-                <td>{item.supplier}</td>
-                <td>{item.volume}</td>
-                <td>{item.threshold}</td>
-                <td>{item.savings}</td>
-                <td>{item.recommendedSupplier}</td>
-                <td>{item.status}</td>
-                <td>
-                  <i
-                    className="fa-regular fa-eye text-primary mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="View"
-                    onClick={() => handleVolumeAction("View", item)}
-                  />
-                  <i
-                    className="fa-solid fa-circle-check text-success mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="Confirm"
-                    onClick={() => handleVolumeAction("Confirm", item)}
-                  />
-                  <i
-                    className="fa-solid fa-xmark text-danger mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="Delete"
-                    onClick={() => handleVolumeAction("Delete", item)}
-                  />
-                </td>
+          <table className="table table-striped table-bordered text-center">
+            <thead>
+              <tr>
+                <th>Category Name</th>
+                <th>Supplier Name</th>
+                <th>Historical Volume Purchased (last 12 months)</th>
+                <th>Discount Threshold</th>
+                <th>Estimated Savings</th>
+                <th>Recommended Supplier</th>
+                <th>Status</th>
+                <th>Action</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {volumedata.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.category}</td>
+                  <td>{item.supplier}</td>
+                  <td>{item.volume}</td>
+                  <td>{item.threshold}</td>
+                  <td>{item.savings}</td>
+                  <td>{item.recommendedSupplier}</td>
+                  <td>{item.status}</td>
+                  <td>
+                    <i
+                      className="fa-regular fa-eye text-primary mx-2"
+                      style={{ cursor: "pointer" }}
+                      title="View"
+                    />
+                    <i
+                      className="fa-solid fa-circle-check text-success mx-2"
+                      onClick={confirm}
+                      style={{ cursor: "pointer" }}
+                      title="Confirm"
+                    />
+                    <i
+                      className="fa-solid fa-xmark text-danger mx-2"
+                      onClick={() => setVisible(true)} // Show dialog for reject action
+                      style={{ cursor: "pointer" }}
+                      title="Delete"
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
         {/* Pagination */}
         <nav aria-label="Page navigation" className="mt-4">
@@ -148,6 +154,23 @@ const ValuDiscount = () => {
           </ul>
         </nav>
       </div>
+      {/* Confirmation Dialog */}
+      <ConfirmDialog
+        visible={visible}
+        onHide={() => setVisible(false)}
+        message="Are you sure you want to proceed?"
+        header="Confirmation"
+        icon="pi pi-exclamation-triangle"
+        accept={acceptFunc}
+        reject={rejectFunc}
+        acceptLabel="Yes"
+        rejectLabel="No"
+        breakpoints={{ "960px": "75vw", "640px": "100vw" }}
+        style={{
+          maxWidth: "90%",
+          width: "20vw",
+        }}
+      />
     </>
   );
 };

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import { Link } from "react-router-dom";
+import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -10,54 +11,69 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-const Supplierdata = [
-  {
-    category: "Office Furniture",
-    supplier: "Supplier A",
-    Current: "Supplier X, Supplier Y",
-    Spend: "$50,000, $40,000",
-    Recommended: "Supplier X",
-    Potential: "$10,000",
-    status: "New Opportunity",
-    action: "",
-  },
-  {
-    category: "Office Furniture",
-    supplier: "Supplier A",
-    Current: "Supplier X, Supplier Y",
-    Spend: "$50,000, $40,000",
-    Recommended: "Supplier X",
-    Potential: "$10,000",
-    status: "New Opportunity",
-    action: "",
-  },
-  {
-    category: "Office Furniture",
-    supplier: "Supplier A",
-    Current: "Supplier X, Supplier Y",
-    Spend: "$50,000, $40,000",
-    Recommended: "Supplier X",
-    Potential: "$10,000",
-    status: "New Opportunity",
-    action: "",
-  },
-  {
-    category: "Office Furniture",
-    supplier: "Supplier A",
-    Current: "Supplier X, Supplier Y",
-    Spend: "$50,000, $40,000",
-    Recommended: "Supplier X",
-    Potential: "$10,000",
-    status: "New Opportunity",
-    action: "",
-  },
-];
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 function SupplierConsolidation () {
+    const [visible, setVisible] = useState(false);
+  
+    // Placeholder functions for accept and reject actions
+    const acceptFunc = () => {
+      console.log("Action accepted");
+    };
+  
+    const rejectFunc = () => {
+      console.log("Action rejected");
+    };
+  
+    const confirm = () => {
+      setVisible(true); // Show the dialog
+    };
+  
 
-
+  const Supplierdata = [
+    {
+      category: "Office Furniture",
+      supplier: "Supplier A",
+      Current: "Supplier X, Supplier Y",
+      Spend: "$50,000, $40,000",
+      Recommended: "Supplier X",
+      Potential: "$10,000",
+      status: "New Opportunity",
+      action: "",
+    },
+    {
+      category: "Office Furniture",
+      supplier: "Supplier A",
+      Current: "Supplier X, Supplier Y",
+      Spend: "$50,000, $40,000",
+      Recommended: "Supplier X",
+      Potential: "$10,000",
+      status: "New Opportunity",
+      action: "",
+    },
+    {
+      category: "Office Furniture",
+      supplier: "Supplier A",
+      Current: "Supplier X, Supplier Y",
+      Spend: "$50,000, $40,000",
+      Recommended: "Supplier X",
+      Potential: "$10,000",
+      status: "New Opportunity",
+      action: "",
+    },
+    {
+      category: "Office Furniture",
+      supplier: "Supplier A",
+      Current: "Supplier X, Supplier Y",
+      Spend: "$50,000, $40,000",
+      Recommended: "Supplier X",
+      Potential: "$10,000",
+      status: "New Opportunity",
+      action: "",
+    },
+  ];
+  
+  ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
  
   return (
     <div className="container">
@@ -110,25 +126,24 @@ function SupplierConsolidation () {
                 <td>{item.recommendedSupplier}</td>
                 <td>{item.status}</td>
                 <td>
-                  <i
-                    className="fa-regular fa-eye text-primary mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="View"
-                    onClick={() => handleVolumeAction("View", item)}
-                  />
-                  <i
-                    className="fa-solid fa-circle-check text-success mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="Confirm"
-                    onClick={() => handleVolumeAction("Confirm", item)}
-                  />
-                  <i
-                    className="fa-solid fa-xmark text-danger mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="Delete"
-                    onClick={() => handleVolumeAction("Delete", item)}
-                  />
-                </td>
+                    <i
+                      className="fa-regular fa-eye text-primary mx-2"
+                      style={{ cursor: "pointer" }}
+                      title="View"
+                    />
+                    <i
+                      className="fa-solid fa-circle-check text-success mx-2"
+                      onClick={confirm}
+                      style={{ cursor: "pointer" }}
+                      title="Confirm"
+                    />
+                    <i
+                      className="fa-solid fa-xmark text-danger mx-2"
+                      onClick={() => setVisible(true)} // Show dialog for reject action
+                      style={{ cursor: "pointer" }}
+                      title="Delete"
+                    />
+                  </td>
               </tr>
             ))}
           </tbody>
@@ -230,6 +245,23 @@ function SupplierConsolidation () {
           </div>
         </div>
       </div>
+            {/* Confirmation Dialog */}
+            <ConfirmDialog
+              visible={visible}
+              onHide={() => setVisible(false)}
+              message="Are you sure you want to proceed?"
+              header="Confirmation"
+              icon="pi pi-exclamation-triangle"
+              accept={acceptFunc}
+              reject={rejectFunc}
+              acceptLabel="Yes"
+              rejectLabel="No"
+              breakpoints={{ "960px": "75vw", "640px": "100vw" }}
+              style={{
+                maxWidth: "90%",
+                width: "20vw",
+              }}
+            />
     </div>
   );
 }

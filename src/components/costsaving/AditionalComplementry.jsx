@@ -1,41 +1,57 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Link } from 'react-router-dom'
-
-const Aditionaldata = [
-  {
-    Vendor:"Supplier A",
-    Supplier:"jons",
-    Current:"Data Analytics Software",
-    Recommeded:"Training for Staff",
-    Cost:"$0",
-    Savings:"$3,000",
-    Status:"Proposed",
-    Action:"",
-  },
-  {
-    Vendor:"Supplier A",
-    Supplier:"jons",
-    Current:"Data Analytics Software",
-    Recommeded:"Training for Staff",
-    Cost:"$0",
-    Savings:"$3,000",
-    Status:"Proposed",
-    Action:"",
-  },
-  {
-    Vendor:"Supplier A",
-    Supplier:"jons",
-    Current:"Data Analytics Software",
-    Recommeded:"Training for Staff",
-    Cost:"$0",
-    Savings:"$3,000",
-    Status:"Proposed",
-    Action:"",
-  },
-  
-]
+import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 
 const AditionalComplementry = () => {
+    const [visible, setVisible] = useState(false);
+  
+    // Placeholder functions for accept and reject actions
+    const acceptFunc = () => {
+      console.log("Action accepted");
+    };
+  
+    const rejectFunc = () => {
+      console.log("Action rejected");
+    };
+  
+    const confirm = () => {
+      setVisible(true); // Show the dialog
+    };
+
+    const Aditionaldata = [
+      {
+        Vendor:"Supplier A",
+        Supplier:"jons",
+        Current:"Data Analytics Software",
+        Recommeded:"Training for Staff",
+        Cost:"$0",
+        Savings:"$3,000",
+        Status:"Proposed",
+        Action:"",
+      },
+      {
+        Vendor:"Supplier A",
+        Supplier:"jons",
+        Current:"Data Analytics Software",
+        Recommeded:"Training for Staff",
+        Cost:"$0",
+        Savings:"$3,000",
+        Status:"Proposed",
+        Action:"",
+      },
+      {
+        Vendor:"Supplier A",
+        Supplier:"jons",
+        Current:"Data Analytics Software",
+        Recommeded:"Training for Staff",
+        Cost:"$0",
+        Savings:"$3,000",
+        Status:"Proposed",
+        Action:"",
+      },
+      
+    ]
+  
   return (
     <>
     <div className="container">
@@ -136,25 +152,24 @@ const AditionalComplementry = () => {
                 <td>{item.Savings}</td>
                 <td>{item.Status}</td>
                 <td>
-                  <i
-                    className="fa-regular fa-eye text-primary mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="View"
-                    onClick={() => handleVolumeAction("View", item)}
-                  />
-                  <i
-                    className="fa-solid fa-circle-check text-success mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="Confirm"
-                    onClick={() => handleVolumeAction("Confirm", item)}
-                  />
-                  <i
-                    className="fa-solid fa-xmark text-danger mx-2"
-                    style={{ cursor: "pointer" }}
-                    title="Delete"
-                    onClick={() => handleVolumeAction("Delete", item)}
-                  />
-                </td>
+                    <i
+                      className="fa-regular fa-eye text-primary mx-2"
+                      style={{ cursor: "pointer" }}
+                      title="View"
+                    />
+                    <i
+                      className="fa-solid fa-circle-check text-success mx-2"
+                      onClick={confirm}
+                      style={{ cursor: "pointer" }}
+                      title="Confirm"
+                    />
+                    <i
+                      className="fa-solid fa-xmark text-danger mx-2"
+                      onClick={() => setVisible(true)} // Show dialog for reject action
+                      style={{ cursor: "pointer" }}
+                      title="Delete"
+                    />
+                  </td>
               </tr>
             ))}
           </tbody>
@@ -211,6 +226,23 @@ const AditionalComplementry = () => {
     </ul>
   </nav>
 </div>
+{/* Confirmation Dialog */}
+      <ConfirmDialog
+        visible={visible}
+        onHide={() => setVisible(false)}
+        message="Are you sure you want to proceed?"
+        header="Confirmation"
+        icon="pi pi-exclamation-triangle"
+        accept={acceptFunc}
+        reject={rejectFunc}
+        acceptLabel="Yes"
+        rejectLabel="No"
+        breakpoints={{ "960px": "75vw", "640px": "100vw" }}
+        style={{
+          maxWidth: "90%",
+          width: "20vw",
+        }}
+      />
     </>
   )
 }
