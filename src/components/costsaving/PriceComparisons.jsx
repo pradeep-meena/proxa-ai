@@ -56,6 +56,7 @@ function PriceComparisons() {
               <th>Delivery Term</th>
               <th>Additional Benefits/Features</th>
               <th>Recommended Supplier</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -100,6 +101,26 @@ function PriceComparisons() {
                 <td>{row["Delivery Term"]}</td>
                 <td>{row["Additional Benefits/Features"]}</td>
                 <td>{row["Recommended Supplier"]}</td>
+                <td>
+                  <i
+                    className="fa-regular fa-eye text-primary mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="View"
+                    onClick={() => handleVolumeAction("View", item)}
+                  />
+                  <i
+                    className="fa-solid fa-circle-check text-success mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Confirm"
+                    onClick={() => handleVolumeAction("Confirm", item)}
+                  />
+                  <i
+                    className="fa-solid fa-xmark text-danger mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Delete"
+                    onClick={() => handleVolumeAction("Delete", item)}
+                  />
+                </td>
               </tr>
             ))}
           </tbody>

@@ -112,6 +112,7 @@ function MultiYearContracting() {
               <th>Multi-Year Proposal</th>
               <th>Saving Estimate</th>
               <th>Status</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -156,6 +157,26 @@ function MultiYearContracting() {
                 <td>{row["Multi-Year Proposal"]}</td>
                 <td>{row["Saving Estimate"]}</td>
                 <td>{row["Status"]}</td>
+                <td>
+                  <i
+                    className="fa-regular fa-eye text-primary mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="View"
+                    onClick={() => handleVolumeAction("View", item)}
+                  />
+                  <i
+                    className="fa-solid fa-circle-check text-success mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Confirm"
+                    onClick={() => handleVolumeAction("Confirm", item)}
+                  />
+                  <i
+                    className="fa-solid fa-xmark text-danger mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Delete"
+                    onClick={() => handleVolumeAction("Delete", item)}
+                  />
+                </td>
               </tr>
             ))}
           </tbody>

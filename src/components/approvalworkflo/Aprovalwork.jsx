@@ -80,27 +80,27 @@ const ApprovalWork = () => {
                   <td>{item.status}</td>
                   <td>{item.urgency}</td>
                   <td>{item.approvers}</td>
-                  <td className="approvalicon">
-                    <Link to="/contractapproval">
+                    <td className="approvalicon">
+                      <Link to="/contractapproval">
+                        <i
+                          className="fa-regular fa-eye"
+                          style={{ color: "#0d99ff" }} 
+                          data-bs-placement="top" title="View"
+                        />
+                      </Link>
                       <i
-                        className="fa-regular fa-eye"
-                        style={{ color: "#0d99ff" }} 
-                        data-bs-placement="top" title="View"
+                        className="fa-solid fa-circle-check text-success mx-2"
+                        onClick={confirm}
+                        style={{ cursor: "pointer" }}
+                        data-bs-placement="top" title="Confirm"
                       />
-                    </Link>
-                    <i
-                      className="fa-solid fa-circle-check text-success mx-2"
-                      onClick={confirm}
-                      style={{ cursor: "pointer" }}
-                      data-bs-placement="top" title="Confirm"
-                    />
-                    <i
-                      className="fa-solid fa-xmark text-danger"
-                      onClick={() => setVisible(true)} // Show dialog for reject action
-                      style={{ cursor: "pointer" }}
-                      data-bs-placement="top" title="Delete"
-                    />
-                  </td>
+                      <i
+                        className="fa-solid fa-xmark text-danger"
+                        onClick={() => setVisible(true)} // Show dialog for reject action
+                        style={{ cursor: "pointer" }}
+                        data-bs-placement="top" title="Delete"
+                      />
+                    </td>
                 </tr>
               ))}
             </tbody>

@@ -51,6 +51,7 @@ function SupplierConsolidation() {
               <th>Recommended Supplier</th>
               <th>Potential Savings</th>
               <th>Status</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -100,6 +101,26 @@ function SupplierConsolidation() {
                 <td>{row.recommended}</td>
                 <td>{row.savings}</td>
                 <td>{row.status}</td>
+                <td>
+                  <i
+                    className="fa-regular fa-eye text-primary mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="View"
+                    onClick={() => handleVolumeAction("View", item)}
+                  />
+                  <i
+                    className="fa-solid fa-circle-check text-success mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Confirm"
+                    onClick={() => handleVolumeAction("Confirm", item)}
+                  />
+                  <i
+                    className="fa-solid fa-xmark text-danger mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Delete"
+                    onClick={() => handleVolumeAction("Delete", item)}
+                  />
+                </td>
               </tr>
             ))}
           </tbody>
