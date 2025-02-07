@@ -1,6 +1,40 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+const Aditionaldata = [
+  {
+    Vendor:"Supplier A",
+    Supplier:"jons",
+    Current:"Data Analytics Software",
+    Recommeded:"Training for Staff",
+    Cost:"$0",
+    Savings:"$3,000",
+    Status:"Proposed",
+    Action:"",
+  },
+  {
+    Vendor:"Supplier A",
+    Supplier:"jons",
+    Current:"Data Analytics Software",
+    Recommeded:"Training for Staff",
+    Cost:"$0",
+    Savings:"$3,000",
+    Status:"Proposed",
+    Action:"",
+  },
+  {
+    Vendor:"Supplier A",
+    Supplier:"jons",
+    Current:"Data Analytics Software",
+    Recommeded:"Training for Staff",
+    Cost:"$0",
+    Savings:"$3,000",
+    Status:"Proposed",
+    Action:"",
+  },
+  
+]
+
 const AditionalComplementry = () => {
   return (
     <>
@@ -88,55 +122,42 @@ const AditionalComplementry = () => {
           <th>Cost</th>
           <th>Savings/Value-Added Estimate</th>
           <th>Status</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Supplier A</td>
-          <td>jons</td>
-          <td>Data Analytics Software</td>
-          <td>Training for Staff</td>
-          <td>$0</td>
-          <td>$3,000</td>
-          <td>Proposed</td>
-        </tr>
-        <tr>
-          <td>Supplier B</td>
-          <td>Supplier X</td>
-          <td>Marketing Software</td>
-          <td>SEO Tools</td>
-          <td>$0</td>
-          <td>$3,000</td>
-          <td>Approved</td>
-        </tr>
-        <tr>
-          <td>Supplier A</td>
-          <td>Supplier Y</td>
-          <td>Data Analytics Software</td>
-          <td>Training for Staff</td>
-          <td>$500</td>
-          <td>$2,000</td>
-          <td>Proposed</td>
-        </tr>
-        <tr>
-          <td>Supplier B</td>
-          <td>Supplier Z</td>
-          <td>Data Analytics Software</td>
-          <td>SEO Tools</td>
-          <td>$500</td>
-          <td>$3,000</td>
-          <td>Implemented</td>
-        </tr>
-        <tr>
-          <td>Supplier C</td>
-          <td>Supplier m</td>
-          <td>Cloud Hosting</td>
-          <td>Backup Services</td>
-          <td>$0</td>
-          <td>$2,000</td>
-          <td>Proposed</td>
-        </tr>
-      </tbody>
+            {Aditionaldata.map((item, index) => (
+              <tr key={index}>
+                <td>{item.Vendor}</td>
+                <td>{item.Supplier}</td>
+                <td>{item. Current}</td>
+                <td>{item.Recommeded}</td>
+                <td>{item.Cost}</td>
+                <td>{item.Savings}</td>
+                <td>{item.Status}</td>
+                <td>
+                  <i
+                    className="fa-regular fa-eye text-primary mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="View"
+                    onClick={() => handleVolumeAction("View", item)}
+                  />
+                  <i
+                    className="fa-solid fa-circle-check text-success mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Confirm"
+                    onClick={() => handleVolumeAction("Confirm", item)}
+                  />
+                  <i
+                    className="fa-solid fa-xmark text-danger mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Delete"
+                    onClick={() => handleVolumeAction("Delete", item)}
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
     </table>
   </div>
   {/* Pagination */}
