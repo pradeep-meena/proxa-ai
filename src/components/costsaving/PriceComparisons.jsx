@@ -27,10 +27,10 @@ function PriceComparisons() {
             lineHeight: "42px",
           }}
         >
-          Price Comparisons
+          Price Comparison
         </h1>
         <Link to="/pricecomparisonsprice">
-        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Price Compari</button>
+        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'220px'}}>Price Comparison</button>
         </Link>
         </div>
         <h5 className="mt-5"
@@ -56,6 +56,7 @@ function PriceComparisons() {
               <th>Delivery Term</th>
               <th>Additional Benefits/Features</th>
               <th>Recommended Supplier</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -100,6 +101,26 @@ function PriceComparisons() {
                 <td>{row["Delivery Term"]}</td>
                 <td>{row["Additional Benefits/Features"]}</td>
                 <td>{row["Recommended Supplier"]}</td>
+                <td>
+                  <i
+                    className="fa-regular fa-eye text-primary mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="View"
+                    onClick={() => handleVolumeAction("View", item)}
+                  />
+                  <i
+                    className="fa-solid fa-circle-check text-success mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Confirm"
+                    onClick={() => handleVolumeAction("Confirm", item)}
+                  />
+                  <i
+                    className="fa-solid fa-xmark text-danger mx-2"
+                    style={{ cursor: "pointer" }}
+                    title="Delete"
+                    onClick={() => handleVolumeAction("Delete", item)}
+                  />
+                </td>
               </tr>
             ))}
           </tbody>
