@@ -27,10 +27,10 @@ function PriceComparisons() {
             lineHeight: "42px",
           }}
         >
-          Price Comparisons
+          Price Comparison
         </h1>
         <Link to="/pricecomparisonsprice">
-        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'120px'}}>Price Compari</button>
+        <button className="p-2 rounded "style={{backgroundColor:'#578e7e',color:'white',border:'none', width:'220px'}}>Price Comparison</button>
         </Link>
         </div>
         <h5 className="mt-5"

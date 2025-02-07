@@ -73,7 +73,7 @@ const AllContractWearehouse = () => {
               aria-label="Search"
             />
           </div>
-          <div className="upload d-column">
+          {/* <div className="upload d-column">
             <button
               className="btn btn-success d-flex align-items-center justify-content-center contrabtn"
               style={{
@@ -101,7 +101,7 @@ const AllContractWearehouse = () => {
               }}>
               <i className="fa-solid fa-arrow-left"></i> Back
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="table-responsive contracttable">
           <table className="table table-striped table-bordered text-center">
