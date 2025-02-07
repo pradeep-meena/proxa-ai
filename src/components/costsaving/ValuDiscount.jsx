@@ -101,60 +101,6 @@ const ValuDiscount = () => {
             ))}
           </tbody>
         </table>
-              {/* <tr>
-                <td>Laptop Computers</td>
-                <td>Supplier B</td>
-                <td>200 units</td>
-                <td>250 units (8%)</td>
-                <td>$2,000</td>
-                <td>Supplier A</td>
-                <td>New Opportunity</td>
-              </tr>
-              <tr>
-                <td>Cloud Storage</td>
-                <td>Supplier C</td>
-                <td>500 TB</td>
-                <td>600 TB (15%)</td>
-                <td>$2,000</td>
-                <td>Supplier B</td>
-                <td>Under Review</td>
-              </tr>
-              <tr>
-                <td>Office Supplies</td>
-                <td>Supplier D</td>
-                <td>10,000 units</td>
-                <td>12,000 units (10%)</td>
-                <td>$2,000</td>
-                <td>Supplier A</td>
-                <td>Approved</td>
-              </tr>
-              <tr>
-                <td>Office Supplies</td>
-                <td>Supplier X</td>
-                <td>10,000 units</td>
-                <td>12,000 units (10%)</td>
-                <td>$2,000</td>
-                <td>Supplier C</td>
-                <td>New Opportunity</td>
-              </tr>
-              <tr>
-                <td>Cloud Storage</td>
-                <td>Supplier Y</td>
-                <td>500 TB</td>
-                <td>600 TB (15%)</td>
-                <td>$2,000</td>
-                <td>Supplier B</td>
-                <td>Approved</td>
-              </tr>
-              <tr>
-                <td>Laptop Computers</td>
-                <td>Supplier Z</td>
-                <td>200 units</td>
-                <td>250 units (8%)</td>
-                <td>$2,000</td>
-                <td>Supplier A</td>
-                <td>Under Review</td>
-              </tr> */}
         </div>
         {/* Pagination */}
         <nav aria-label="Page navigation" className="mt-4">
